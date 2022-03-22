@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: #adacff;
+    overflow: hidden;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    z-index: 100;
+}
+.menu .logo img{
+    margin-left: 70px;
+    padding-top: 70px;
+    width: 240px;
+}
+
+.menu .ul{
+    display: flex;
+    list-style: none;
+}
+.menu .ul li{
+    margin-right: 40px;
+}
+.menu .ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+.menu .ul li:hover a{
+    transition: .3s ease-in-out;
+    color: #610de2;
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 40px;
+}
+#home .main-text{
+    text-align: center;
+
+}
+.line{
+    overflow: hidden;
+
+}
+#home .main-text p{
+    overflow: hidden;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 120px;
+    margin: 8px 0px;
+}
+#home .main-text p span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    color: #610de2;
+}
+.cursor{
+    position: absolute;
+    background-size: cover;
+    width: 450px;
+    height: 250px;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(5px,5px);
+}
+.cursor-follow1{
+    background: url(../resources/desing/4-30.webp) no-repeat 50% 50%;
+    opacity: 0;
+}
+
+.cursor-follow2{
+    background: url(../resources/p-gaia.webp) no-repeat 50% 50%;
+    opacity: 0;
+}
+
+.cursor-follow3{
+    background: url(../resources/p-andromeda.png) no-repeat 50% 50%;
+    opacity: 0;
+}
+
+.cursor-follow4{
+    background: url(../resources/p-musica.webp) no-repeat 50% 50%;
+    opacity: 0;
+}
+.line1:hover ~ .cursor-follow1{
+    opacity: 1;
+}
+.line2:hover ~ .cursor-follow2{
+    opacity: 1;
+}
+.line3:hover ~ .cursor-follow3{
+    opacity: 1;
+}
+.line4:hover ~ .cursor-follow4{
+    opacity: 1;
+}
+
+/*---- 
+         Laptop 
+__________________________________*/
+@media screen and (max-width: 1450px){
+    .menu .logo img{
+        margin-left: 50px;
+        padding-top: 0px;
+        width: 140px;
+    }
+    .menu .ul li a{
+        font-size: 14px;
+    }
+    #home .main-text p{
+        font-size: 60px;
+    }
+    #home .main-text p span{
+        font-size: 12px;
+    }
+}
+/*---- 
+         Phone
+__________________________________*/
+@media screen and (max-width: 630px){
+    .menu .logo img{
+        width: 110px;
+    }
+    .menu .ul li a{
+        display: none;
+    }
+    #home .main-text p{
+        font-size: 30px;
+        letter-spacing: 0px;
+        margin: 10px 0px;
+    }
+    #home .main-text p span{
+        font-size: 8px;
+    }
+}
