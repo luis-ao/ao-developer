@@ -1,7 +1,7 @@
 const tl = gsap.timeline();
 
 /* Movimiento del texto principal */
-tl.from('.line p', 2.8,{
+tl.from('.line p', 2.4,{
     delay: 1,
     ease: 'power4.out',
     y: 250,
@@ -12,17 +12,17 @@ tl.from('.line p', 2.8,{
 });
 
 /* Cambio de color en el fondo */
-tl.to('.body',1.8,{
+tl.to('.body',1.4,{
     backgroundColor: '#121212'
 })
 
 /* Cambio de color en el texto principal */
-tl.to('.line p a', 1.5,{
+tl.to('.line p a', 1.1,{
     color: 'white'
 },"-=1.8")
 
 /* Movimiento del navbar */
-tl.from('.logo, .ul li',1.2,{
+tl.from('.logo, .ul li',.8,{
     opacity: 0,
     y: "-100%",
     stagger: {
