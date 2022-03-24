@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2B0663;
+    overflow: hidden;
+}
+/*********************
+        HEADER 
+____________________*/
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+    z-index: 100;
+}
+.navbar .logo img{
+    margin-left: 70px;
+    padding-top: 70px;
+    width: 200px;
+}
+
+.navbar .menu{
+    display: flex;
+    list-style: none;
+}
+.navbar .menu .menu__div{
+    cursor: pointer;
+    margin-right: 60px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+.navbar .menu .menu__div:hover{
+    transition: .3s ease-in-out;
+    color: #610de2;
+    /* color: #B0AA00; */
+    font-size: 700;
+}

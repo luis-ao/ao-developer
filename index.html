@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -12,39 +12,40 @@
     href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200&display=swap"
     rel="stylesheet">
 
-  
-    <!--////////            
+  <!--////////            
                Style
   _______________________-->
-  <link rel="stylesheet" href="src/css/main.css" />
+  <link rel="stylesheet" href="src/css/menu.css" />
+  <link rel="stylesheet" href="src/css/index.css" />
 
 
   <link rel='icon' href="src/resources/favicon.webp" />
   <title>Proyectos // AO Developer</title>
-
-  <!--////////            
-               GSAP 
-  _______________________-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-
 </head>
 
-<body class="body">
+<body>
+
+  <!--////////            
+               HEADER
+  _______________________-->
   <header>
-    <div class="menu">
+    <div class="navbar">
       <div class="logo">
         <a href="index.html">
           <img src="src/resources/logo.webp" alt="Logo AO Developer">
         </a>
       </div>
-      <ul class="ul">
-        <li><a href="index.html">Proyectos</a></li>
-        <li><a href="src/resources/cv-ao-dev.pdf" download="cv-ao-dev.pdf">Descarga mi CV</a></li>
-      </ul>
+      <div class="menu">
+        <div class="menu__div" href="#">Menu</div>
+      </div>
     </div>
+
+    <!--////////            
+                 HEADER
+    _______________________-->
+
   </header>
-  
+
 
   <div class="container" id="home">
     <div class="main-text">
@@ -55,7 +56,8 @@
         <p><a href="src/gaia.html">Gaia <span>(WordPress)</span> </a></p>
       </div>
       <div class="line line3">
-        <p><a href="https://santiagougc07.github.io/Operacion_Andromeda/public/html/pc-gamer-delios.html?" target="_blank">Andromeda <span>(Programación)</span></a></p>
+        <p><a href="https://santiagougc07.github.io/Operacion_Andromeda/public/html/pc-gamer-delios.html?"
+            target="_blank">Andromeda <span>(Programación)</span></a></p>
       </div>
       <div class="line line4">
         <p><a href="src/musica.html">Música</a></p>
@@ -69,9 +71,16 @@
   </div>
 
   <!--////////            
+               GSAP 
+  _______________________-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+  <!--////////            
                Script 
   _______________________-->
   <script src="src/js/index.js"></script>
+  <script src="src/js/menu.js"></script>
 
 </body>
 
