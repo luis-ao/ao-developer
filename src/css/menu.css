@@ -41,11 +41,6 @@ ____________________*/
     text-transform: uppercase;
     transition: .3s ease-in-out;
 }
-.header__text .menu-open:hover{
-    transition: .3s ease-in-out;
-    color: #610de2;
-    font-size: 700;
-}
 
 /*********************
         MENU
@@ -59,7 +54,7 @@ ____________________*/
     justify-content: space-between;
     padding: 0px 50px;
     position: fixed;
-    top: -100%;
+    top: -100vh;
     align-items: center;
     background-color: #2B0663;
     z-index: 1900;
@@ -67,17 +62,23 @@ ____________________*/
 .menu__background {
     font-family: 'Orbitron', sans-serif;
     position: absolute;
-    font-size: 240px;
+    font-size: 420px;
     font-weight: 900;
     color: #4b52e327;
     user-select: none;
     z-index: 1;
 }
+
 .menu-exit {
     cursor: pointer;
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: 60px;
+    top: 60px;
+    color: #DE591D;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 2px;
 }
 
 .nav-gsap {
@@ -87,42 +88,41 @@ ____________________*/
 
 .menu__nav-link {
     text-decoration: none;
-    font-size: 22px;
+    font-size: 80px;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     transition: all 0.2s ease-in-out;
     z-index: 2000;
     color: #B0AA00;
 }
 
-.menu__nav-link:hover {
-    color: #DE591D;
-    transition: all 0.2s ease-in-out;
-}
-
 .small-number {
-    font-size: 10px;
+    font-size: 36px;
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     z-index: 1000;
 }
 
 .contact__title {
-    font-size: 2rem;
-    color: rgb(170, 151, 126);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #B0AA00;
 }
 .contact__subtitle {
-    font-size: 2rem;
-    color: rgb(170, 151, 126);
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #1287DE;
 }
 
 .right {
-    padding-right: 100px;
+    padding-right: 120px;
     z-index: 1000;
 }
 
 .contact {
-    margin-bottom: 24px;
+    margin-bottom: 40px;
 }
 
 .menu__links {
@@ -130,14 +130,75 @@ ____________________*/
 }
 
 .contact__rrss > a {
-    color: white;
+    padding-right: 60px;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #34910C;
 }
 
+
+/*********************
+        HOVER
+____________________*/
+@media (hover: hover) {
+    .header__text .menu-open:hover{
+        transition: .3s ease-in-out;
+        color: #610de2;
+    }
+
+    .menu-exit:hover{
+        transition: .3s ease-in-out;
+        color: #DDDE1D;
+    }
+
+    .menu__nav-link:hover {
+        color: #DE591D;
+        letter-spacing: 12px;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .contact__subtitle:hover {
+        transition: all 0.2s ease-in-out;
+        color: #34910C;
+    }
+    .contact__rrss > a:hover{
+        transition: all 0.2s ease-in-out;
+        color: #1287DE;
+    }
+
+}
+
+/*********************
+    SELECT - ACTIVE
+____________________*/
+.header__text .menu-open:active{
+    color: #610de2;
+}
+.menu-exit:active{
+    color: #DDDE1D;
+}
+.menu__nav-link:active {
+    color: #DE591D;
+}
+
+/*********************
+        LAPTOP
+____________________*/
+
+
+/*********************
+        TABLET
+____________________*/
+
+
+/*********************
+        PHONE
+____________________*/
 @media screen and (max-width: 660px) {
+
     .menu {
         flex-direction: column;
         justify-content: center;
@@ -145,5 +206,38 @@ ____________________*/
 
     .right {
         display: none;
+    }
+    .menu-exit {
+        right: 26px;
+        top: 32px;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .menu__background{
+        font-size: 240px;
+    }
+
+    .menu__nav-link {
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .menu__nav-link:hover {
+        letter-spacing: 0px;
+    }
+
+    .small-number {
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+    
+    .small-number {
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        z-index: 1000;
     }
 }
