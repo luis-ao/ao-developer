@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: #2B0663;
+    background-color: #7267CB;
 }
 /*********************
         HEADER
@@ -39,7 +39,7 @@ ____________________*/
     padding: 0px 30px;
     text-align: center;
     text-transform: uppercase;
-    transition: .3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 /*********************
@@ -56,7 +56,7 @@ ____________________*/
     position: fixed;
     top: -100vh;
     align-items: center;
-    background-color: #2B0663;
+    background-color: #7267CB;
     z-index: 1900;
 }
 .menu__background {
@@ -64,7 +64,7 @@ ____________________*/
     position: absolute;
     font-size: 420px;
     font-weight: 900;
-    color: #4b52e327;
+    color: #b8e4f015;
     user-select: none;
     z-index: 1;
 }
@@ -74,11 +74,12 @@ ____________________*/
     position: absolute;
     right: 60px;
     top: 60px;
-    color: #DE591D;
-    font-weight: 600;
+    color: #1F1D36;
+    font-weight: 500;
     text-transform: uppercase;
     font-size: 28px;
     letter-spacing: 2px;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav-gsap {
@@ -87,13 +88,15 @@ ____________________*/
 } 
 
 .menu__nav-link {
+    text-transform: uppercase;
     text-decoration: none;
     font-size: 80px;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 2px;
     transition: all 0.2s ease-in-out;
     z-index: 2000;
-    color: #B0AA00;
+    color: #1F1D36;
+    transition: all 0.4s ease-in-out;
 }
 
 .small-number {
@@ -105,15 +108,16 @@ ____________________*/
 
 .contact__title {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 2px;
-    color: #B0AA00;
+    color: #e8b6b09c;
 }
 .contact__subtitle {
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
     letter-spacing: 2px;
-    color: #1287DE;
+    color: #1F1D36;
+    transition: all 0.4s ease-in-out;
 }
 
 .right {
@@ -122,21 +126,22 @@ ____________________*/
 }
 
 .contact {
-    margin-bottom: 40px;
+    margin: 60px 0px;
 }
 
 .menu__links {
+    padding-left: 60px;
     z-index: 200;
 }
 
 .contact__rrss > a {
-    padding-right: 60px;
+    padding-right: 80px;
     text-decoration: none;
-    /* text-transform: uppercase; */
     font-size: 34px;
     font-weight: 800;
     letter-spacing: 2px;
-    color: #34910C;
+    color: #1F1D36;
+    transition: all 0.4s ease-in-out;
 }
 
 
@@ -145,28 +150,29 @@ ____________________*/
 ____________________*/
 @media (hover: hover) {
     .header__text .menu-open:hover{
-        transition: .3s ease-in-out;
+        transition: all 0.4s ease-in-out;
         color: #610de2;
     }
 
     .menu-exit:hover{
-        transition: .3s ease-in-out;
-        color: #DDDE1D;
+        transition: all 0.2s ease-in-out;
+        color: #E8CD99;
     }
 
     .menu__nav-link:hover {
-        color: #DE591D;
-        letter-spacing: 12px;
         transition: all 0.2s ease-in-out;
+        color: #E8CD99;
     }
     
     .contact__subtitle:hover {
-        transition: all 0.2s ease-in-out;
-        color: #34910C;
+        transition: all 0.4s ease-in-out;
+        color: #E8CD99;
+        text-decoration: underline;
     }
     .contact__rrss > a:hover{
         transition: all 0.2s ease-in-out;
-        color: #1287DE;
+        color: #E8CD99;
+        text-decoration: underline;
     }
 
 }
@@ -174,15 +180,6 @@ ____________________*/
 /*********************
     SELECT - ACTIVE
 ____________________*/
-.header__text .menu-open:active{
-    color: #610de2;
-}
-.menu-exit:active{
-    color: #DDDE1D;
-}
-.menu__nav-link:active {
-    color: #DE591D;
-}
 
 /*********************
         LAPTOP
@@ -203,7 +200,6 @@ ____________________*/
         flex-direction: column;
         justify-content: center;
     }
-
     .right {
         display: none;
     }
@@ -218,11 +214,15 @@ ____________________*/
         font-size: 240px;
     }
 
+    .menu__links {
+        padding-left: 0px;
+        z-index: 200;
+    }
+
     .menu__nav-link {
         text-decoration: none;
-        font-size: 22px;
-        font-weight: 500;
-        letter-spacing: 1px;
+        font-size: 26px;
+        letter-spacing: 0px;
     }
     .menu__nav-link:hover {
         letter-spacing: 0px;
@@ -230,8 +230,7 @@ ____________________*/
 
     .small-number {
         font-size: 10px;
-        font-weight: 400;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
     }
     
     .small-number {
