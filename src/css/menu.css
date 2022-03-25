@@ -22,6 +22,7 @@ ____________________*/
     z-index: 1000;
 }
 .header__logo img{
+    margin-top: 0px;
     margin-left: 30px;
     width: 100px;
 }
@@ -30,12 +31,10 @@ ____________________*/
     list-style: none;
 }
 .header__text .menu-open{
-    cursor: pointer;
-    text-decoration: none;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 12px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     padding: 0px 30px;
     text-align: center;
     text-transform: uppercase;
@@ -70,12 +69,11 @@ ____________________*/
 }
 
 .menu-exit {
-    cursor: pointer;
     position: absolute;
     right: 60px;
     top: 60px;
-    color: #1F1D36;
-    font-weight: 500;
+    color: #e8b6b0;
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 28px;
     letter-spacing: 2px;
@@ -151,12 +149,12 @@ ____________________*/
 @media (hover: hover) {
     .header__text .menu-open:hover{
         transition: all 0.4s ease-in-out;
-        color: #610de2;
+        color: #7267CB;
     }
 
     .menu-exit:hover{
         transition: all 0.2s ease-in-out;
-        color: #E8CD99;
+        color: #b8e4f056;
     }
 
     .menu__nav-link:hover {
@@ -166,35 +164,142 @@ ____________________*/
     
     .contact__subtitle:hover {
         transition: all 0.4s ease-in-out;
-        color: #E8CD99;
-        text-decoration: underline;
+        color: #b8e4f056;
     }
     .contact__rrss > a:hover{
         transition: all 0.2s ease-in-out;
-        color: #E8CD99;
-        text-decoration: underline;
+        color: #b8e4f056;
     }
-
 }
 
 /*********************
     SELECT - ACTIVE
 ____________________*/
+.header__text .menu-open:active{
+    transition: all 0.4s ease-in-out;
+    color: #7267CB;
+}
+
+.menu-exit:active{
+    transition: all 0.2s ease-in-out;
+    color: #b8e4f056;
+}
+
+.menu__nav-link:active {
+    transition: all 0.2s ease-in-out;
+    color: #E8CD99;
+}
+
+.contact__subtitle:active {
+    transition: all 0.4s ease-in-out;
+    color: #b8e4f056;
+}
+.contact__rrss > a:active{
+    transition: all 0.2s ease-in-out;
+    color: #b8e4f056;
+}
 
 /*********************
         LAPTOP
 ____________________*/
+@media screen and (max-width: 1600px){
+    .header__logo img{
+        width: 160px;
+        margin-top: 14px;
+        margin-left: 40px;
+    }
+    .header__text .menu-open{
+        font-size: 14px;
+        padding: 0px 40px;
+    }
+    .menu-exit {
+        right: 40px;
+        top: 32px;
+        font-size: 14px;
+    }
+    .menu__background{
+        font-size: 200px;
+    }
+    .menu__links {
+        padding-left: 28px;
+    }
+    .menu__nav-link {
+        font-size: 48px;
+        letter-spacing: 1px;
+    }
+    .small-number {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
 
+    .right {
+        padding-right: 100px;
+    }
+    .contact {
+        margin: 40px 0px;
+    }
+    .contact__title {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    .contact__subtitle {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .contact__rrss > a {
+        padding-right: 40px;
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+}
 
 /*********************
         TABLET
 ____________________*/
+@media screen and (max-width: 1000px){
+    .header__logo img{
+        width: 130px;
+    }
+    .header__text .menu-open{
+        font-size: 11px;
+    }
+    .menu-exit {
+        font-size: 11px;
+    }
+    .menu__background{
+        font-size: 140px;
+    }
+    .menu__links {
+        padding-left: 22px;
+    }
+    .menu__nav-link {
+        font-size: 36px;
+    }
+    .small-number {
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
 
+    .right {
+        padding-right: 20px;
+    }
+    .contact__title {
+        font-size: 20px;
+    }
+    .contact__subtitle {
+        font-size: 14px;
+    }
+    .contact__rrss > a {
+        padding-right: 20px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+}
 
 /*********************
         PHONE
 ____________________*/
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 720px) {
 
     .menu {
         flex-direction: column;
@@ -203,40 +308,29 @@ ____________________*/
     .right {
         display: none;
     }
+
+    .header__logo img{
+        width: 120px;
+    }
+    .header__text .menu-open{
+        font-size: 12px;
+    }
     .menu-exit {
-        right: 26px;
         top: 32px;
         font-size: 12px;
-        letter-spacing: 2px;
     }
-
     .menu__background{
         font-size: 240px;
     }
-
     .menu__links {
         padding-left: 0px;
-        z-index: 200;
     }
-
     .menu__nav-link {
-        text-decoration: none;
         font-size: 26px;
         letter-spacing: 0px;
     }
-    .menu__nav-link:hover {
-        letter-spacing: 0px;
-    }
-
     .small-number {
         font-size: 10px;
         letter-spacing: 0px;
-    }
-    
-    .small-number {
-        font-size: 10px;
-        font-weight: 400;
-        letter-spacing: 2px;
-        z-index: 1000;
     }
 }
