@@ -9,11 +9,9 @@
 }
 #home .main-text{
     text-align: center;
-
 }
 .line{
-    overflow: hidden;
-
+    overflow: hidden;   
 }
 #home .main-text p{
     overflow: hidden;
@@ -22,11 +20,13 @@
     letter-spacing: 2px;
     font-size: 120px;
     margin: 10px 0px;
+    z-index: 0;
 }
 #home .main-text p span{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 24px;
+    z-index: 0;
 }
 a{
     text-decoration: none;

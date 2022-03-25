@@ -22,7 +22,7 @@ tl.to('.line p a', 1.1,{
 },"-=1.8")
 
 /* Movimiento del navbar */
-tl.from('.logo, .menu',.8,{
+tl.from('.header__logo, .header__text',.8,{
     opacity: 0,
     y: "-100%",
     stagger: {
