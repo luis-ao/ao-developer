@@ -318,6 +318,7 @@ ____________________*/
     .menu-exit {
         top: 32px;
         font-size: 12px;
+        font-weight: 600;
     }
     .menu__background{
         font-size: 240px;
