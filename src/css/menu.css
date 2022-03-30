@@ -1,11 +1,14 @@
+@font-face {
+    font-family: 'nasalization';
+    src: url(../resources/nasalization-rg.otf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: #7267CB;
+    background-color: #1a1a1a;
 }
 /*********************
         HEADER
@@ -27,11 +30,14 @@ ____________________*/
     width: 100px;
 }
 .header__text{
+    font-family: 'nasalization', sans-serif;
+    font-weight: 500;
     display: flex;
     list-style: none;
 }
 .header__text .menu-open{
     color: white;
+    text-decoration: none;
     font-weight: 600;
     font-size: 12px;
     letter-spacing: 4px;
@@ -55,7 +61,7 @@ ____________________*/
     position: fixed;
     top: -100vh;
     align-items: center;
-    background-color: #7267CB;
+    background-color: #131991;
     z-index: 1900;
 }
 .menu__background {
@@ -70,9 +76,10 @@ ____________________*/
 
 .menu-exit {
     position: absolute;
+    text-decoration: none;
     right: 60px;
     top: 60px;
-    color: #e8b6b0;
+    color: white;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 28px;
@@ -93,7 +100,7 @@ ____________________*/
     letter-spacing: 2px;
     transition: all 0.2s ease-in-out;
     z-index: 2000;
-    color: #1F1D36;
+    color: white;
     transition: all 0.4s ease-in-out;
 }
 
@@ -108,13 +115,14 @@ ____________________*/
     font-size: 40px;
     font-weight: 800;
     letter-spacing: 2px;
-    color: #e8b6b09c;
+    color: white;
 }
 .contact__subtitle {
+    text-decoration: none;
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 2px;
-    color: #1F1D36;
+    color: white;
     transition: all 0.4s ease-in-out;
 }
 
@@ -138,7 +146,7 @@ ____________________*/
     font-size: 34px;
     font-weight: 800;
     letter-spacing: 2px;
-    color: #1F1D36;
+    color: white;
     transition: all 0.4s ease-in-out;
 }
 
@@ -204,7 +212,7 @@ ____________________*/
 ____________________*/
 @media screen and (max-width: 1600px){
     .header__logo img{
-        width: 160px;
+        width: 100px;
         margin-top: 14px;
         margin-left: 40px;
     }
@@ -218,7 +226,7 @@ ____________________*/
         font-size: 14px;
     }
     .menu__background{
-        font-size: 200px;
+        font-size: 240px;
     }
     .menu__links {
         padding-left: 28px;
@@ -309,16 +317,23 @@ ____________________*/
         display: none;
     }
 
+    .header{
+        height: 80px;
+    }
+ 
     .header__logo img{
         width: 120px;
+        margin-left: 24px;
     }
     .header__text .menu-open{
         font-size: 12px;
+        padding: 0px 24px;
     }
     .menu-exit {
-        top: 32px;
+        top: 29px;
         font-size: 12px;
         font-weight: 600;
+        right: 24px;
     }
     .menu__background{
         font-size: 240px;
