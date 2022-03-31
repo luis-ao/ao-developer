@@ -1,14 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto+Serif:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 @font-face {
     font-family: 'nasalization';
     src: url(../resources/nasalization-rg.otf);
 }
+
+:root{
+    --primary-colour: #1C0C5B;
+    --secondary-colour: #C2BC17;
+    --tertiary-color: #C996CC;
+    --quaternary-color: #916BBF;
+    --text-colour:  #eee2ff;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-color: #1a1a1a;
+    background-color: #180A0A;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto Mono', monospace; */
+  /*   font-family: 'Roboto Serif', serif; */
 }
 /*********************
         HEADER
@@ -36,7 +50,7 @@ ____________________*/
     list-style: none;
 }
 .header__text .menu-open{
-    color: white;
+    color: var(--text-colour);
     text-decoration: none;
     font-weight: 600;
     font-size: 12px;
@@ -61,30 +75,30 @@ ____________________*/
     position: fixed;
     top: -100vh;
     align-items: center;
-    background-color: #131991;
+    background-color: var(--primary-colour);
     z-index: 1900;
 }
 .menu__background {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'nasalization', serif;
     position: absolute;
     font-size: 420px;
     font-weight: 900;
-    color: #b8e4f015;
+    color: #916bbf1f;
     user-select: none;
     z-index: 1;
 }
 
 .menu-exit {
+    font-family: 'nasalization', serif;
     position: absolute;
     text-decoration: none;
     right: 60px;
     top: 60px;
-    color: white;
+    color: var(--secondary-colour);
     font-weight: 600;
     text-transform: uppercase;
     font-size: 28px;
     letter-spacing: 2px;
-    transition: all 0.2s ease-in-out;
 }
 
 .nav-gsap {
@@ -96,15 +110,14 @@ ____________________*/
     text-transform: uppercase;
     text-decoration: none;
     font-size: 80px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    transition: all 0.2s ease-in-out;
+    font-weight: 900;
+    letter-spacing: 4px;
     z-index: 2000;
-    color: white;
-    transition: all 0.4s ease-in-out;
+    color: var(--text-colour);
 }
 
 .small-number {
+    font-family: 'Roboto Mono', monospace;
     font-size: 36px;
     font-weight: 400;
     letter-spacing: 4px;
@@ -115,14 +128,14 @@ ____________________*/
     font-size: 40px;
     font-weight: 800;
     letter-spacing: 2px;
-    color: white;
+    color: var(--tertiary-color);
 }
 .contact__subtitle {
     text-decoration: none;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 2px;
-    color: white;
+    color: var(--text-colour);
     transition: all 0.4s ease-in-out;
 }
 
@@ -146,7 +159,7 @@ ____________________*/
     font-size: 34px;
     font-weight: 800;
     letter-spacing: 2px;
-    color: white;
+    color: var(--tertiary-color);
     transition: all 0.4s ease-in-out;
 }
 
@@ -155,56 +168,26 @@ ____________________*/
         HOVER
 ____________________*/
 @media (hover: hover) {
-    .header__text .menu-open:hover{
-        transition: all 0.4s ease-in-out;
-        color: #7267CB;
+    .text-hover:hover{
+        transition: all 0.2s ease-in-out;
+        color: var(--secondary-colour);
     }
-
     .menu-exit:hover{
         transition: all 0.2s ease-in-out;
-        color: #b8e4f056;
-    }
-
-    .menu__nav-link:hover {
-        transition: all 0.2s ease-in-out;
-        color: #E8CD99;
-    }
-    
-    .contact__subtitle:hover {
-        transition: all 0.4s ease-in-out;
-        color: #b8e4f056;
-    }
-    .contact__rrss > a:hover{
-        transition: all 0.2s ease-in-out;
-        color: #b8e4f056;
+        color: var(--tertiary-color);
     }
 }
 
 /*********************
     SELECT - ACTIVE
 ____________________*/
-.header__text .menu-open:active{
-    transition: all 0.4s ease-in-out;
-    color: #7267CB;
+.text-hover:active {
+    transition: all 0.2s ease-in-out;
+    color: var(--secondary-colour);
 }
-
 .menu-exit:active{
     transition: all 0.2s ease-in-out;
-    color: #b8e4f056;
-}
-
-.menu__nav-link:active {
-    transition: all 0.2s ease-in-out;
-    color: #E8CD99;
-}
-
-.contact__subtitle:active {
-    transition: all 0.4s ease-in-out;
-    color: #b8e4f056;
-}
-.contact__rrss > a:active{
-    transition: all 0.2s ease-in-out;
-    color: #b8e4f056;
+    color: var(--tertiary-color);
 }
 
 /*********************
