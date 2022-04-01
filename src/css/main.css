@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto+Serif:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 
 @font-face {
     font-family: 'nasalization';
@@ -7,22 +8,22 @@
 
 :root{
     --primary-colour: #1C0C5B;
-    --secondary-colour: #C2BC17;
-    --tertiary-color: #C996CC;
-    --quaternary-color: #916BBF;
+    --secondary-colour: #1D8C1E;
+    --tertiary-color: #916BBF;
+    --quaternary-color: #74328C;
     --text-colour:  #eee2ff;
-}
 
+    --secondary-font: 'Goldman', cursive;
+    --tertiary-font: 'Roboto', serif;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-color: #180A0A;
-    font-family: 'Roboto', sans-serif;
-    /* font-family: 'Roboto Mono', monospace; */
-  /*   font-family: 'Roboto Serif', serif; */
+    background-color: #1b1b1b;
+    font-family: var(--tertiary-font);
 }
 /*********************
         HEADER
@@ -79,13 +80,13 @@ ____________________*/
     z-index: 1900;
 }
 .menu__background {
-    font-family: 'nasalization', serif;
     position: absolute;
     font-size: 420px;
     font-weight: 900;
-    color: #916bbf1f;
+    color: #5e62b642;
     user-select: none;
     z-index: 1;
+    filter: blur(6px);
 }
 
 .menu-exit {
@@ -100,12 +101,10 @@ ____________________*/
     font-size: 28px;
     letter-spacing: 2px;
 }
-
 .nav-gsap {
     opacity: 0;
     margin-bottom: -20px;
 } 
-
 .menu__nav-link {
     text-transform: uppercase;
     text-decoration: none;
@@ -115,9 +114,7 @@ ____________________*/
     z-index: 2000;
     color: var(--text-colour);
 }
-
 .small-number {
-    font-family: 'Roboto Mono', monospace;
     font-size: 36px;
     font-weight: 400;
     letter-spacing: 4px;
@@ -133,26 +130,22 @@ ____________________*/
 .contact__subtitle {
     text-decoration: none;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 2px;
     color: var(--text-colour);
     transition: all 0.4s ease-in-out;
 }
-
 .right {
     padding-right: 120px;
     z-index: 1000;
 }
-
 .contact {
     margin: 60px 0px;
 }
-
 .menu__links {
     padding-left: 60px;
     z-index: 200;
 }
-
 .contact__rrss > a {
     padding-right: 80px;
     text-decoration: none;
@@ -172,6 +165,7 @@ ____________________*/
         transition: all 0.2s ease-in-out;
         color: var(--secondary-colour);
     }
+    .header__text .menu-open:hover,
     .menu-exit:hover{
         transition: all 0.2s ease-in-out;
         color: var(--tertiary-color);
@@ -185,10 +179,12 @@ ____________________*/
     transition: all 0.2s ease-in-out;
     color: var(--secondary-colour);
 }
+.header__text .menu-open:active,
 .menu-exit:active{
     transition: all 0.2s ease-in-out;
     color: var(--tertiary-color);
 }
+
 
 /*********************
         LAPTOP
