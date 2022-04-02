@@ -224,17 +224,6 @@ ____________________*/
     .right {
         display: none;
     }
-    .menu-open {
-        font-size: 1.2rem;
-    }
-    .menu-exit {
-        font-size: 1.2rem;
-        top: 1.6em;
-    }
-    .menu__nav-link {
-        font-size: 8em;
-        letter-spacing: 2px;
-    }
 }
 
 /*********************
