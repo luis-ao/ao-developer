@@ -29,9 +29,6 @@ body{
     font-family: var(--tertiary-font);
     font-size: 10px;
 }
-.text-hover{
-    transition: all 0.2s ease-in-out;
-}
 
 /*********************
         HEADER
@@ -227,9 +224,16 @@ ____________________*/
     .right {
         display: none;
     }
+    .menu-open {
+        font-size: 1.2rem;
+    }
     .menu-exit {
-        font-size: 1rem;
-        top: 2.2em;
+        font-size: 1.2rem;
+        top: 1.6em;
+    }
+    .menu__nav-link {
+        font-size: 8em;
+        letter-spacing: 2px;
     }
 }
 
@@ -247,6 +251,10 @@ ____________________*/
     }
     .right {
         display: none;
+    }
+    .menu-exit {
+        font-size: .8rem;
+        top: 2.2em;
     }
     .menu__links {
         padding-left: 3.2rem;
