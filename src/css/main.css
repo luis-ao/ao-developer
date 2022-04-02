@@ -17,9 +17,7 @@
     --secondary-font: 'Goldman', cursive;
     --tertiary-font: 'Roboto', serif;
 }
-html{
-    font-size: 62.5%;
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -28,6 +26,7 @@ html{
 body{
     background-color: var(--background-color);
     font-family: var(--tertiary-font);
+    font-size: 10px; /* = 10px */
 }
 
 /*********************
@@ -42,12 +41,12 @@ ____________________*/
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 1rem 3rem .2rem 0;
+    padding: 2em 5em 1em 0;
     z-index: 1000;
 }
 .header__logo img{
     image-rendering: auto;
-    width: 22rem;
+    width: 22em;
 }
 .header__text{
     cursor: pointer;
@@ -60,7 +59,7 @@ ____________________*/
     color: var(--text-colour);
     letter-spacing: 4px;
     font-weight: 600;
-    font-size: 2.2rem;
+    font-size: 2.2em;
 }
 
 /*********************
@@ -172,7 +171,7 @@ ____________________*/
 }
 #loader img{
     image-rendering: auto;
-    width: 30rem;
+    width: 36em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -212,8 +211,8 @@ ____________________*/
         LAPTOP
 ____________________*/
 @media screen and (max-width: 1600px){
-    html{
-        font-size: 40%;
+    body{
+        font-size: 7px;
     }
 
     
@@ -261,53 +260,11 @@ ____________________*/
 }
 
 /*********************
-        TABLET
-____________________*/
-@media screen and (max-width: 1000px){
-    html{
-        font-size: 38%;
-    }
-    /* 
-    .menu-exit {
-        font-size: 11px;
-    }
-    .menu__background{
-        font-size: 140px;
-    }
-    .menu__links {
-        padding-left: 22px;
-    }
-    .menu__nav-link {
-        font-size: 36px;
-    }
-    .small-number {
-        font-size: 16px;
-        letter-spacing: 0px;
-    }
-
-    .right {
-        padding-right: 20px;
-    }
-    .contact__title {
-        font-size: 20px;
-    }
-    .contact__subtitle {
-        font-size: 14px;
-    }
-    .contact__rrss > a {
-        padding-right: 20px;
-        font-size: 20px;
-        letter-spacing: 1px;
-    } */
-
-}
-
-/*********************
         PHONE
 ____________________*/
 @media screen and (max-width: 720px) {
-    html{
-        font-size: 38%;
+    body{
+        font-size: 6px;
     }
 
     /* .menu {
