@@ -52,13 +52,10 @@ ____________________*/
     image-rendering: auto;
     width: 22em;
 }
-.header__text{
+.menu-open{
+    text-decoration: none;
     cursor: pointer;
     font-family:var(--primary-font);
-    display: flex;
-    text-decoration: none;
-}
-.header__text .menu-open{
     text-transform: uppercase;
     color: var(--text-colour);
     letter-spacing: 4px;
@@ -214,10 +211,6 @@ ____________________*/
         font-size: .86rem;
         top: 2.2em;
     }
-    .contact__subtitle {
-        text-decoration: none;
-        font-size: 3.2em;
-    }
 }
 /*********************
         TABLET
@@ -235,7 +228,7 @@ ____________________*/
         display: none;
     }
     .menu-exit {
-        font-size: .86rem;
+        font-size: 1rem;
         top: 2.2em;
     }
 }
