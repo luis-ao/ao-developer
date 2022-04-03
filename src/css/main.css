@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap'); 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
-
 @font-face {
     font-family: 'nasalization';
     src: url(../resources/nasalization-rg.otf);
@@ -49,8 +47,9 @@ ____________________*/
     width: 22em;
 }
 .menu-open{
+    padding: 1em .9em .84em 1.2em;
+    border-radius: .5em;
     text-decoration: none;
-    /* user-select: none; */
     font-family:var(--primary-font);
     text-transform: uppercase;
     color: var(--text-colour);
@@ -102,7 +101,7 @@ ____________________*/
     padding-left: 14em;
     z-index: 2000;
 }
-.menu__nav-link {
+.menu__links-nav {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 7.4em;
@@ -111,38 +110,32 @@ ____________________*/
     color: var(--background-color);
 }
 .small-number {
-    opacity: .6;
+    font-family: var(--secondary-font);
     font-size: .4em;
     font-weight: 400;
     letter-spacing: 1px;
 }
-.contact__title {
-    font-size: 4.2em;
-    font-weight: 800;
-    letter-spacing: 1px;
-    color: var(--secondary-colour);
+.menu__links-contact {
+    margin: 4em 0em;
 }
-.contact__subtitle {
+.right {
+    padding-right: 20em;
+    z-index: 1000;
+}
+.contact__text {
     text-decoration: none;
-    font-size: 3.2em;
+    font-size: 4em;
     font-weight: 600;
     letter-spacing: 1px;
     color: var(--background-color);
-}
-.right {
-    padding-right: 14em;
-    z-index: 1000;
-}
-.contact {
-    margin: 4em 0em;
 }
 .contact__rrss > a {
     padding-right: 2em;
     text-decoration: none;
     font-weight: 800;
     letter-spacing: 1px;
-    color: var(--secondary-colour);
-    font-size: 4.2em;
+    color: var(--background-color);
+    font-size: 4em;
 }
 
 /*********************
@@ -174,12 +167,17 @@ ____________________*/
 ____________________*/
 @media (hover: hover) {
     .text-hover:hover{
-        transition: all 0.2s ease-in-out;
+        transition: all 0.4s ease-in-out;
         color: var(--secondary-colour);
     }
+    .menu__links-nav:hover{
+        transition: all 0.4s ease-in-out;
+        padding-left: 20px;
+    }
     .menu-open:hover{
-        transition: all 0.2s ease-in-out;
-        color: var(--tertiary-color);
+        transition: all 0.4s ease-in-out;
+        color: var(--background-color);
+        background-color: var(--primary-colour);
     }
 }
 
@@ -192,7 +190,7 @@ ____________________*/
 }
 .menu-open:active{
     transition: all 0.2s ease-in-out;
-    color: var(--quaternary-color);
+    color: var(--tertiary-font);
 }
 
 
@@ -236,7 +234,7 @@ ____________________*/
 ____________________*/
 @media screen and (max-width: 500px) {
     body{
-        font-size: 6px;
+        font-size: 5.8px;
     }
     .menu {
         font-size: 6px;
@@ -246,10 +244,6 @@ ____________________*/
     }
     .right {
         display: none;
-    }
-    .menu-exit {
-        font-size: .8rem;
-        top: 2.2em;
     }
     .menu__links {
         padding-left: 3rem;
