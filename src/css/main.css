@@ -92,10 +92,12 @@ ____________________*/
     text-transform: uppercase;
     color: var(--background-color);
     font-weight: 600;
-    font-size: 1.4rem;
-    right: 2em;
-    top: 2em;
+    font-size: 2.3em;
+    right: 1.6em;
+    top: 1em;
     letter-spacing: 2px;
+    padding: 1em;
+    border-radius: .5em;
 }
 .menu__links {
     padding-left: 14em;
@@ -124,7 +126,7 @@ ____________________*/
 }
 .contact__text {
     text-decoration: none;
-    font-size: 4em;
+    font-size: 3.8em;
     font-weight: 600;
     letter-spacing: 1px;
     color: var(--background-color);
@@ -135,8 +137,9 @@ ____________________*/
     font-weight: 800;
     letter-spacing: 1px;
     color: var(--background-color);
-    font-size: 4em;
+    font-size: 3.8em;
 }
+
 
 /*********************
         PRELOADER
@@ -161,7 +164,6 @@ ____________________*/
 }
 
 
-
 /*********************
         HOVER
 ____________________*/
@@ -178,8 +180,16 @@ ____________________*/
         transition: all 0.4s ease-in-out;
         color: var(--background-color);
         background-color: var(--primary-colour);
+        box-shadow: 3px 3px 6px  var(--text-colour);
+    }
+    .menu-exit:hover{
+        transition: all 0.4s ease-in-out;
+        color: var(--text-colour);
+        background-color: var(--background-color);
+        box-shadow: 3px 3px 6px  var(--secondary-colour);
     }
 }
+
 
 /*********************
     SELECT - ACTIVE
@@ -192,7 +202,10 @@ ____________________*/
     transition: all 0.2s ease-in-out;
     color: var(--tertiary-font);
 }
-
+.menu-exit:active{
+    transition: all 0.4s ease-in-out;
+    color: var(--text-colour);
+}
 
     
 
@@ -206,10 +219,10 @@ ____________________*/
     .menu{
         font-size: 6.5px;
     }
-    .menu-exit {
+    /* .menu-exit {
         font-size: .88rem;
         top: 2.2em;
-    } 
+    }  */
 }
 /*********************
         TABLET
@@ -237,7 +250,7 @@ ____________________*/
         font-size: 5.8px;
     }
     .menu {
-        font-size: 6px;
+        font-size: 5.8px;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -245,8 +258,9 @@ ____________________*/
     .right {
         display: none;
     }
+
     .menu__links {
-        padding-left: 3rem;
+        padding-left: 2.6rem;
     }
     .menu__nav-link {
         letter-spacing: 0px;
