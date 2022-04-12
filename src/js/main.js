@@ -5,20 +5,28 @@ const menuBtn = document.querySelector(".menu-open");
 const exitBtn = document.querySelector(".menu-exit");
 
 let t1 = gsap.timeline({ paused: true });
-t1.to(".menu", {
+
+t1.to(".menu", { 
     opacity: 1,
-    duration: 1,
-    top: 0,
-    ease: Power2.easeInOut
-});
-t1.to(".nav-gsap", {
-    opacity: 1,
-    marginBottom: 0,
-    duration: 1,
-    ease: Power2.easeInOut,
-    stagger: 0.3,
-},
+    duration: 1, 
+    top: 0, 
+    ease: Power2.easeInOut }
+);
+t1.to(".menu__links", {
+        opacity: 1,
+        paddingTop: 0,
+        duration: 1,
+        ease: Power3.easeInOut,
+    },
     ">-0.5"
+);
+t1.to(".menu__background", {
+        opacity: 0.4,
+        duration: 1,
+        stagger: 0.3,
+        ease: "slow(0.7, 0.7, false)",
+    },
+">-0.7"
 );
 
 menuBtn.addEventListener("click", () => {
