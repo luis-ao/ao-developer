@@ -26,7 +26,7 @@ t1.to(".menu__background", {
         duration: 1,
         ease: "slow(0.7, 0.7, false)",
     },
-">-0.7"
+">-0.6"
 );
 
 menuBtn.addEventListener("click", () => {
