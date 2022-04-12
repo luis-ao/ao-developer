@@ -47,7 +47,7 @@ ____________________*/
     width: 22em;
 }
 .menu-open{
-    padding: 1em .9em .84em 1.2em;
+    padding: 1em;
     border-radius: .5em;
     text-decoration: none;
     font-family:var(--primary-font);
@@ -103,9 +103,9 @@ ____________________*/
     border: 0px solid var(--secondary-colour);
 }
 .menu__links {
-    opacity: 0.3;
+    opacity: 0;
     padding-left: 14em;
-    padding-top: 18em;
+    padding-top: 10em;
     z-index: 2000;
 }
 .menu__links-nav {
@@ -251,9 +251,6 @@ ____________________*/
     }
     .right {
         display: none;
-    }
-    .menu-open{
-        padding: 1em .9em 0em 1.2em;
     }
     .menu-exit {
         right: 1em;
