@@ -41,7 +41,7 @@ ____________________*/
     width: 100%;
     padding: 2em 4em 1em 0;
     z-index: 1000;
-    box-shadow: 0em 0em 2em var(--background-color);
+    box-shadow: 0px 0em 2em var(--background-color);
 }
 .header__logo img{
     image-rendering: auto;

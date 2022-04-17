@@ -37,18 +37,18 @@ h2{
                  -3px 3px 0px var(--tertiary-color);
     font-family: var(--secondary-font);
     font-weight: 900;
-    font-size: 10em;
+    font-size: 8em;
 }
 .infoProyect_description{
     display: flex;
-    padding: 1em 0 3em 0;
+    padding: 1em 0 4em 0;
     text-align: justify;
     color: var(--text-colour);
     opacity: .8;
     font-family: var(--tertiary-font);
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 2px;
-    font-size: 2.8em;
+    font-size: 2em;
 }
 /*********************
         COVER ART
@@ -60,13 +60,14 @@ ____________________*/
     padding-left:var(--main-padding);
     padding-right:var(--main-padding);
 }
-
 .coverArt__column1{
     flex: 50%;
     padding-right: var(--gallery-padding_small);
 }
-.coverArt__column1 img{
+.coverArt__column1 img,
+.coverArt__column1 video{
     width: 100%;
+    padding-bottom: 4em;
 }
 .coverArt__column2{
     flex: 50%;
@@ -78,6 +79,51 @@ ____________________*/
 /*********************
     DISEÑO GRÁFICO
 ____________________*/
+.desing__row1,
+.desing__row2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    padding-left:var(--main-padding);
+    padding-right:var(--main-padding);
+}
+.desing__row1-colum1{
+    padding-right: var(--gallery-padding_small);
+    padding-bottom: 4em;
+    flex: 66%;
+}
+.desing__row1-colum1 img{
+    width: 100%;
+}
+.desing__row1-colum2{
+    padding-left: var(--gallery-padding_small);
+    padding-bottom: 4em;
+    flex: 33%;
+}
+.desing__row1-colum2 img{
+    width: 100%;
+}
+.desing__row2-colum1{
+    padding-right: var(--gallery-padding_small);
+    flex: 30%;
+}
+.desing__row2-colum2{
+    padding: 0 1em;
+    flex: 30%;
+}
+.desing__row2-colum3{
+    padding-left: var(--gallery-padding_small);
+    flex: 30%;
+}
+.desing__row2-colum1 img,
+.desing__row2-colum2 img,
+.desing__row2-colum3 img{
+    padding-bottom: 4em;
+    width: 100%;
+}
+.img-phone{
+    display: none;
+}
 /*********************
         LAPTOP
 ____________________*/
@@ -107,15 +153,43 @@ ____________________*/
     }
     .infoProyect_description{
         letter-spacing: 1px;
+        padding: 1em 0 2.4em 0;
+        font-size: 2.6em;
     }
     .coverArt{
         font-size: 5.8px;
         padding-left:var(--main-padding_small);
         padding-right:var(--main-padding_small);
+        flex-direction: column-reverse;
+
     }
     .coverArt__column1,
     .coverArt__column2{
         padding: 2em 0;
         flex: 100%;
+    }
+    .desing__row1,
+    .desing__row2{
+        font-size: 5.8px;
+        padding-left:var(--main-padding_small);
+        padding-right:var(--main-padding_small);
+    }
+    .desing__row1-colum1,
+    .desing__row1-colum2{
+        padding: 0 0 4em 0;
+        flex: 100%;
+    }
+
+    .desing__row2-colum1,
+    .desing__row2-colum2,
+    .desing__row2-colum3{
+        padding: 0;
+        flex: 100%;
+    }
+    .img-phone{
+        display: flex;
+    }
+    .img-phone-2{
+        display: none;
     }
 }
