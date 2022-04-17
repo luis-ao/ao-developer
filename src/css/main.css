@@ -25,7 +25,7 @@ body{
     background-color: var(--background-color);
     font-family: var(--tertiary-font);
     font-size: 10px;
-}
+} 
 
 /*********************
         HEADER
@@ -41,6 +41,7 @@ ____________________*/
     width: 100%;
     padding: 2em 4em 1em 0;
     z-index: 1000;
+    box-shadow: 0em 0em 2em var(--background-color);
 }
 .header__logo img{
     image-rendering: auto;
@@ -64,7 +65,7 @@ ____________________*/
 ____________________*/
 .menu {
     font-size: 10px;
-    opacity: 0.1;
+    opacity: 0.8;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -117,10 +118,10 @@ ____________________*/
     color: var(--background-color);
 }
 .menu__links-contact {
-    margin: 5em 0em;
+    margin: 4em 0em;
 }
 .right {
-    padding-right: 16em;
+    padding-right: 18em;
     z-index: 1000;
 }
 .contact__text {
@@ -169,7 +170,7 @@ ____________________*/
         transition: all 0.4s ease-in-out;
         color: var(--secondary-colour);
     }
-    .text-hover-2:hover{
+    .menu-open:hover{
         transition: all 0.4s ease-in-out;
         opacity: 1;
         color: var(--text-colour);
@@ -179,6 +180,17 @@ ____________________*/
                      0 0 80px var(--text-colour),
                      0 0 120px var(--text-colour),
                      0 0 160px var(--text-colour);
+    }
+    .menu-exit:hover{
+        transition: all 0.4s ease-in-out;
+        opacity: 1;
+        color: var(--secondary-colour);
+        text-shadow: 0 0 10px var(--secondary-colour),
+                     0 0 20px var(--secondary-colour),
+                     0 0 40px var(--secondary-colour),
+                     0 0 80px var(--secondary-colour),
+                     0 0 120px var(--secondary-colour),
+                     0 0 160px var(--secondary-colour);
     }
     .menu__links-nav:hover{
         transition: all 0.4s ease-in-out;
@@ -195,14 +207,18 @@ ____________________*/
     transition: all 0.2s ease-in-out;
     color: var(--secondary-colour);
 }
-.text-hover-2:active{
+.menu-open:active{
     transition: all 0.4s ease-in-out;
     opacity: 1;
     color: var(--text-colour);
     text-shadow: 0 0 10px var(--text-colour);
 }
-
-    
+.menu-exit:active{
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    color: var(--secondary-colour);
+    text-shadow: 0 0 10px var(--secondary-colour),
+}
 
 /*********************
         LAPTOP

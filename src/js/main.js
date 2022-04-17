@@ -41,7 +41,7 @@ menuBtn.addEventListener('click', () => {
 });
 
 exitBtn.addEventListener('click', () => {
-    t1.timeScale(2.2);
+    t1.timeScale(2);
     t1.reverse();
 });
 

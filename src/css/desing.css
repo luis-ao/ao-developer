@@ -1,165 +1,121 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.body{
-    background-color: #adacff;
-}
-.menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 120px;
-    z-index: 100;
-}
-.menu .logo img{
-    margin-left: 70px;
-    padding-top: 70px;
-    width: 240px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'nasalization';
+    src: url(../resources/nasalization-rg.otf);
 }
 
-.menu .ul{
+:root{
+    --background-color: #0D0D0C;
+    --primary-colour: #827AAB;
+    --secondary-colour: #C0A8B7;
+    --tertiary-color: #4b4363;
+    --text-colour:  #F2F2F2;
+
+    --primary-font: 'nasalization', sans-serif;
+    --secondary-font: 'Orbitron', sans-serif;
+    --tertiary-font: 'Montserrat', sans-serif;
+
+    --main-padding: 8em;
+    --main-padding_small: 5.6em;
+    --gallery-padding_small: 2em;
+}
+/*********************
+ INFORMATION PROYECT
+____________________*/
+.infoProyect{
+    margin-top: 18em;
+    padding-left:var(--main-padding);
+    padding-right:var(--main-padding);
+    display: flexbox;
+    font-size: 10px;
+}
+h2{
+    color: var(--text-colour);
+    text-shadow: -1px 1px 0px var(--tertiary-color),
+                 -2px 2px 0px var(--tertiary-color),
+                 -3px 3px 0px var(--tertiary-color);
+    font-family: var(--secondary-font);
+    font-weight: 900;
+    font-size: 10em;
+}
+.infoProyect_description{
     display: flex;
-    list-style: none;
-}
-.menu .ul li{
-    margin-right: 40px;
-}
-.menu .ul li a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
+    padding: 1em 0 3em 0;
+    text-align: justify;
+    color: var(--text-colour);
+    opacity: .8;
+    font-family: var(--tertiary-font);
+    font-weight: 300;
     letter-spacing: 2px;
-    padding: 10px 20px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: .3s ease-in-out;
+    font-size: 2.8em;
 }
-.menu .ul li:hover a{
-    transition: .3s ease-in-out;
-    color: #610de2;
-}
-
-
-/*---- 
-         Galeria
-__________________________________*/
-
-.row1{
+/*********************
+        COVER ART
+____________________*/
+.coverArt{
     display: flex;
-    padding: 0px 40px;
     flex-wrap: wrap;
-    margin-top: 100px;
+    font-size: 10px;
+    padding-left:var(--main-padding);
+    padding-right:var(--main-padding);
 }
 
-.row1__column1{
+.coverArt__column1{
     flex: 50%;
-    padding:0px 5px;
+    padding-right: var(--gallery-padding_small);
 }
-.row1__column1 iframe{
+.coverArt__column1 img{
     width: 100%;
-    height: 100%;
 }
-
-.row1__column2{
-    flex: 25%;
-    padding: 5px;
-}
-.row1__column2 video{
-    width: 100%;
-    margin-top: 5px;
-}
-
-
-.row2{
-    display: flex;
-    padding: 0px 40px;
-    flex-wrap: wrap;
-}
-.row2__column{
-    flex: 25%;
-    padding: 5px;
-}
-.row2__column img{
-    width: 100%;
-    margin-top: 5px;
-}
-
-.row3{
-    display: flex;
-    padding: 0px 40px;
-    flex-wrap: wrap;
-}
-.row3__column1{
-    flex: 17%;
-    padding: 5px;
-}
-
-.row3__column2{
+.coverArt__column2{
     flex: 50%;
-    padding: 5px;
+    padding-left: var(--gallery-padding_small);
 }
-.row3__column1 img,
-.row3__column2 img{
+.coverArt__column2 video{
     width: 100%;
-    margin-top: 5px;
+}
+/*********************
+    DISEÑO GRÁFICO
+____________________*/
+/*********************
+        LAPTOP
+____________________*/
+@media screen and (max-width: 1500px){
+
 }
 
-/*---- 
-         Laptop 
-__________________________________*/
-@media screen and (max-width: 1450px){
-    .menu .logo img{
-        margin-left: 50px;
-        padding-top: 0px;
-        width: 140px;
-    }
-    .menu .ul li a{
-        font-size: 14px;
-    }
-    #home .main-text p{
-        font-size: 60px;
-    }
-    #home .main-text p span{
-        font-size: 12px;
-    }
-}
-/*---- 
-         Phone
-__________________________________*/
-@media screen and (max-width: 630px){
-    .menu .logo img{
-        width: 110px;
-    }
-    .menu .ul li a{
-        display: none;
-    }
-    #home .main-text p{
-        font-size: 30px;
-        letter-spacing: 0px;
-        margin: 10px 0px;
-    }
-    #home .main-text p span{
-        font-size: 8px;
-    }
 
-    .row1,
-    .row2,
-    .row3{
-        padding:0px 15px;
+/*********************
+        TABLET
+____________________*/
+@media screen and (max-width: 966px){
+
+}
+
+/*********************
+        PHONE
+____________________*/
+@media screen and (max-width: 500px) {
+    .infoProyect{
+        font-size: 5.8px;
+        padding-left:var(--main-padding_small);
+        padding-right:var(--main-padding_small);
     }
-    
-    .row1__column1,
-    .row1__column2,
-    .row2__column,
-    .row3__column1,
-    .row3__column2{
+    h2{
+        font-size: 6.8em;
+    }
+    .infoProyect_description{
+        letter-spacing: 1px;
+    }
+    .coverArt{
+        font-size: 5.8px;
+        padding-left:var(--main-padding_small);
+        padding-right:var(--main-padding_small);
+    }
+    .coverArt__column1,
+    .coverArt__column2{
+        padding: 2em 0;
         flex: 100%;
     }
 }
