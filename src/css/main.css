@@ -10,11 +10,19 @@
     --primary-colour: #827AAB;
     --secondary-colour: #C0A8B7;
     --tertiary-color: #4b4363;
+    --quaternary-color: #87A2D8;
     --text-colour:  #F2F2F2;
 
     --primary-font: 'nasalization', sans-serif;
     --secondary-font: 'Orbitron', sans-serif;
     --tertiary-font: 'Montserrat', sans-serif;
+}
+/* SCROLLBAR */
+::-webkit-scrollbar{
+    width: 2em;
+} 
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(var(--primary-colour), var(--secondary-colour));
 }
 *{
     margin: 0;
@@ -138,6 +146,74 @@ ____________________*/
     font-size: 3.4em;
 }
 
+/*********************
+        FOOTER
+____________________*/
+.footer-row1{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 10px;
+    background-color: var(--tertiary-color);
+    align-items: center;
+    margin-top: 14em;
+}
+.footer-row1__logo{
+    flex: 33%;
+    display: flex;
+    justify-content: center;
+}
+.footer-row1__logo img{
+    width: 44%;
+}
+.footer-row1__copy{
+    flex: 33%;
+    display: flex;
+    justify-content: center;
+}
+.footer-row1__copy p{
+    font-weight: 400;
+    padding-left: 6em;
+    letter-spacing: 1px;
+    color: var(--text-colour);
+    font-size: 1.4em;
+}
+
+.footer-row1__contact{
+    flex: 33%;
+}
+.footer-row1__contact-phone,
+.footer-row1__contact-email,
+.footer-row1__contact-rrss{
+    padding:1em 0em 1em 0em;
+}
+
+.footer-row1__contact-phone a,
+.footer-row1__contact-email a,
+.footer-row1__contact-rrss a{
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-colour);
+    font-size: 1.4em;
+    padding-left: 2em;
+    letter-spacing: 1px;
+}
+
+.footer-row2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    justify-content: center;
+    background-color: var(--primary-colour);
+}
+.footer-row2 p {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--background-color);
+    padding: .8em;
+    font-size: 1em;
+}
 
 /*********************
         PRELOADER
@@ -162,6 +238,20 @@ ____________________*/
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*********************
         HOVER
 ____________________*/
@@ -169,6 +259,10 @@ ____________________*/
     .text-hover:hover{
         transition: all 0.4s ease-in-out;
         color: var(--secondary-colour);
+    }
+    .text-hover__footer:hover{
+        transition: all 0.4s ease-in-out;
+        color: var(--quaternary-color);
     }
     .menu-open:hover{
         transition: all 0.4s ease-in-out;
@@ -207,6 +301,10 @@ ____________________*/
     transition: all 0.2s ease-in-out;
     color: var(--secondary-colour);
 }
+.text-hover__footer:active{
+    transition: all 0.4s ease-in-out;
+    color: var(--quaternary-color);
+}
 .menu-open:active{
     transition: all 0.4s ease-in-out;
     opacity: 1;
@@ -219,6 +317,24 @@ ____________________*/
     color: var(--secondary-colour);
     text-shadow: 0 0 10px var(--secondary-colour),
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*********************
         LAPTOP
@@ -252,6 +368,20 @@ ____________________*/
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*********************
         PHONE
 ____________________*/
@@ -277,5 +407,40 @@ ____________________*/
     .menu__links-nav {
         font-size: 7.2em;
         letter-spacing: 1px;
+    }
+
+    
+    .footer-row1{
+        font-size: 5.8px;
+    }
+    .footer-row1__logo{
+        order: 1;
+        flex: 100%;
+        margin-top: 2em;
+    }
+    
+    .footer-row1__contact{
+        order: 2;
+        flex: 100%;
+        padding-left: 2em;
+        padding-bottom: 3em ;
+    }
+    .footer-row1__contact-phone a,
+    .footer-row1__contact-email a,
+    .footer-row1__contact-rrss a{
+        font-size: 2.8em;
+        padding-left: 1em;
+    }
+
+    .footer-row1__copy{
+        order: 3;
+        flex: 100%;
+    }
+    .footer-row1__copy p{
+        font-weight: 400;
+        padding-left: 0em;
+        font-size: 2.4em;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
 }

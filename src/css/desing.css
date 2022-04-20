@@ -37,12 +37,13 @@ h2{
                  -3px 3px 0px var(--tertiary-color);
     font-family: var(--secondary-font);
     font-weight: 900;
-    font-size: 8em;
+    font-size: 7em;
 }
 .infoProyect_description{
     display: flex;
     padding: 1em 0 4em 0;
     text-align: justify;
+    line-height: 1.6em;
     color: var(--text-colour);
     opacity: .8;
     font-family: var(--tertiary-font);
@@ -64,7 +65,10 @@ ____________________*/
     flex: 50%;
     padding-right: var(--gallery-padding_small);
 }
-.coverArt__column1 img,
+.coverArt__column1 img{
+    width: 100%;
+    padding-bottom: 0;
+}
 .coverArt__column1 video{
     width: 100%;
     padding-bottom: 4em;
@@ -128,7 +132,6 @@ ____________________*/
         LAPTOP
 ____________________*/
 @media screen and (max-width: 1500px){
-
 }
 
 
@@ -136,7 +139,6 @@ ____________________*/
         TABLET
 ____________________*/
 @media screen and (max-width: 966px){
-
 }
 
 /*********************
@@ -150,6 +152,9 @@ ____________________*/
     }
     h2{
         font-size: 6.8em;
+        text-shadow: -1px 1px 0px var(--tertiary-color),
+                     -2px 2px 0px var(--tertiary-color),
+                     -3px 3px 0px var(--tertiary-color);
     }
     .infoProyect_description{
         letter-spacing: 1px;
