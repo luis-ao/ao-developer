@@ -84,6 +84,7 @@ ____________________*/
 }
 .header__open{
     cursor: pointer;
+    user-select: none;
     padding: 1em .5em 1em .5em;
     font-family:var(--primary-font);
     color: var(--text-colour);
@@ -121,6 +122,7 @@ ____________________*/
 }
 .menu__exit {
     cursor: pointer;
+    user-select: none;
     opacity: .8;
     position: absolute;
     font-family: var(--primary-font);
@@ -178,7 +180,7 @@ ____________________*/
     font-size: 10px;
     background-color: var(--tertiary-color);
     align-items: center;
-    margin-top: 18em;
+    margin-top: 22em;
 }
 .footer-row1__logo{
     order: 2;
@@ -196,8 +198,9 @@ ____________________*/
     justify-content: center;
 }
 .footer-row1__copy p{
+    user-select: none;
     font-weight: 400;
-    padding-right: 6em;
+    padding-right: 4em;
     letter-spacing: 1px;
     color: var(--text-colour);
     font-size: 2.5em;
@@ -230,7 +233,7 @@ ____________________*/
     flex-wrap: wrap;
     font-size: 10px;
     justify-content: center;
-    background-color: var(--secondary-colour);
+    background-color: var(--text-colour);
 }
 .footer-row2 p {
     text-transform: uppercase;
@@ -338,7 +341,7 @@ ____________________*/
 /*********************
         LAPTOP
 ____________________*/
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1540px){
     body{
         font-size: var(--main-size__laptop);
     }
@@ -386,17 +389,6 @@ ____________________*/
         font-size: var(--main-size__tablet);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
