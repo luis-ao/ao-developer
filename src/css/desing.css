@@ -16,40 +16,41 @@
     --secondary-font: 'Orbitron', sans-serif;
     --tertiary-font: 'Montserrat', sans-serif;
 
-    --main-padding: 8em;
-    --main-padding_small: 5.6em;
+    --main-size__laptop: 7.2px;
+    --main-size__tablet: 3.8px;
+    --main-size__phone: 5px;
+
+    --main-padding: 12em;
+    --main-padding_small: 7em;
     --gallery-padding_small: 2em;
 }
 /*********************
  INFORMATION PROYECT
 ____________________*/
 .infoProyect{
-    margin-top: 18em;
+    padding-top: 22em;
     padding-left:var(--main-padding);
     padding-right:var(--main-padding);
     display: flexbox;
     font-size: 10px;
 }
-h2{
+.infoProyect h2{
     color: var(--text-colour);
-    text-shadow: -1px 1px 0px var(--tertiary-color),
-                 -2px 2px 0px var(--tertiary-color),
-                 -3px 3px 0px var(--tertiary-color);
     font-family: var(--secondary-font);
     font-weight: 900;
-    font-size: 7em;
+    font-size: 10.4em;
 }
 .infoProyect_description{
     display: flex;
     padding: 1em 0 4em 0;
     text-align: justify;
-    line-height: 1.6em;
+    line-height: 1.4em;
     color: var(--text-colour);
-    opacity: .8;
+    opacity: .7;
     font-family: var(--tertiary-font);
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 2px;
-    font-size: 2em;
+    font-size: 2.8em;
 }
 /*********************
         COVER ART
@@ -132,6 +133,16 @@ ____________________*/
         LAPTOP
 ____________________*/
 @media screen and (max-width: 1500px){
+    .infoProyect{
+        font-size: var(--main-size__laptop);
+    }
+    .coverArt{
+        font-size: var(--main-size__laptop);
+    }
+    .desing__row1,
+    .desing__row2{
+        font-size: var(--main-size__laptop);
+    }
 }
 
 
@@ -139,6 +150,16 @@ ____________________*/
         TABLET
 ____________________*/
 @media screen and (max-width: 966px){
+    .infoProyect{
+        font-size: var(--main-size__tablet);
+    }
+    .coverArt{
+        font-size: var(--main-size__tablet);
+    }
+    .desing__row1,
+    .desing__row2{
+        font-size: var(--main-size__tablet);
+    }
 }
 
 /*********************
@@ -146,27 +167,17 @@ ____________________*/
 ____________________*/
 @media screen and (max-width: 500px) {
     .infoProyect{
-        font-size: 5.8px;
+        font-size: var(--main-size__phone);
         padding-left:var(--main-padding_small);
         padding-right:var(--main-padding_small);
     }
-    h2{
-        font-size: 6.8em;
-        text-shadow: -1px 1px 0px var(--tertiary-color),
-                     -2px 2px 0px var(--tertiary-color),
-                     -3px 3px 0px var(--tertiary-color);
-    }
-    .infoProyect_description{
-        letter-spacing: 1px;
-        padding: 1em 0 2.4em 0;
-        font-size: 2.6em;
-    }
+
+
     .coverArt{
-        font-size: 5.8px;
+        font-size: var(--main-size__phone);
         padding-left:var(--main-padding_small);
         padding-right:var(--main-padding_small);
         flex-direction: column-reverse;
-
     }
     .coverArt__column1,
     .coverArt__column2{
@@ -175,7 +186,7 @@ ____________________*/
     }
     .desing__row1,
     .desing__row2{
-        font-size: 5.8px;
+        font-size: var(--main-size__phone);
         padding-left:var(--main-padding_small);
         padding-right:var(--main-padding_small);
     }
