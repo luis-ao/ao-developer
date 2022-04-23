@@ -21,12 +21,14 @@
     --main-size__phone: 5px;
 
     --main-padding: 12em;
-    --main-padding_small: 7em;
+    --main-padding_small: 5em;
     --gallery-padding_small: 2em;
 }
-/*********************
- INFORMATION PROYECT
-____________________*/
+
+
+/*¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+ INFORMATION PROYECT COVER ART
+________________________________*/
 .infoProyect{
     display: flex;
     flex-wrap: wrap;
@@ -80,6 +82,33 @@ ____________________*/
 }
 .coverArt__column2 video{
     width: 100%;
+}
+/*¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+ INFORMATION PROYECT DISEÑO GRÁFICO
+______________________________________*/
+.infoProyect2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    padding-top: 22em;
+    padding-left:var(--main-padding);
+    padding-right:var(--main-padding);
+}
+.infoProyect2__title{
+    color: var(--text-colour);
+    font-family: var(--secondary-font);
+    font-weight: 900;
+    font-size: 10.4em;
+}
+.infoProyect2__description{
+    padding: 1em 0 4em 0;
+    text-align: justify;
+    line-height: 1.4em;
+    color: var(--text-colour);
+    opacity: .7;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 2.8em;
 }
 /*********************
     DISEÑO GRÁFICO
@@ -160,7 +189,7 @@ ____________________*/
     text-decoration: none;
     color: var(--text-colour);
     font-size: .6em;
-    opacity: .1;
+    opacity: .3;
 }
 
 
@@ -215,6 +244,9 @@ ____________________*/
     .coverArt{
         font-size: var(--main-size__laptop);
     }
+    .infoProyect2{
+        font-size: var(--main-size__laptop);
+    }
     .desing__row1,
     .desing__row2{
         font-size: var(--main-size__laptop);
@@ -233,6 +265,9 @@ ____________________*/
         font-size: var(--main-size__tablet);
     }
     .coverArt{
+        font-size: var(--main-size__tablet);
+    }
+    .infoProyect2{
         font-size: var(--main-size__tablet);
     }
     .desing__row1,
@@ -268,6 +303,11 @@ ____________________*/
     .coverArt__column2{
         padding: 2em 0;
         flex: 100%;
+    }
+    .infoProyect2{
+        font-size: var(--main-size__phone);
+        padding-left:var(--main-padding_small);
+        padding-right:var(--main-padding_small);
     }
     .desing__row1,
     .desing__row2{

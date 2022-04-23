@@ -54,7 +54,7 @@ ____________________*/
 }
 #loader img{
     image-rendering: auto;
-    width: 50%;
+    width: 20%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -284,6 +284,9 @@ ____________________*/
         PHONE
 ____________________*/
 @media screen and (max-width: 500px) {
+    #loader img{
+        width: 50%;
+    }
     .header{
         font-size: var(--main-size__phone);
     }
