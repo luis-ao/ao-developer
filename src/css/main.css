@@ -1,7 +1,7 @@
 /* SCROLLBAR */
 ::-webkit-scrollbar{
-    width: 2em;
-} 
+    width: 18px;
+}
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(var(--primary-colour), var(--secondary-colour));
 }
@@ -37,7 +37,6 @@
 body{
     background-color: var(--background-color);
     font-family: var(--tertiary-font);
-    font-size: 10px;
 } 
 
 /*********************
@@ -55,7 +54,7 @@ ____________________*/
 }
 #loader img{
     image-rendering: auto;
-    width: 36em;
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -70,8 +69,8 @@ ____________________*/
     background-color: var(--background-color);
     box-shadow: -1px 1px 2em var(--background-color);
     position: fixed;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -105,7 +104,7 @@ ____________________*/
     flex-direction: row;
     justify-content: space-between;
     position: fixed;
-    top: -100%;
+    top: -120%;
     align-items: center;
     background-color: var(--primary-colour);
     z-index: 1900;
@@ -169,94 +168,6 @@ ____________________*/
     color: var(--background-color);
     font-size: 3.4em;
 }
-
-/*********************
-        FOOTER
-____________________*/
-.footer-row1{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    font-size: 10px;
-    background-color: var(--tertiary-color);
-    align-items: center;
-    margin-top: 22em;
-}
-.footer-row1__logo{
-    order: 2;
-    flex: 33%;
-    display: flex;
-    justify-content: center;
-}
-.footer-row1__logo img{
-    width: 44%;
-}
-.footer-row1__copy{
-    order: 3;
-    flex: 33%;
-    display: flex;
-    justify-content: center;
-}
-.footer-row1__copy p{
-    user-select: none;
-    font-weight: 400;
-    padding-right: 4em;
-    letter-spacing: 1px;
-    color: var(--text-colour);
-    font-size: 2.5em;
-}
-
-.footer-row1__contact{
-    order: 1;
-    flex: 33%;
-    padding-left: 2.8em;
-}
-.footer-row1__contact-phone,
-.footer-row1__contact-email,
-.footer-row1__contact-rrss{
-    padding:1em 0em;
-}
-
-.footer-row1__contact-phone a,
-.footer-row1__contact-email a,
-.footer-row1__contact-rrss a{
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--text-colour);
-    font-size: 2.5em;
-    padding-left: 2em;
-    letter-spacing: 1px;
-}
-
-.footer-row2{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 10px;
-    justify-content: center;
-    background-color: var(--text-colour);
-}
-.footer-row2 p {
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: var(--background-color);
-    padding: .5em;
-    font-size: 1.8em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -328,35 +239,17 @@ ____________________*/
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*********************
         LAPTOP
 ____________________*/
 @media screen and (max-width: 1540px){
-    body{
-        font-size: var(--main-size__laptop);
+    ::-webkit-scrollbar{
+        width: 14px;
     }
     .header{
         font-size: var(--main-size__laptop);
     }
     .menu{
-        font-size: var(--main-size__laptop);
-    }
-
-    .footer-row1{
-        font-size: var(--main-size__laptop);
-    }
-
-    .footer-row2{
         font-size: var(--main-size__laptop);
     }
 }
@@ -366,8 +259,8 @@ ____________________*/
         TABLET
 ____________________*/
 @media screen and (max-width: 966px){
-    body{
-        font-size: var(--main-size__tablet);
+    ::-webkit-scrollbar{
+        width: 8px;
     }
     .header{
         font-size: var(--main-size__tablet);
@@ -380,14 +273,7 @@ ____________________*/
     }
     .right {
         display: none;
-    }
-
-    .footer-row1{
-        font-size: var(--main-size__tablet);
-    }
-    .footer-row2{
-        font-size: var(--main-size__tablet);
-    }
+    } 
 }
 
 
@@ -398,9 +284,6 @@ ____________________*/
         PHONE
 ____________________*/
 @media screen and (max-width: 500px) {
-    body{
-        font-size: var(--main-size__phone);
-    }
     .header{
         font-size: var(--main-size__phone);
     }
@@ -415,38 +298,5 @@ ____________________*/
     }
     .menu__links {
         padding-left: 2.6rem;
-    }
-    
-    .footer-row1{
-        font-size: var(--main-size__phone);
-    }
-    .footer-row1__logo{
-        order: 1;
-        flex: 100%;
-        padding-top: 2em;
-    }
-    
-    .footer-row1__contact{
-        order: 2;
-        flex: 100%;
-        padding-bottom: 3em;
-    }
-    .footer-row1__contact-phone a,
-    .footer-row1__contact-email a,
-    .footer-row1__contact-rrss a{
-        padding-left: 1em;
-    }
-
-    .footer-row1__copy{
-        order: 3;
-        flex: 100%;
-    }
-    .footer-row1__copy p{
-        padding: 0em;
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
-    .footer-row2{
-        font-size: var(--main-size__phone);
     }
 }

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap'); 
+
+@font-face {
+    font-family: 'nasalization';
+    src: url(../resources/nasalization-rg.otf);
+}
+
+:root{
+    --background-color: #0D0D0C;
+    --primary-colour: #827AAB;
+    --secondary-colour: #C0A8B7;
+    --tertiary-color: #4b4363;
+    --text-colour:  #F2F2F2;
+
+    --primary-font: 'nasalization', sans-serif;
+    --secondary-font: 'Orbitron', sans-serif;
+    --tertiary-font: 'Montserrat', sans-serif;
+
+    --main-size__laptop: 7.2px;
+    --main-size__tablet: 3.8px;
+    --main-size__phone: 5px;
+}
+
+
+/*********************
+        FOOTER
+____________________*/
+.footer-row1{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 10px;
+    background-color: var(--tertiary-color);
+    align-items: center;
+    margin-top: 22em;
+}
+.footer-row1__logo{
+    order: 2;
+    flex: 33%;
+    display: flex;
+    justify-content: center;
+}
+.footer-row1__logo img{
+    width: 30em;
+}
+.footer-row1__copy{
+    order: 3;
+    flex: 33%;
+    display: flex;
+    justify-content: center;
+}
+.footer-row1__copy p{
+    user-select: none;
+    font-weight: 400;
+    padding-right: 4em;
+    letter-spacing: 1px;
+    color: var(--text-colour);
+    font-size: 2.5em;
+}
+
+.footer-row1__contact{
+    order: 1;
+    flex: 33%;
+    padding-left: 2.8em;
+}
+.footer-row1__contact-phone,
+.footer-row1__contact-email,
+.footer-row1__contact-rrss{
+    padding:1em 0em;
+}
+
+.footer-row1__contact-phone a,
+.footer-row1__contact-email a,
+.footer-row1__contact-rrss a{
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-colour);
+    font-size: 2.5em;
+    padding-left: 2em;
+    letter-spacing: 1px;
+}
+
+.footer-row2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    justify-content: center;
+    background-color: var(--text-colour);
+}
+.footer-row2 p {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--background-color);
+    padding: .5em;
+    font-size: 1.8em;
+}
+
+
+
+
+
+
+/*********************
+        LAPTOP
+____________________*/
+@media screen and (max-width: 1540px){
+    .footer-row1{
+        font-size: var(--main-size__laptop);
+    }
+
+    .footer-row2{
+        font-size: var(--main-size__laptop);
+    }
+}
+
+
+/*********************
+        TABLET
+____________________*/
+@media screen and (max-width: 966px){
+    .footer-row1{
+        font-size: var(--main-size__tablet);
+    }
+    .footer-row2{
+        font-size: var(--main-size__tablet);
+    }
+}
+
+
+
+
+/*********************
+        PHONE
+____________________*/
+@media screen and (max-width: 500px) {    
+    .footer-row1{
+        font-size: var(--main-size__phone);
+    }
+    .footer-row1__logo{
+        order: 1;
+        flex: 100%;
+        padding-top: 2em;
+    }
+    
+    .footer-row1__contact{
+        order: 2;
+        flex: 100%;
+        padding-bottom: 3em;
+    }
+    .footer-row1__contact-phone a,
+    .footer-row1__contact-email a,
+    .footer-row1__contact-rrss a{
+        padding-left: 1em;
+    }
+
+    .footer-row1__copy{
+        order: 3;
+        flex: 100%;
+    }
+    .footer-row1__copy p{
+        padding: 0em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .footer-row2{
+        font-size: var(--main-size__phone);
+    }
+}

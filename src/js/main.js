@@ -25,7 +25,7 @@ const exitBtn = document.querySelector('.menu__exit');
 
 let t1 = gsap.timeline({ paused: true });
 t1.to('.menu', { 
-    top: 0, 
+    top: 0,
     duration: 1, 
     ease: Power2.easeInOut }
 );

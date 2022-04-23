@@ -28,20 +28,20 @@
  INFORMATION PROYECT
 ____________________*/
 .infoProyect{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
     padding-top: 22em;
     padding-left:var(--main-padding);
     padding-right:var(--main-padding);
-    display: flexbox;
-    font-size: 10px;
 }
-.infoProyect h2{
+.infoProyect__title{
     color: var(--text-colour);
     font-family: var(--secondary-font);
     font-weight: 900;
     font-size: 10.4em;
 }
-.infoProyect_description{
-    display: flex;
+.infoProyect__description{
     padding: 1em 0 4em 0;
     text-align: justify;
     line-height: 1.4em;
@@ -243,10 +243,6 @@ ____________________*/
         font-size: var(--main-size__tablet);
     }
 }
-
-
-
-
 
 
 
