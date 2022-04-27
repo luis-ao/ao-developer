@@ -13,9 +13,15 @@
   <link rel="stylesheet" href="./css/desing.css" />
   <link rel="stylesheet" href="./css/footer.css" />
 
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 
   <link rel='icon' href="./resources/favicon-ao.webp" />
   <title>Diseño Gráfico</title>
+  
 </head>
 
 <body>
@@ -82,16 +88,25 @@
         </div>
       </div>
     </div>
+
+    <div class="logo">
+      <img class="logo__img" src="./resources/logo-a.png" alt="Logo AO Developer">
+      <img class="logo__img-2" src="./resources/logo-o.png" alt="Logo AO Developer">
+    </div>
   </header>
 
+  <!--////////            
+               BODY
+  _______________________-->
+
   <Section class="infoProyect">
-    <div class="infoProyect__title">
+    <div class="infoProyect__title wow animate__animated animate__fadeIn animate__slow">
       COVER ART
     </div>
-    <div class="infoProyect__description">
+    <div class="infoProyect__description wow animate__animated animate__fadeIn animate__slow">
       Los proyectos que más disfruto en el mundo del diseño gráfico es realizar portadas para música; mi método de
       trabajo es investigar que quería transmitir el autor con su obra, escuchar el tema e interpretarlo a travéz de
-      imagenes usando técnicas como collage digital con Fhothoshop y haciendo uso de efectos y cámaras con After
+      imagenes usando técnicas como collage digital con Photoshop y haciendo uso de efectos y cámaras con After
       Effects.
     </div>
   </Section> 
@@ -99,15 +114,15 @@
   <section class="coverArt">
 
     <div class="coverArt__column1">
-      <video controls loop>
+      <video class="wow animate__animated animate__fadeIn animate__slow" controls loop>
         <source src="./resources/desing/astroman.mp4" type="video/mp4"> su navegador no puede reproducir este formato de
         video
       </video>
-      <img src="./resources/desing/4-30.webp" alt="Collage con Photoshop" />
+      <img class="wow animate__animated animate__fadeIn animate__slow" src="./resources/desing/4-30.webp" alt="Collage con Photoshop" />
     </div>
 
-    <div class="coverArt__column2">
-      <video controls loop>
+    <div class="coverArt__column2 wow animate__animated animate__fadeIn">
+      <video class="wow animate__animated animate__fadeIn animate__slow" controls loop>
         <source src="./resources/desing/woman-gold.mp4" type="video/mp4"> su navegador no puede reproducir este
         formato de video
       </video>
@@ -116,10 +131,10 @@
   </section>
 
   <Section class="infoProyect">
-    <div class="infoProyect__title">
+    <div class="infoProyect__title wow animate__animated animate__fadeInUp">
       DISEÑO GRÁFICO
     </div>
-    <div class="infoProyect__description">
+    <div class="infoProyect__description wow animate__animated animate__fadeInUp">
       A lo largo de mi trayectora como diseñador gráfico he podido trabajar para diversos clientes, elaborando contenido
       para redes sociales, anuncios, menús digitales e infografías; cada diseño ha sido elaborado con el proposito de
       transmitir el mensaje que cada proyecto demandaba.
@@ -129,79 +144,85 @@
   <section class="desing">
 
     <div class="desing__row1">
-      <div class="desing__row1-colum1">
+      <div class="desing__row1-colum1 wow animate__animated animate__fadeIn animate__slow">
         <img src="./resources/desing/menu-la-canica.webp" alt="Menú digital La Canica">
       </div>
-      <div class="desing__row1-colum2">
+      <div class="desing__row1-colum2 wow animate__animated animate__fadeIn animate__slow">
         <img src="./resources/desing/P1.webp" alt="Infografía de planta">
       </div>
     </div>
 
     <div class="desing__row2">
       <div class="desing__row2-colum1">
-        <img src="./resources/desing/P2.webp" alt="Infografía de planta">
+        <img class="wow animate__animated animate__fadeIn animate__slow" src="./resources/desing/P2.webp" alt="Infografía de planta">
 
-        <img class="img-phone" src="./resources/desing/P3.webp" alt="Infografía de planta">
-        <img class="img-phone" src="./resources/desing/P4.webp" alt="Infografía de planta">
+        <img class="img-phone wow animate__animated animate__fadeIn animate__slow" src="./resources/desing/P3.webp" alt="Infografía de planta">
+        <img class="img-phone wow animate__animated animate__fadeIn animate__slow" src="./resources/desing/P4.webp" alt="Infografía de planta">
 
-        <img src="./resources/desing/pizza.webp" alt="publicidad para pizza">
+        <img class="wow animate__animated animate__fadeIn animate__slow" src="./resources/desing/pizza.webp" alt="publicidad para pizza">
       </div>
       <div class="desing__row2-colum2">
-        <img class="img-phone-2" src="./resources/desing/P3.webp" alt="Infografía de planta">
-        <img src="./resources/desing/burguer.webp" alt="publicidad para hamburguesas">
+        <img class="img-phone-2 wow animate__animated animate__fadeIn animate__slow" src="./resources/desing/P3.webp" alt="Infografía de planta">
+        <img class="wow animate__animated animate__fadeIn animate__slow" src="./resources/desing/burguer.webp" alt="publicidad para hamburguesas">
       </div>
       <div class="desing__row2-colum3">
-        <img class="img-phone-2" src="./resources/desing/P4.webp" alt="Infografía de planta">
-        <img src="./resources/desing/cesped.webp" alt="Publicidad para jardinería">
+        <img class="img-phone-2 wow animate__animated animate__fadeIn animate__slow" src="./resources/desing/P4.webp" alt="Infografía de planta">
+        <img class="wow animate__animated animate__fadeIn animate__slow" src="./resources/desing/cesped.webp" alt="Publicidad para jardinería">
       </div>
     </div>
 
   </section>
 
-  <section class="arrows">
-    <a class="arrows__prev" href="#">
-      <ion-icon name="arrow-back"></ion-icon>
-      <span>Anterior</span>
-    </a>
-    <a class="arrows__next" href="#">
-      <span>Siguiente</span>
-      <ion-icon name="arrow-forward"></ion-icon>
-    </a>
+  <section class="arrows wow animate__animated animate__fadeInUp">
+    <div class="arrows__prev">
+      <a href="#">
+        Anterior
+      </a>
+    </div>
+    
+    <div class="arrows__next">
+      <a href="#">
+        Siguiente
+      </a>
+    </div>
   </section>
 
+  <!--////////            
+               FOOTER
+  _______________________-->
   <footer>
     <div class="footer-row1">
 
       <div class="footer-row1__copy">
-        <p>Copyright 2022 © AO Luis Roberto</p>
+        <p class="wow animate__animated animate__fadeInUp">Copyright 2022 © AO Luis Roberto</p>
       </div>
       
       <div class="footer-row1__logo">
         <img src="./resources/loading-ao.gif" alt="Logo de AO Developer">
       </div>
 
-      <div class="footer-row1__contact">
+      <div class="footer-row1__contact wow animate__animated animate__fadeInUp animate__fast">
         <div class="footer-row1__contact-phone">
-          <a class="text-hover" href="https://api.whatsapp.com/send?phone=+5215611859713&text=%C2%A1Hola%20Luis!" target="_blank">56
+          <a class="text-hover-2" href="https://api.whatsapp.com/send?phone=+5215611859713&text=%C2%A1Hola%20Luis!" target="_blank">56
             1185 9713</a>
         </div>
 
         <div class="footer-row1__contact-email">
-          <a class="text-hover" href="mailto:ao.luis.roberto@gmail.com">ao.luis.roberto@gmail.com</a>
+          <a class="text-hover-2" href="mailto:ao.luis.roberto@gmail.com">ao.luis.roberto@gmail.com</a>
         </div>
 
         <div class="footer-row1__contact-rrss">
           <a href="https://www.linkedin.com/in/aoluis-roberto" target="_blank"
-            class="social-media text-hover">LinkedIn</a>
-          <a href="https://github.com/luis-ao" target="_blank" class="social-media text-hover">GitHub</a>
+            class="social-media text-hover-2">LinkedIn</a>
+          <a href="https://github.com/luis-ao" target="_blank" class="social-media text-hover-2">GitHub</a>
           <a href="https://www.youtube.com/channel/UCvWQLc76by0Wa8k91pWhViA" target="_blank"
-            class="social-media text-hover">YouTube</a>
+            class="social-media text-hover-2">YouTube</a>
         </div>
       </div>
     </div>
     
     <div class="footer-row2">
-      <p>¡Gracias por tu Atención!</p>
+      <p class="animate__animated animate__fadeIn animate__slow animate__delay-4s">¡Gracias por tu Atención!</p>
     </div>
   </footer>
 
@@ -212,26 +233,31 @@
                PRELOADER 
   _______________________-->
   <div id="loader">
-    <img src="./resources/loading-ao.gif" alt="loading" width="200px" />
+    <img src="./resources/loading-ao.gif" alt="loading" />
   </div>
 
 
-  <!--////////            
-               GSAP 
-  _______________________-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-
-  <!-- ionicons cdn -->
-  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-
+  
   <!--////////            
                SCRIPT 
   _______________________-->
-  <script src="./js/main.js"></script>
-  <script src="./js/desing.js"></script>
-
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+  <script src="js/wow.min.js"></script>
+  
+  <script>
+  new WOW().init();
+  </script>
+  
+  <!--////////            
+               SCRIPT
+  _______________________-->
+
+  <script src="./js/main.js"></script>
+
+
 
 </body>
 

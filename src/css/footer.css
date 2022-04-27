@@ -10,13 +10,14 @@
     --primary-colour: #827AAB;
     --secondary-colour: #C0A8B7;
     --tertiary-color: #4b4363;
+    --quaternary-color: #62396D;
     --text-colour:  #F2F2F2;
 
     --primary-font: 'nasalization', sans-serif;
     --secondary-font: 'Orbitron', sans-serif;
     --tertiary-font: 'Montserrat', sans-serif;
 
-    --main-size__laptop: 7.2px;
+    --main-size__laptop: 6.7px;
     --main-size__tablet: 3.8px;
     --main-size__phone: 5px;
 }
@@ -32,7 +33,7 @@ ____________________*/
     font-size: 10px;
     background-color: var(--tertiary-color);
     align-items: center;
-    margin-top: 22em;
+    margin-top: 36em;
 }
 .footer-row1__logo{
     order: 2;
@@ -51,11 +52,12 @@ ____________________*/
 }
 .footer-row1__copy p{
     user-select: none;
-    font-weight: 400;
+    font-weight: 500;
     padding-right: 4em;
-    letter-spacing: 1px;
-    color: var(--text-colour);
-    font-size: 2.5em;
+    letter-spacing: 1.5px;
+    color: var(--secondary-colour);
+    font-size: 2.4em;
+    opacity: .8;
 }
 
 .footer-row1__contact{
@@ -66,7 +68,7 @@ ____________________*/
 .footer-row1__contact-phone,
 .footer-row1__contact-email,
 .footer-row1__contact-rrss{
-    padding:1em 0em;
+    padding:1.4em 0em;
 }
 
 .footer-row1__contact-phone a,
@@ -74,10 +76,15 @@ ____________________*/
 .footer-row1__contact-rrss a{
     font-weight: 500;
     text-decoration: none;
-    color: var(--text-colour);
-    font-size: 2.5em;
+    color: var(--secondary-colour);
+    font-size: 2.4em;
     padding-left: 2em;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+}
+.footer-row1__contact-rrss a{
+    text-transform: uppercase;
+    font-weight: 700;
+    user-select: none;
 }
 
 .footer-row2{
@@ -85,7 +92,7 @@ ____________________*/
     flex-wrap: wrap;
     font-size: 10px;
     justify-content: center;
-    background-color: var(--text-colour);
+    background-color: var(--primary-colour);
 }
 .footer-row2 p {
     text-transform: uppercase;
@@ -94,6 +101,7 @@ ____________________*/
     color: var(--background-color);
     padding: .5em;
     font-size: 1.8em;
+    user-select: none;
 }
 
 

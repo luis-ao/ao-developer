@@ -12,7 +12,14 @@ window.addEventListener('load', function () {
 /* *********** 
      MENÚ
 _________________*/
-gsap.from('.header__logo, .menu-open-gsap',1.2,{
+gsap.from('.menu-open-gsap',{
+    opacity: 0,
+    x: '100%',
+    duration: 1.5,
+    ease: 'slow(0.7, 0.7, false)',
+});
+
+gsap.from('.logo__img, .logo__img-2',1.2,{
     opacity: 0,
     y: '-100%',
     stagger: {
@@ -27,7 +34,8 @@ let t1 = gsap.timeline({ paused: true });
 t1.to('.menu', { 
     top: 0,
     duration: 1, 
-    ease: Power2.easeInOut }
+    ease: Power2.easeInOut 
+   }
 );
 t1.to('.menu__links', {
         opacity: 1,
@@ -55,4 +63,12 @@ exitBtn.addEventListener('click', () => {
 });
 
 
-
+textrev.from(".line", 1.8, {
+    y: 200,
+    ease: "power4.out",
+    delay: 1,
+    skewY: 10,
+    stagger: {
+        amount: 0.4,
+    },
+});

@@ -7,6 +7,7 @@
 
 :root{
     --background-color: #0D0D0C;
+    --background-color3: #272727;
     --primary-colour: #827AAB;
     --secondary-colour: #C0A8B7;
     --tertiary-color: #4b4363;
@@ -16,13 +17,13 @@
     --secondary-font: 'Orbitron', sans-serif;
     --tertiary-font: 'Montserrat', sans-serif;
 
-    --main-size__laptop: 7.2px;
+    --main-size__laptop: 6.7;
     --main-size__tablet: 3.8px;
     --main-size__phone: 5px;
 
     --main-padding: 12em;
-    --main-padding_small: 5em;
-    --gallery-padding_small: 2em;
+    --main-padding_small: 6em;
+    --gallery-padding_small: 3em;
 }
 
 
@@ -33,7 +34,7 @@ ________________________________*/
     display: flex;
     flex-wrap: wrap;
     font-size: 10px;
-    padding-top: 22em;
+    padding-top: 14em;
     padding-left:var(--main-padding);
     padding-right:var(--main-padding);
 }
@@ -41,7 +42,8 @@ ________________________________*/
     color: var(--text-colour);
     font-family: var(--secondary-font);
     font-weight: 900;
-    font-size: 9em;
+    font-size: 9.4em;
+    opacity: .9;
 }
 .infoProyect__description{
     padding: 1em 0 4em 0;
@@ -63,6 +65,7 @@ ____________________*/
     font-size: 10px;
     padding-left:var(--main-padding);
     padding-right:var(--main-padding);
+    margin-bottom: 12em;
 }
 .coverArt__column1{
     flex: 50%;
@@ -96,7 +99,7 @@ ____________________*/
     padding-right:var(--main-padding);
 }
 .desing__row1-colum1{
-    padding-right: var(--gallery-padding_small);
+    padding-right: 1em;
     padding-bottom: 4em;
     flex: 66%;
 }
@@ -133,38 +136,44 @@ ____________________*/
     display: none;
 }
 
+
+
 /*********************
     ARROWS
 ____________________*/
 .arrows{
     display: flex;
     flex-wrap: wrap;
-    font-size: 10px;
     padding-left:var(--main-padding);
     padding-right:var(--main-padding);
-    align-items: center;
-    justify-content: space-between;
     padding-top: 6em;
+    justify-content: space-between;
+    font-size: 10px;
 }
 .arrows__prev,
 .arrows__next{
-    text-decoration: none;
-    color: var(--text-colour);
-    font-size: 4em;
-    opacity: .6;
+    cursor: pointer;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26em;
+    height: 8em;
+    background-color: var(--background-color3);
+    border-radius: .6em;
 }
-.arrows__prev span,
-.arrows__next span{
-    font-family: var(--tertiary-font);
-    letter-spacing: 1px;
-    font-weight: 700;
+.arrows__prev a,
+.arrows__next a{
+    user-select: none;
+    text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none;
     color: var(--text-colour);
-    font-size: .6em;
-    opacity: .3;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 3em;
 }
+
+
 
 
 
@@ -178,20 +187,21 @@ ____________________*/
 
 
 @media (hover: hover){
+
     .arrows__prev:hover,
     .arrows__next:hover{
         transition: all 0.4s ease-in-out;
-        opacity: 1;
+        background-color: var(--secondary-colour);
     }
-    .arrows__prev span:hover,
-    .arrows__next span:hover{
+    .arrows__prev:hover a,
+    .arrows__next:hover a{
         transition: all 0.4s ease-in-out;
-        opacity: 1;
+        color: var(--background-color);
     }
 }
 
-.arrows__prev:active,
-.arrows__next:active{
+.arrows__prev svg:active,
+.arrows__next svg:active{
     transition: all 0.4s ease-in-out;
     opacity: 1;
 }
@@ -228,6 +238,10 @@ ____________________*/
     .arrows{
         font-size: var(--main-size__laptop);
     }
+    .arrows__prev,
+    .arrows__next{
+        font-size: var(--main-size__laptop);
+    }
 }
 
 
@@ -249,6 +263,10 @@ ____________________*/
         font-size: var(--main-size__tablet);
     }
     .arrows{
+        font-size: var(--main-size__tablet);
+    }
+    .arrows__prev,
+    .arrows__next{
         font-size: var(--main-size__tablet);
     }
 }
@@ -312,5 +330,9 @@ ____________________*/
         font-size: var(--main-size__phone);
         padding-left: var(--main-padding_small);
         padding-right: var(--main-padding_small);
+    }
+    .arrows__prev,
+    .arrows__next{
+        font-size: var(--main-size__phone);
     }
 }
