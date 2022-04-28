@@ -73,12 +73,8 @@ ____________________*/
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding-top: 1.6em;
+    padding-right: 4em;
     z-index: 1000;
-}
-.header__logo img{
-    width: 24em;
-    opacity: 0;
 }
 .header__open{
     cursor: pointer;
@@ -89,20 +85,19 @@ ____________________*/
     font-weight: 900;
     font-size: 2.6em;
     opacity: .9;
-    padding: 1em 2em;
-    border-radius: .4em 0 0 .4em;
+    padding: 2em .7em 1em 1em;
+    border-radius: 0 0 .4em .4em;
     background-color: var(--background-color2);
     box-shadow: -2px 2px 1em var(--background-color);
 }
-
 .logo{
     display: flex;
     font-size: 10px;
-    padding-top: 5em;
+    padding-top: 4em;
     padding-left: 5em;
 }
 .logo img{
-    width: 8em;
+    width: 7.6em;
 }
 /*********************
         MENU
@@ -211,13 +206,7 @@ ____________________*/
         transition: all 0.4s ease-in-out;
         opacity: 1;
         color: var(--secondary-colour);
-        text-shadow: 0 0 10px var(--secondary-colour),
-        0 0 20px var(--secondary-colour),
-        0 0 40px var(--secondary-colour),
-        0 0 80px var(--secondary-colour),
-        0 0 120px var(--secondary-colour),
-        0 0 160px var(--secondary-colour);
-        
+        text-shadow: 0 0 10px var(--secondary-colour);
     }
     .menu__links-nav:hover{
         transition: all 0.4s ease-in-out;

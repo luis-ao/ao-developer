@@ -7,11 +7,12 @@
 
 :root{
     --background-color: #0D0D0C;
-    --background-color3: #272727;
     --primary-colour: #827AAB;
     --secondary-colour: #C0A8B7;
     --tertiary-color: #4b4363;
     --text-colour:  #F2F2F2;
+    --button-color: #272727;
+
 
     --primary-font: 'nasalization', sans-serif;
     --secondary-font: 'Orbitron', sans-serif;
@@ -65,25 +66,28 @@ ____________________*/
     font-size: 10px;
     padding-left:var(--main-padding);
     padding-right:var(--main-padding);
-    margin-bottom: 12em;
+    margin-bottom: 14em;
 }
 .coverArt__column1{
-    flex: 50%;
-    padding-right: var(--gallery-padding_small);
+    flex: 36%;
+    padding-right: 4em;
 }
 .coverArt__column1 img{
     width: 100%;
     padding-bottom: 0;
 }
-.coverArt__column1 video{
-    width: 100%;
-    padding-bottom: 4em;
-}
 .coverArt__column2{
-    flex: 50%;
-    padding-left: var(--gallery-padding_small);
+    flex: 36%;
+    padding-left:0 2em;
 }
 .coverArt__column2 video{
+    width: 100%;
+}
+.coverArt__column3{
+    flex: 26%;
+    padding-left: 4em;
+}
+.coverArt__column3 video{
     width: 100%;
 }
 
@@ -141,7 +145,7 @@ ____________________*/
 /*********************
     ARROWS
 ____________________*/
-.arrows{
+.buttoms{
     display: flex;
     flex-wrap: wrap;
     padding-left:var(--main-padding);
@@ -149,28 +153,25 @@ ____________________*/
     padding-top: 6em;
     justify-content: space-between;
     font-size: 10px;
+    
 }
-.arrows__prev,
-.arrows__next{
-    cursor: pointer;
-    font-size: 10px;
+.buttoms a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 26em;
-    height: 8em;
-    background-color: var(--background-color3);
-    border-radius: .6em;
-}
-.arrows__prev a,
-.arrows__next a{
+    width: 10em;
+    height: 3.6em;
+
+    font-size: 2.6em;
+
     user-select: none;
+    letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
     color: var(--text-colour);
     font-weight: 700;
-    letter-spacing: 1px;
-    font-size: 3em;
+    background-color: var(--button-color);
+    border-radius: .6em;
 }
 
 
@@ -187,29 +188,18 @@ ____________________*/
 
 
 @media (hover: hover){
-
-    .arrows__prev:hover,
-    .arrows__next:hover{
-        transition: all 0.4s ease-in-out;
+    .buttoms a:hover{
+        transition: all 0.2s ease-in-out;
         background-color: var(--secondary-colour);
+        color: var(--background-color);        
     }
-    .arrows__prev:hover a,
-    .arrows__next:hover a{
-        transition: all 0.4s ease-in-out;
-        color: var(--background-color);
-    }
+}
+.buttoms a:active{
+    transition: all 0.2s ease-in-out;
+    background-color: var(--secondary-colour);
+    color: var(--background-color);        
 }
 
-.arrows__prev svg:active,
-.arrows__next svg:active{
-    transition: all 0.4s ease-in-out;
-    opacity: 1;
-}
-.arrows__prev span:active,
-.arrows__next span:active{
-    transition: all 0.4s ease-in-out;
-    opacity: 1;
-}
 
 
 
@@ -235,11 +225,7 @@ ____________________*/
     .desing__row2{
         font-size: var(--main-size__laptop);
     }
-    .arrows{
-        font-size: var(--main-size__laptop);
-    }
-    .arrows__prev,
-    .arrows__next{
+    .buttoms{
         font-size: var(--main-size__laptop);
     }
 }
@@ -262,11 +248,7 @@ ____________________*/
     .desing__row2{
         font-size: var(--main-size__tablet);
     }
-    .arrows{
-        font-size: var(--main-size__tablet);
-    }
-    .arrows__prev,
-    .arrows__next{
+    .buttoms{
         font-size: var(--main-size__tablet);
     }
 }
@@ -292,7 +274,8 @@ ____________________*/
         flex-direction: column-reverse;
     }
     .coverArt__column1,
-    .coverArt__column2{
+    .coverArt__column2,
+    .coverArt__column3{
         padding: 2em 0;
         flex: 100%;
     }
@@ -326,13 +309,9 @@ ____________________*/
         display: none;
     }
 
-    .arrows{
+    .buttoms{
         font-size: var(--main-size__phone);
         padding-left: var(--main-padding_small);
         padding-right: var(--main-padding_small);
-    }
-    .arrows__prev,
-    .arrows__next{
-        font-size: var(--main-size__phone);
     }
 }

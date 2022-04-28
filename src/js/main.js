@@ -61,14 +61,3 @@ exitBtn.addEventListener('click', () => {
     t1.timeScale(2);
     t1.reverse();
 });
-
-
-textrev.from(".line", 1.8, {
-    y: 200,
-    ease: "power4.out",
-    delay: 1,
-    skewY: 10,
-    stagger: {
-        amount: 0.4,
-    },
-});
