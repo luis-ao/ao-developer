@@ -66,7 +66,7 @@ ____________________*/
     font-size: 10px;
     padding-left:var(--main-padding);
     padding-right:var(--main-padding);
-    margin-bottom: 14em;
+    margin-bottom: 10em;
 }
 .coverArt__column1{
     flex: 36%;
@@ -171,6 +171,8 @@ ____________________*/
     color: var(--text-colour);
     font-weight: 700;
     background-color: var(--button-color);
+    box-shadow: 0px 0px 10px var(--secondary-colour);
+    border: 1px solid var(--secondary-colour);
     border-radius: .6em;
 }
 

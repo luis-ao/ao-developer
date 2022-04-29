@@ -13,13 +13,13 @@ window.addEventListener('load', function () {
      MENÚ
 _________________*/
 gsap.from('.menu-open-gsap',{
-    opacity: 0,
-    x: '100%',
+    
+    y: '-100%',
     duration: 1.5,
     ease: 'slow(0.7, 0.7, false)',
 });
 
-gsap.from('.logo__img, .logo__img-2',1.2,{
+gsap.from('.logo__img, .logo__img-2',1.8,{
     opacity: 0,
     y: '-100%',
     stagger: {
@@ -33,11 +33,11 @@ const exitBtn = document.querySelector('.menu__exit');
 let t1 = gsap.timeline({ paused: true });
 t1.to('.menu', { 
     top: 0,
-    duration: 1, 
+    duration: .8, 
     ease: Power2.easeInOut 
    }
 );
-t1.to('.menu__links', {
+t1.to('.menu__links-GSAP', {
         opacity: 1,
         paddingTop: 0,
         duration: 1,
@@ -45,10 +45,18 @@ t1.to('.menu__links', {
     },
     '>-0.6'
 );
+t1.to('.menu__links-GSAP-2', {
+    opacity: 1,
+    paddingTop: 0,
+    duration: 1,
+    ease: Power2.easeInOut,
+},
+'>-0.8'
+);
 t1.to('.menu__background', {
         opacity: 0.4,
         duration: 1,
-        ease: 'slow(0.7, 0.7, false)',
+        ease:  Power2.easeInOut,
     },
     '>-0.8'
 );
@@ -58,6 +66,6 @@ menuBtn.addEventListener('click', () => {
 });
 
 exitBtn.addEventListener('click', () => {
-    t1.timeScale(2);
+    t1.timeScale(1.5); 
     t1.reverse();
 });

@@ -42,7 +42,7 @@ ____________________*/
     justify-content: center;
 }
 .footer-row1__logo img{
-    width: 30em;
+    width: 34em;
 }
 .footer-row1__copy{
     order: 3;
@@ -104,6 +104,27 @@ ____________________*/
     user-select: none;
 }
 
+
+/******************************
+        HOVER // ACTIVE
+________________________________*/
+@media (hover: hover) {
+    .text-hover-2:hover{
+        transition: all 0.3s ease-in-out;
+        opacity: 1;
+        color: var(--text-colour);
+        text-shadow: 0 0 10px var(--text-colour);
+    }
+}
+
+/* ---- */
+
+.text-hover-2:active{
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    color: var(--text-colour);
+    text-shadow: 0 0 10px var(--text-colour);
+}
 
 
 
@@ -169,7 +190,7 @@ ____________________*/
     .footer-row1__copy p{
         padding: 0em;
         padding-top: 2em;
-        padding-bottom: 2em;
+        padding-bottom: 4em;
     }
     .footer-row2{
         font-size: var(--main-size__phone);
