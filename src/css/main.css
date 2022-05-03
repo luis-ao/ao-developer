@@ -19,22 +19,22 @@
     --tertiary-color: #4b4363;
     --quaternary-color: #62396D;
     --text-colour:  #F2F2F2;
+    --button-color: #272727;
+
     
     --primary-font: 'nasalization', sans-serif;
     --secondary-font: 'Orbitron', sans-serif;
     --tertiary-font: 'Montserrat', sans-serif;
 
-    --main-size__laptop: 6.7px;
+    --main-size__laptop: 6.5px;
     --main-size__tablet: 3.8px;
     --main-size__phone: 5px;
+
+    --main-padding: 12em;
+    --main-padding_small: 6em;
+    --gallery-padding_small: 3em;
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body{
     background-color: var(--background-color);
     font-family: var(--tertiary-font);
@@ -72,7 +72,7 @@ ____________________*/
     user-select: none;
     position: fixed;
     font-size: 10px;
-    right: 6em;
+    right: 4em;
     padding: 5.5em 1.6em 1.6em 2.4em;
     border-radius: 0 0 1.4em 1.4em;
     border-bottom: solid  2px   var(--primary-colour);
@@ -85,7 +85,6 @@ ____________________*/
     box-shadow: -3px 3px 6px var(--primary-colour);
 }
 .header__open p{
-    font-family:var(--primary-font);
     letter-spacing: 4px;
     font-weight: 900;
     font-size: 2.6em;
@@ -97,7 +96,7 @@ ____________________*/
     padding-left: 5em;
 }
 .logo img{
-    width: 8.4em;
+    width: 9.6em;
 }
 /*********************
         MENU
@@ -165,13 +164,13 @@ ____________________*/
     display: block;
     text-decoration: none;
     font-size: 3.4em;
-    font-weight: 900;
+    font-weight: 800;
     color: var(--tertiary-color);
     letter-spacing: .5px;
 }
 .contact__text {
     text-decoration: none;
-    font-size: 3.2em;
+    font-size: 3.4em;
     font-weight: 700;
     color: var(--background-color);
     letter-spacing: .5px;
@@ -181,10 +180,9 @@ ____________________*/
     text-decoration: none;
     user-select: none;
     text-transform: uppercase;
-    font-weight: 900;
-    color: var(--tertiary-color);
+    font-weight: 800;
+    color: var(--background-color);
     font-size: 3.4em;
-    letter-spacing: .5px;
 }
 
 

@@ -1,0 +1,212 @@
+@import url('main.css');
+
+.infoProject{
+    display: grid;
+    grid-template-columns: 34% 66%;
+    grid-template-rows: auto auto;
+    font-size: 10px;
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    color: var(--text-colour);
+}
+
+.infoProject__title{
+    order: 1;
+    grid-column: 1 / span 2;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 10em;
+    margin-bottom: .8em;
+    margin-top: 1.8em;
+}
+
+.infoProject__date{
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+}
+.infoProject__date-job{
+    flex: 100%;
+}
+.infoProject__date-duration,
+.infoProject__date-finish{
+    flex: 50%;
+    padding-right: 2em;
+    height: 0px;
+}
+.date-title{
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 3em;
+    margin-bottom: .2em;
+    text-transform: uppercase;
+    color: var(--primary-colour);
+}
+.date-text{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 2.8em;
+    opacity: .8;
+}
+
+.infoProject__description{
+    order: 3;
+}
+.infoProject__description-title{
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 3em;
+    margin-bottom: .2em;
+    text-transform: uppercase;
+    color: var(--primary-colour);
+}
+.infoProject__description-text{
+    font-weight: 300;
+    opacity: .7;
+    letter-spacing: 2px;
+    font-size: 2.8em;
+    margin-bottom: 2em;
+}
+/*********************
+    BUTTOMS
+____________________*/
+.buttoms{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:var(--main-padding);
+    padding-right:var(--main-padding);
+    padding-top: 6em;
+    justify-content: space-between;
+    font-size: 10px;
+    
+}
+.buttoms a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 3.6em;
+
+    font-size: 2.6em;
+
+    user-select: none;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text-colour);
+    font-weight: 700;
+    background-color: var(--button-color);
+    box-shadow: 0px 0px 10px var(--secondary-colour);
+    border: 1px solid var(--secondary-colour);
+    border-radius: .6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (hover: hover){
+    .buttoms a:hover{
+        transition: all 0.2s ease-in-out;
+        background-color: var(--secondary-colour);
+        color: var(--background-color);        
+    }
+}
+.buttoms a:active{
+    transition: all 0.2s ease-in-out;
+    background-color: var(--secondary-colour);
+    color: var(--background-color);        
+}
+
+
+
+
+
+
+
+
+
+/*********************
+        LAPTOP
+____________________*/
+@media screen and (max-width: 1540px){
+    .buttoms{
+        font-size: var(--main-size__laptop);
+    }
+    .infoProject{
+        font-size: var(--main-size__laptop);
+    }
+    .infoProject__date{
+        font-size: var(--main-size__laptop);
+    }
+}
+
+
+/*********************
+        TABLET
+____________________*/
+@media screen and (max-width: 966px){
+    .buttoms{
+        font-size: var(--main-size__tablet);
+    }
+    .infoProject{
+        font-size: var(--main-size__tablet);
+    }
+    .infoProject__date{
+        font-size: var(--main-size__tablet);
+    }
+}
+
+
+
+
+
+
+/*********************
+        PHONE
+____________________*/
+@media screen and (max-width: 500px) {
+    .infoProject{
+        font-size: var(--main-size__phone);
+        padding-left: var(--main-padding_small);
+        padding-right: var(--main-padding_small);
+    }
+    .infoProject__title{
+        grid-column: 1 / span 2;
+        order: 1;
+        font-size: 6.9em;
+    }
+    .infoProject__date{
+        grid-column: 1 / span 2;
+        order: 3;
+        font-size: var(--main-size__phone);
+    }
+    .infoProject__date-job{
+        padding-top: 4em;
+    }
+    .infoProject__date-duration,
+    .infoProject__date-finish{
+        height: auto;
+    }
+    .infoProject__description{
+        grid-column: 1 / span 2;
+        order: 2;
+    }
+    .buttoms{
+        font-size: var(--main-size__phone);
+        padding-left: var(--main-padding_small);
+        padding-right: var(--main-padding_small);
+    }
+}
