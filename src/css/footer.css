@@ -91,7 +91,7 @@ ________________________________*/
         transition: all 0.3s ease-in-out;
         opacity: 1;
         color: var(--text-color);
-        text-shadow: 0 0 10px var(--text-color);
+        text-shadow: 0 0 10px var(--secondary-color);
     }
 }
 
@@ -101,7 +101,7 @@ ________________________________*/
     transition: all 0.3s ease-in-out;
     opacity: 1;
     color: var(--text-color);
-    text-shadow: 0 0 10px var(--text-color);
+    text-shadow: 0 0 10px var(--secondary-color);
 }
 
 

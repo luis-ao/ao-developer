@@ -1,7 +1,6 @@
 const tl = gsap.timeline();
 
 tl.to(".titleGSAP", {
-  duration: 1,
   opacity: 1,
 });
 tl.from(
