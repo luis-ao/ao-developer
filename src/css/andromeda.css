@@ -7,7 +7,7 @@
     font-size: 10px;
     padding-left: var(--main-padding);
     padding-right: var(--main-padding);
-    color: var(--text-colour);
+    color: var(--text-color);
 }
 
 .infoProject__title{
@@ -43,7 +43,7 @@
     font-size: 3em;
     margin-bottom: .2em;
     text-transform: uppercase;
-    color: var(--primary-colour);
+    color: var(--primary-color);
 }
 .date-text{
     font-weight: 600;
@@ -61,12 +61,12 @@
     font-size: 3em;
     margin-bottom: .2em;
     text-transform: uppercase;
-    color: var(--primary-colour);
+    color: var(--primary-color);
 }
 .infoProject__description-text{
-    font-weight: 300;
+    font-weight: 400;
     opacity: .7;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 2.8em;
     margin-bottom: 2em;
 }
@@ -96,11 +96,11 @@ ____________________*/
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--text-colour);
+    color: var(--text-color);
     font-weight: 700;
     background-color: var(--button-color);
-    box-shadow: 0px 0px 10px var(--secondary-colour);
-    border: 1px solid var(--secondary-colour);
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     border-radius: .6em;
 }
 
@@ -120,13 +120,13 @@ ____________________*/
 @media (hover: hover){
     .buttoms a:hover{
         transition: all 0.2s ease-in-out;
-        background-color: var(--secondary-colour);
+        background-color: var(--secondary-color);
         color: var(--background-color);        
     }
 }
 .buttoms a:active{
     transition: all 0.2s ease-in-out;
-    background-color: var(--secondary-colour);
+    background-color: var(--secondary-color);
     color: var(--background-color);        
 }
 
@@ -186,7 +186,7 @@ ____________________*/
     .infoProject__title{
         grid-column: 1 / span 2;
         order: 1;
-        font-size: 6.9em;
+        font-size: 6em;
     }
     .infoProject__date{
         grid-column: 1 / span 2;

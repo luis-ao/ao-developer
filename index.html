@@ -1,177 +1,217 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!--////////            
-               STYLE
-  _______________________-->
-  <link rel="stylesheet" href="./src/css/main.css" />
-  <link rel="stylesheet" href="./src/css/footer.css" />
-
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
-
-  <link rel='icon' href="./src/resources/favicon-ao.webp" />
-  <title>AO Developer</title>
-  
-</head>
-
-<body>
-
-  <!--////////            
-               HEADER
-  _______________________-->
-  <header>
-
-    <div class="header">
-      <div class="header__logo">
-        <a href="../index.html">
-          <img src="./resources/logo-ao.webp" alt="Logo AO Developer">
-        </a>
-      </div>
-      <div class="menu-open-gsap">
-        <div href="#" class="header__open">MENÚ</div>
-      </div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--////////            
-               MENU
-    _______________________-->
-    <div class="menu">
+               STYLE
+  _______________________-->
+    <link rel="stylesheet" href="./src/css/normalize.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
 
-      <div class="menu__background">MENÚ</div>
-      <div href="#" class="menu__exit">X</div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-      <div class="menu__links">
+    <link rel="icon" href="./src/resources/favicon-ao.webp" />
+    <title>Hola soy Luis!</title>
 
-        <div><a href="#" class="menu__links-nav text-hover">Sobre Mi</a>
-        </div>
+  </head>
 
-        <br />
-        <div><a href="../index.html" class="menu__links-nav text-hover">Proyectos</a>
-        </div>
-
-        <br />
-        <div><a href="#" class="menu__links-nav text-hover">Servicios</a>
-        </div>
-
-        <br />
-        <div><a href="#" class="menu__links-nav text-hover">Contacto</a>
-        </div>
-
+  <body>
+    <!--////////            
+               HEADER
+  _______________________-->
+    <header>
+      <div class="header__open menu-open-gsap">
+        <p>MENÚ</p>
       </div>
 
-      <div class="menu__links right">
-        <div class="menu__links-contact">
-          <a href="https://api.whatsapp.com/send?phone=+5215611859713&text=%C2%A1Hola%20Luis!" target="_blank"
-            class="contact__text text-hover">56 1185 9713</a>
+      <div class="logo">
+        <a href="./index.html">
+        <img
+          href="./index.html"
+          class="logo__img"
+          src="./src/resources/logo-a.png"
+          alt="Logo AO Developer"
+        />
+        <img
+          class="logo__img-2"
+          src="./src/resources/logo-o.png"
+          alt="Logo AO Developer"
+        />
+       </a>
+      </div>
+
+      <!--////////            
+               MENU
+    _______________________-->
+      <div class="menu">
+        <div class="menu__background">MENÚ</div>
+        <div class="menu__exit">X</div>
+
+        <div class="menu__links menu__links-GSAP">
+          <div><a href="./index.html" class="menu__links-nav">Sobre Mi</a></div>
+
+          <br />
+          <div>
+            <a href="./proyectos.html" class="menu__links-nav">Proyectos</a>
+          </div>
+
+          <br />
+          <div>
+            <a href="./servicios.html" class="menu__links-nav">Servicios</a>
+          </div>
+
+          <br />
+          <div><a href="./contacto.html" class="menu__links-nav">Contacto</a></div>
         </div>
-        <div class="menu__links-contact">
-          <a href="mailto:ao.luis.roberto@gmail.com" class="contact__text text-hover">ao.luis.roberto@gmail.com</a>
-        </div>
-        <div class="menu__links-contact">
-          <div class="contact__rrss">
-            <a href="https://www.linkedin.com/in/aoluis-roberto" target="_blank"
-              class="social-media text-hover">LinkedIn</a>
-            <a href="https://github.com/luis-ao" target="_blank" class="social-media text-hover">GitHub</a>
-            <a href="https://www.youtube.com/channel/UCvWQLc76by0Wa8k91pWhViA" target="_blank"
-              class="social-media text-hover">YouTube</a>
+
+        <div class="menu__links right menu__links-GSAP-2">
+          <div class="menu__links-contact">
+            <span> TEL: </span>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5215611859713&text=%C2%A1Hola%20Luis!"
+              target="_blank"
+              class="contact__text text-hover"
+            >
+              56 1185 9713</a
+            >
+          </div>
+          <div class="menu__links-contact">
+            <span> E-MAIL: </span>
+            <a
+              href="mailto:ao.luis.roberto@gmail.com"
+              class="contact__text text-hover"
+              >ao.luis.roberto@gmail.com</a
+            >
+          </div>
+          <div class="menu__links-contact">
+            <div class="contact__rrss">
+              <a
+                href="https://www.linkedin.com/in/aoluis-roberto"
+                target="_blank"
+                class="social-media text-hover"
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/luis-ao"
+                target="_blank"
+                class="social-media text-hover"
+                >GitHub</a
+              >
+              <a
+                href="https://www.youtube.com/channel/UCvWQLc76by0Wa8k91pWhViA"
+                target="_blank"
+                class="social-media text-hover"
+                >YouTube</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div class="logo">
-      <img class="logo__img" src="./resources/logo-a.png" alt="Logo AO Developer">
-      <img class="logo__img-2" src="./resources/logo-o.png" alt="Logo AO Developer">
-    </div>
-  </header>
-
-  <!--////////            
+    <!--////////            
                BODY
   _______________________-->
 
 
 
-  <!--////////            
+    <!--////////            
                FOOTER
   _______________________-->
-  <footer>
-    <div class="footer-row1">
-
-      <div class="footer-row1__copy">
-        <p class="wow animate__animated animate__fadeInUp">Copyright 2022 © AO Luis Roberto</p>
-      </div>
-      
-      <div class="footer-row1__logo">
-        <img src="./src/resources/loading-ao.gif" alt="Logo de AO Developer">
-      </div>
-
-      <div class="footer-row1__contact wow animate__animated animate__fadeInUp animate__fast">
-        <div class="footer-row1__contact-phone">
-          <a class="text-hover-2" href="https://api.whatsapp.com/send?phone=+5215611859713&text=%C2%A1Hola%20Luis!" target="_blank">56
-            1185 9713</a>
+    <footer>
+      <div class="footer-row1">
+        <div class="footer-row1__copy">
+          <p class="wow animate__animated animate__fadeIn animate__slower">
+            Copyright 2022 © AO Luis Roberto
+          </p>
         </div>
 
-        <div class="footer-row1__contact-email">
-          <a class="text-hover-2" href="mailto:ao.luis.roberto@gmail.com">ao.luis.roberto@gmail.com</a>
+        <div class="footer-row1__logo">
+          <img
+            class="wow animate__animated animate__fadeIn animate__slow"
+            src="./src/resources/footer-ao.gif"
+            alt="Logo de AO Developer"
+          />
         </div>
 
-        <div class="footer-row1__contact-rrss">
-          <a href="https://www.linkedin.com/in/aoluis-roberto" target="_blank"
-            class="social-media text-hover-2">LinkedIn</a>
-          <a href="https://github.com/luis-ao" target="_blank" class="social-media text-hover-2">GitHub</a>
-          <a href="https://www.youtube.com/channel/UCvWQLc76by0Wa8k91pWhViA" target="_blank"
-            class="social-media text-hover-2">YouTube</a>
+        <div
+          class="footer-row1__contact wow animate__animated animate__fadeIn animate__slower"
+        >
+          <div class="footer-row1__contact-phone">
+            <a
+              class="text-hover-2"
+              href="https://api.whatsapp.com/send?phone=+5215611859713&text=%C2%A1Hola%20Luis!"
+              target="_blank"
+              >56 1185 9713</a
+            >
+          </div>
+
+          <div class="footer-row1__contact-email">
+            <a class="text-hover-2" href="mailto:ao.luis.roberto@gmail.com"
+              >ao.luis.roberto@gmail.com</a
+            >
+          </div>
+
+          <div class="footer-row1__contact-rrss">
+            <a
+              href="https://www.linkedin.com/in/aoluis-roberto"
+              target="_blank"
+              class="social-media text-hover-2"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/luis-ao"
+              target="_blank"
+              class="social-media text-hover-2"
+              >GitHub</a
+            >
+            <a
+              href="https://www.youtube.com/channel/UCvWQLc76by0Wa8k91pWhViA"
+              target="_blank"
+              class="social-media text-hover-2"
+              >YouTube</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    
-    <div class="footer-row2">
-      <p class="animate__animated animate__fadeIn animate__slow animate__delay-4s">¡Gracias por tu Atención!</p>
-    </div>
-  </footer>
 
+      <div class="footer-row2">
+        <p>¡Gracias por tu Atención!</p>
+      </div>
+    </footer>
 
-
-
-  <!--//////////////// 
+    <!--//////////////// 
                PRELOADER 
   _______________________-->
-  <div id="loader">
-    <img src="./src/resources/loading-ao.gif" alt="loading" />
-  </div>
+    <div id="loader">
+      <img src="./src/resources/loading-ao.gif" alt="loading" />
+    </div>
 
-
-  
-  <!--////////            
+    <!--////////            
                SCRIPT 
   _______________________-->
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
-  <script src="./src/js/wow.min.js"></script>
-  
-  <script>
-  new WOW().init();
-  </script>
-  
-  <!--////////            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <script src="./src/js/wow.min.js"></script>
+
+    <script>
+      new WOW().init();
+    </script>
+
+    <!--////////            
                SCRIPT
   _______________________-->
 
-  <script src="./src/js/main.js"></script>
-
-
-
-</body>
-
+    <script src="./src/js/main.js"></script>
+  </body>
 </html>

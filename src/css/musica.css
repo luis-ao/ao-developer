@@ -1,0 +1,181 @@
+@import url('main.css');
+
+.music{
+    display: grid;
+    grid-template-columns: 46% 54%;
+    font-size: 10px;
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    color: var(--text-color);
+    margin-top: 12em;
+    margin-bottom: 18em;
+}
+.music__video{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    border: solid 2px var(--tertiary-color);
+    box-shadow: 0px 0px 10px var(--tertiary-color);
+}
+.music__video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.music__text{
+    padding-left: 10em;
+}
+.music__text-title{
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 8em;
+    margin-bottom: .4em;
+}
+.music__text-year{
+    flex: 50%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 2.7em;
+}
+.music__text-year span{
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    display: block;
+    color: var(--primary-color);
+}
+
+.music__text-description{
+    margin-top: 1.4em;
+    font-weight: 500;
+    font-size: 2.4em;
+    letter-spacing: 1px;
+    opacity: .8;
+}
+
+/*********************
+    BUTTOMS
+____________________*/
+.buttoms{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:var(--main-padding);
+    padding-right:var(--main-padding);
+    justify-content: space-between;
+    font-size: 10px;
+}
+.buttoms a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 3.6em;
+
+    font-size: 2.6em;
+
+    user-select: none;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 700;
+    background-color: var(--button-color);
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: .6em;
+}
+
+
+
+
+
+
+
+
+
+@media (hover: hover){
+    .buttoms a:hover{
+        transition: all 0.2s ease-in-out;
+        background-color: var(--secondary-color);
+        color: var(--background-color);        
+    }
+}
+.buttoms a:active{
+    transition: all 0.2s ease-in-out;
+    background-color: var(--secondary-color);
+    color: var(--background-color);        
+}
+
+
+
+
+
+
+
+
+
+/*********************
+        LAPTOP
+____________________*/
+@media screen and (max-width: 1540px){
+    .buttoms{
+        font-size: var(--main-size__laptop);
+    }
+    .music{
+        font-size: var(--main-size__laptop);
+    }
+}
+
+
+/*********************
+        TABLET
+____________________*/
+@media screen and (max-width: 966px){
+    .buttoms{
+        font-size: var(--main-size__tablet);
+    }
+    .music{
+        font-size: var(--main-size__tablet);
+    }
+}
+
+
+
+
+
+
+/*********************
+        PHONE
+____________________*/
+@media screen and (max-width: 500px) {
+    .music{
+        font-size: var(--main-size__laptop);
+        padding-left: var(--main-padding_small);
+        padding-right: var(--main-padding_small);
+    }
+    .music__text{
+        grid-column: 1 / span 2;
+        padding-left: 0;
+    }
+    .music__text-title{
+        font-size: 6em;
+    }
+    .title-paradigmas{
+        font-size: 5em;
+    }
+    .music__video{
+        grid-column: 1 / span 2;
+        margin-bottom: 8em;
+    }
+    .buttoms{
+        font-size: var(--main-size__phone);
+        padding-left: var(--main-padding_small);
+        padding-right: var(--main-padding_small);
+    }
+}

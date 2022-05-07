@@ -5,29 +5,76 @@
  INFORMATION PROYECT COVER ART
 ________________________________*/
 .infoProject{
+    display: grid;
+    grid-template-columns: 34% 66%;
+    grid-template-rows: auto auto;
+    font-size: 10px;
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    color: var(--text-color);
+    margin-bottom: 6em;
+}
+
+.infoProject__title{
+    order: 1;
+    grid-column: 1 / span 2;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 10em;
+    margin-bottom: .8em;
+    margin-top: 1.8em;
+}
+
+.infoProject__date{
+    order: 2;
     display: flex;
     flex-wrap: wrap;
     font-size: 10px;
-    padding-top: 14em;
-    padding-left:var(--main-padding);
-    padding-right:var(--main-padding);
 }
-.infoProject__title{
-    color: var(--text-colour);
-    font-family: var(--secondary-font);
-    font-weight: 900;
-    font-size: 9.4em;
+.infoProject__date-duration,
+.infoProject__date-finish{
+    flex: 50%;
+    padding-right: 2em;
+    height: 0px;
 }
-.infoProject__description{
-    padding: 1em 0 4em 0;
-    text-align: justify;
-    line-height: 1.4em;
-    color: var(--text-colour);
-    opacity: .7;
-    font-weight: 300;
-    letter-spacing: 2px;
+.date-title{
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 3em;
+    margin-bottom: .2em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+.date-text{
+    font-weight: 600;
+    letter-spacing: 1px;
     font-size: 2.8em;
+    opacity: .8;
 }
+
+.infoProject__description{
+    order: 3;
+}
+.infoProject__description-title{
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 3em;
+    margin-bottom: .2em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+.infoProject__description-text{
+    font-weight: 400;
+    opacity: .7;
+    letter-spacing: 1px;
+    font-size: 2.8em;
+    margin-bottom: 2em;
+}
+
+
+
 /*********************
         COVER ART
 ____________________*/
@@ -139,11 +186,11 @@ ____________________*/
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--text-colour);
+    color: var(--text-color);
     font-weight: 700;
     background-color: var(--button-color);
-    box-shadow: 0px 0px 10px var(--secondary-colour);
-    border: 1px solid var(--secondary-colour);
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     border-radius: .6em;
 }
 
@@ -163,13 +210,13 @@ ____________________*/
 @media (hover: hover){
     .buttoms a:hover{
         transition: all 0.2s ease-in-out;
-        background-color: var(--secondary-colour);
+        background-color: var(--secondary-color);
         color: var(--background-color);        
     }
 }
 .buttoms a:active{
     transition: all 0.2s ease-in-out;
-    background-color: var(--secondary-colour);
+    background-color: var(--secondary-color);
     color: var(--background-color);        
 }
 
@@ -186,6 +233,9 @@ ____________________*/
 ____________________*/
 @media screen and (max-width: 1540px){
     .infoProject{
+        font-size: var(--main-size__laptop);
+    }
+    .infoProject__date{
         font-size: var(--main-size__laptop);
     }
     .coverArt{
@@ -206,6 +256,9 @@ ____________________*/
 ____________________*/
 @media screen and (max-width: 966px){
     .infoProject{
+        font-size: var(--main-size__tablet);
+    }
+    .infoProject__date{
         font-size: var(--main-size__tablet);
     }
     .coverArt{
@@ -231,8 +284,29 @@ ____________________*/
 @media screen and (max-width: 500px) {
     .infoProject{
         font-size: var(--main-size__phone);
-        padding-left:var(--main-padding_small);
-        padding-right:var(--main-padding_small);
+        padding-left: var(--main-padding_small);
+        padding-right: var(--main-padding_small);
+    }
+    .infoProject__title{
+        grid-column: 1 / span 2;
+        order: 1;
+        font-size: 6em;
+    }
+    .infoProject__date{
+        grid-column: 1 / span 2;
+        order: 3;
+        font-size: var(--main-size__phone);
+    }
+    .infoProject__date-job{
+        padding-top: 4em;
+    }
+    .infoProject__date-duration,
+    .infoProject__date-finish{
+        height: auto;
+    }
+    .infoProject__description{
+        grid-column: 1 / span 2;
+        order: 2;
     }
     .coverArt{
         font-size: var(--main-size__phone);

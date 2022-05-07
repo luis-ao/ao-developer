@@ -3,7 +3,7 @@
     width: 18px;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(var(--primary-colour), var(--tertiary-color));
+    background: linear-gradient(var(--primary-color), var(--tertiary-color));
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap'); 
 
@@ -14,11 +14,11 @@
 
 :root{
     --background-color: #0D0D0C;
-    --primary-colour: #827AAB;
-    --secondary-colour: #C0A8B7;
+    --primary-color: #827AAB;
+    --secondary-color: #C0A8B7;
     --tertiary-color: #4b4363;
-    --quaternary-color: #62396D;
-    --text-colour:  #F2F2F2;
+    --quaternary-color: #502f5a;
+    --text-color:  #F2F2F2;
     --button-color: #272727;
 
     
@@ -31,7 +31,7 @@
     --main-size__phone: 5px;
 
     --main-padding: 12em;
-    --main-padding_small: 6em;
+    --main-padding_small: 5.2em;
     --gallery-padding_small: 3em;
 }
 
@@ -75,19 +75,19 @@ ____________________*/
     right: 4em;
     padding: 5.5em 1.6em 1.6em 2.4em;
     border-radius: 0 0 1.4em 1.4em;
-    border-bottom: solid  2px   var(--primary-colour);
-    border-left: solid  2px   var(--primary-colour);
-    border-right: solid  2px   var(--primary-colour);
-    
+    border-bottom: solid  2px   var(--secondary-color);
+    border-left: solid  2px   var(--secondary-color);
+    border-right: solid  2px   var(--secondary-color);
     opacity: .9;
-    color: var(--primary-colour);
     background-color: var(--background-color);
-    box-shadow: -3px 3px 6px var(--primary-colour);
+    box-shadow: -3px 3px 6px var(--secondary-color);
+    color: var(--secondary-color);
 }
 .header__open p{
     letter-spacing: 4px;
-    font-weight: 900;
     font-size: 2.6em;
+    font-family: var(--primary-font);
+    font-weight: 900;
 }
 .logo{
     display: flex;
@@ -111,7 +111,7 @@ ____________________*/
     position: fixed;
     top: -120%;
     align-items: center;
-    background-color: var(--primary-colour);
+    background-color: var(--primary-color);
     z-index: 1900;
 }
 .menu__background {
@@ -119,7 +119,7 @@ ____________________*/
     position: absolute;
     font-size: 50em;
     font-weight: 900;
-    color: var(--secondary-colour);
+    color: var(--secondary-color);
     user-select: none;
     z-index: 1;
     filter: blur(6px);
@@ -163,26 +163,26 @@ ____________________*/
 .menu__links-contact span{
     display: block;
     text-decoration: none;
-    font-size: 3.4em;
-    font-weight: 800;
-    color: var(--tertiary-color);
+    font-size: 3.5em;
+    font-weight: 900;
+    color: var(--background-color);
     letter-spacing: .5px;
 }
 .contact__text {
     text-decoration: none;
-    font-size: 3.4em;
+    font-size: 3.5em;
     font-weight: 700;
-    color: var(--background-color);
-    letter-spacing: .5px;
+    color: var(--button-color);
 }
 .contact__rrss > a {
     padding-right: 1.5em;
     text-decoration: none;
     user-select: none;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 900;
     color: var(--background-color);
-    font-size: 3.4em;
+    font-size: 3.5em;
+    letter-spacing: 1px;
 }
 
 
@@ -195,27 +195,30 @@ ____________________*/
 @media (hover: hover) {
     .text-hover:hover{
         transition: all 0.3s ease-in-out;
-        color: var(--secondary-colour);
-        text-shadow: 0 0 10px var(--secondary-colour);
+        color: var(--secondary-color);
+        text-shadow: 0 0 10px var(--secondary-color);
     }
     .header__open:hover{
         transition: all 0.3s ease-in-out;
         opacity: 1;
+        background-color: var(--primary-color);
+        box-shadow: -3px 3px 6px var(--primary-color);
         color: var(--background-color);
-        background-color: var(--primary-colour);
-        box-shadow: -3px 3px 6px var(--background-color);
+        border-bottom: solid  2px   var(--primary-color);
+        border-left: solid  2px   var(--primary-color);
+        border-right: solid  2px   var(--primary-color);
     }
     .menu__exit:hover{
         transition: all 0.3s ease-in-out;
         opacity: 1;
-        color: var(--secondary-colour);
-        text-shadow: 0 0 10px var(--secondary-colour);
+        color: var(--secondary-color);
+        text-shadow: 0 0 10px var(--secondary-color);
     }
     .menu__links-nav:hover{
         transition: all 0.3s ease-in-out;
         padding-left: 20px;
-        color: var(--secondary-colour);
-        text-shadow: 0 0 10px var(--secondary-colour);
+        color: var(--secondary-color);
+        text-shadow: 0 0 10px var(--secondary-color);
     }
 }
 
@@ -225,27 +228,29 @@ ____________________*/
 ____________________*/
 .text-hover:active {
     transition: all 0.3s ease-in-out;
-    color: var(--secondary-colour);
-    text-shadow: 0 0 10px var(--secondary-colour);
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px var(--secondary-color);
 }
 .header__open:active{
     transition: all 0.3s ease-in-out;
     opacity: 1;
+    background-color: var(--primary-color);
+    box-shadow: -3px 3px 6px var(--primary-color);
     color: var(--background-color);
-    background-color: var(--primary-colour);
-    box-shadow: -3px 3px 6px var(--background-color);
+    border-bottom: solid  2px   var(--primary-color);
+    border-left: solid  2px   var(--primary-color);
+    border-right: solid  2px   var(--primary-color);
 }
 .menu__exit:active{
     transition: all 0.3s ease-in-out;
     opacity: 1;
-    color: var(--secondary-colour);
-    text-shadow: 0 0 10px var(--secondary-colour);
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px var(--secondary-color);
 }
 .menu__links-nav:active{
     transition: all 0.3s ease-in-out;
-    padding-left: 20px;
-    color: var(--secondary-colour);
-    text-shadow: 0 0 10px var(--secondary-colour);
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px var(--secondary-color);
 }
 
 

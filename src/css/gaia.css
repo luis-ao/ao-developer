@@ -7,7 +7,7 @@
     font-size: 10px;
     padding-left: var(--main-padding);
     padding-right: var(--main-padding);
-    color: var(--text-colour);
+    color: var(--text-color);
 }
 
 .infoProject__title{
@@ -16,7 +16,7 @@
     font-family: var(--secondary-font);
     text-transform: uppercase;
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-size: 10em;
     margin-bottom: .6em;
     margin-top: 1.8em;
@@ -43,7 +43,7 @@
     font-size: 3em;
     margin-bottom: .2em;
     text-transform: uppercase;
-    color: var(--primary-colour);
+    color: var(--primary-color);
 }
 .date-text{
     font-weight: 600;
@@ -61,12 +61,12 @@
     font-size: 3em;
     margin-bottom: .2em;
     text-transform: uppercase;
-    color: var(--primary-colour);
+    color: var(--primary-color);
 }
 .infoProject__description-text{
-    font-weight: 300;
+    font-weight: 400;
     opacity: .7;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 2.8em;
     margin-bottom: 2em;
 }
@@ -82,23 +82,25 @@ ____________________*/
     flex-wrap: wrap;
     justify-content: center;
 }
-.videos__home{
+.videos video{
     flex: 100%;
     width: 100%;
+    border: solid 2px var(--tertiary-color);
+    box-shadow: 0px 0px 10px var(--tertiary-color);
+}
+.videos__home{
     margin-top: 12em;
-    border: solid 2px var(--button-color);
 }
 .videos__servicios{
-    flex: 100%;
-    width: 100%;
-    margin: 8em;
-    border: solid 2px var(--button-color);
+    margin: 8em 0;
 }
 .videos__comercial{
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
     height: 0;
+    border: solid 2px var(--tertiary-color);
+    box-shadow: 0px 0px 10px var(--tertiary-color);
 }
 .videos__comercial iframe{
     position: absolute;
@@ -134,11 +136,11 @@ ____________________*/
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--text-colour);
+    color: var(--text-color);
     font-weight: 700;
     background-color: var(--button-color);
-    box-shadow: 0px 0px 10px var(--secondary-colour);
-    border: 1px solid var(--secondary-colour);
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     border-radius: .6em;
 }
 
@@ -158,13 +160,13 @@ ____________________*/
 @media (hover: hover){
     .buttoms a:hover{
         transition: all 0.2s ease-in-out;
-        background-color: var(--secondary-colour);
+        background-color: var(--secondary-color);
         color: var(--background-color);        
     }
 }
 .buttoms a:active{
     transition: all 0.2s ease-in-out;
-    background-color: var(--secondary-colour);
+    background-color: var(--secondary-color);
     color: var(--background-color);        
 }
 
@@ -212,11 +214,6 @@ ____________________*/
         font-size: var(--main-size__tablet);
     }
 }
-
-
-
-
-
 
 /*********************
         PHONE

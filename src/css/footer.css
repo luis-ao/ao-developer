@@ -31,10 +31,11 @@ ____________________*/
     user-select: none;
     font-weight: 500;
     padding-right: 4em;
-    letter-spacing: 1.5px;
-    color: var(--secondary-colour);
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
     font-size: 2.4em;
-    opacity: .8;
+    text-shadow: 0 0 10px var(--secondary-color);
 }
 
 .footer-row1__contact{
@@ -53,10 +54,10 @@ ____________________*/
 .footer-row1__contact-rrss a{
     font-weight: 500;
     text-decoration: none;
-    color: var(--secondary-colour);
+    color: var(--secondary-color);
     font-size: 2.4em;
     padding-left: 2em;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .footer-row1__contact-rrss a{
     text-transform: uppercase;
@@ -69,13 +70,13 @@ ____________________*/
     flex-wrap: wrap;
     font-size: 10px;
     justify-content: center;
-    background-color: var(--primary-colour);
+    background-color: var(--quaternary-color);
 }
 .footer-row2 p {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 2px;
-    color: var(--background-color);
+    color: var(--secondary-color);
     padding: .5em;
     font-size: 1.8em;
     user-select: none;
@@ -89,8 +90,8 @@ ________________________________*/
     .text-hover-2:hover{
         transition: all 0.3s ease-in-out;
         opacity: 1;
-        color: var(--text-colour);
-        text-shadow: 0 0 10px var(--text-colour);
+        color: var(--text-color);
+        text-shadow: 0 0 10px var(--text-color);
     }
 }
 
@@ -99,8 +100,8 @@ ________________________________*/
 .text-hover-2:active{
     transition: all 0.3s ease-in-out;
     opacity: 1;
-    color: var(--text-colour);
-    text-shadow: 0 0 10px var(--text-colour);
+    color: var(--text-color);
+    text-shadow: 0 0 10px var(--text-color);
 }
 
 
