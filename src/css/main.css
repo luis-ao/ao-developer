@@ -251,6 +251,7 @@ ____________________*/
     transition: all 0.3s ease-in-out;
     color: var(--secondary-color);
     text-shadow: 0 0 10px var(--secondary-color);
+    padding-left: 0;
 }
 
 
