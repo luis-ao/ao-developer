@@ -1,5 +1,9 @@
 @import url('main.css');
 
+
+/*¨¨¨¨¨¨¨¨¨¨ 
+     HOLA 
+__________________*/
 .h1-container{
         display: grid;
         grid-template-columns: auto auto auto;
@@ -9,6 +13,7 @@
         color: var(--text-color);
         text-transform: uppercase;
         justify-content: start;
+        user-select: none;
 }
 .hola{
         grid-area: 1 / 1 / 1 / 3 ;
@@ -16,16 +21,17 @@
         font-weight: 900;
         letter-spacing: 4px;
         font-size: 15em;
-        margin-top: 1.2em;
+        margin-top: 1em;
 }
 .musician{
         grid-area: 2 / 1 / 2 / 1;
         padding-right: 1.4em;
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: 3px;
         font-size: 2.6em;
         text-align: end;
         padding-top: 1.3em;
+        color: var(--secondary-color);
 }
 .musician p{
         padding-bottom: .4em;
@@ -48,17 +54,121 @@
         font-size: 15em;
 }
 .luis__front-end{
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: .14em;
         font-size: 2.6em;
         padding-left: .2em;
         padding-top: .4em;
+        color: var(--secondary-color);
 }
 
 
 
-@media (hover: hover){
+/*¨¨¨¨¨¨¨¨¨¨ 
+     ABOUT 
+_________________*/
+.about{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 10px;
+        padding-left:var(--main-padding);
+        padding-right:var(--main-padding);
+        margin-top: 10em;
+}
+.about__video{
+        flex: 68%;
+}
+.about__video img{
+        width: 100%;
+}
+.about__text{
+        flex: 32%;
+        padding-left: 8em;
+}
+.about__text-title{
+        opacity: .9;
+        color: var(--text-color);
+        font-family: var(--secondary-font);
+        font-weight: 900;
+        font-size: 3.6em;
+        letter-spacing: 1.5px;
+}
+.about__text-about{
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 2.2em;
+        letter-spacing: 1px;
+        opacity: .7;
+}
+.about__text-about p{
+        padding: .8em 0;
+}
+.about__text-cv {
+        margin-top: 1.8em;
+}
+.about__text-cv a{
+        font-weight: 800;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 2.4em;
+        letter-spacing: 1px;
+        color: var(--tertiary-color);
+        user-select: none;
+}
 
+/*¨¨¨¨¨¨¨¨¨¨ 
+     CARL SAGAN 
+____________________*/
+.carl{
+        display: grid;
+        font-size: 10px;
+        margin-top: 32em;
+        margin-bottom: 32em;
+        padding:20em 0 18em 0;
+        justify-content: center;
+        align-content: center;
+        color: var(--background-color);
+        background-color: var(--secondary-color);
+}
+.carl__quote{
+        display: grid;
+        text-align: center;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 1px;
+        font-size: 2.8em;
+        line-height: 1.6em;
+}
+.carl__author{
+        display: grid;
+        text-align: center;
+        padding-top: 3.6em;
+        font-weight: 800;
+        letter-spacing: 1px;
+        font-size: 3.2em;
+        text-shadow: 0 0 10px var(--secondary-color),
+}
+
+
+/*______________________
+         
+        HOVER - ACTIVE
+____________________________*/
+@media (hover: hover){
+        .about__text-cv:hover a{
+                transition: all 0.3s ease-in-out;
+                color: var(--primary-color);
+                text-shadow: 0 0 10px var(--primary-color),
+                0 0 10px var(--primary-color);
+        }
+}
+        
+/* ---- */
+.about__text-cv:active a{
+        transition: all 0.3s ease-in-out;
+        color: var(--primary-color);
+        text-shadow: 0 0 10px var(--primary-color),
+        0 0 10px var(--primary-color);
 }
 
 
@@ -77,6 +187,12 @@ ____________________*/
         .h1-container{
                 font-size: var(--main-size__laptop);
         }
+        .about{
+                font-size: var(--main-size__laptop);
+        }
+        .carl{
+                font-size: var(--main-size__laptop);
+        }
 }
 
 
@@ -90,7 +206,12 @@ ____________________*/
         .luis__front-end{
                 letter-spacing: .16em;
         }
-
+        .about{
+                font-size: var(--main-size__tablet);
+        }
+        .carl{
+                font-size: var(--main-size__tablet);
+        }
 }
 
 
@@ -124,6 +245,31 @@ ____________________*/
                 padding-left: 0;
                 padding-top: 0;
         }
-
-
+        .about{
+                font-size: var(--main-size__phone);
+                padding: 0;
+                margin-top: 6em;
+                overflow: hidden;
+        }
+        .about__text-title{
+                font-size: 4.8em;
+        }
+        .about__text-about{
+                font-size: 2.8em;
+        }
+        .about__text-cv a{
+                font-size: 3em;
+        }
+        .about__video{
+                flex: 100%;
+        }
+        .about__text{
+                flex: 100%;
+                padding: 10em 5em 0 5em;
+        }
+        .carl{
+                font-size: var(--main-size__phone);
+                padding-left: 9em;
+                padding-right: 9em ;
+        }
 }

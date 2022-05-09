@@ -152,6 +152,7 @@ ____________________*/
     font-weight: 900;
     letter-spacing: 2px;
     color: var(--background-color);
+    transition: all 0.3s ease-in-out;
 }
 .menu__links-contact {
     margin: 3.6em 0em;
@@ -161,7 +162,7 @@ ____________________*/
     z-index: 1000;
 }
 .menu__links-contact span{
-    display: block;
+    display: none;
     text-decoration: none;
     font-size: 3.5em;
     font-weight: 900;
@@ -196,7 +197,7 @@ ____________________*/
     .text-hover:hover{
         transition: all 0.3s ease-in-out;
         color: var(--secondary-color);
-        text-shadow: 0 0 10px var(--secondary-color);
+        text-shadow: 0 0 10px var(--tertiary-color);
     }
     .header__open:hover{
         transition: all 0.3s ease-in-out;
@@ -212,13 +213,13 @@ ____________________*/
         transition: all 0.3s ease-in-out;
         opacity: 1;
         color: var(--secondary-color);
-        text-shadow: 0 0 10px var(--secondary-color);
+        text-shadow: 0 0 10px var(--tertiary-color);
     }
     .menu__links-nav:hover{
         transition: all 0.3s ease-in-out;
-        padding-left: 20px;
+        padding-left: 18px;
         color: var(--secondary-color);
-        text-shadow: 0 0 10px var(--secondary-color);
+        text-shadow: 0 0 10px var(--tertiary-color);
     }
 }
 
@@ -229,7 +230,7 @@ ____________________*/
 .text-hover:active {
     transition: all 0.3s ease-in-out;
     color: var(--secondary-color);
-    text-shadow: 0 0 10px var(--secondary-color);
+    text-shadow: 0 0 10px var(--tertiary-color);
 }
 .header__open:active{
     transition: all 0.3s ease-in-out;
@@ -245,12 +246,12 @@ ____________________*/
     transition: all 0.3s ease-in-out;
     opacity: 1;
     color: var(--secondary-color);
-    text-shadow: 0 0 10px var(--secondary-color);
+    text-shadow: 0 0 10px var(--tertiary-color);
 }
 .menu__links-nav:active{
     transition: all 0.3s ease-in-out;
     color: var(--secondary-color);
-    text-shadow: 0 0 10px var(--secondary-color);
+    text-shadow: 0 0 10px var(--tertiary-color);
     padding-left: 0;
 }
 
