@@ -74,6 +74,7 @@ _________________*/
         padding-left:var(--main-padding);
         padding-right:var(--main-padding);
         margin-top: 10em;
+        margin-bottom: 30em;
 }
 .about__video{
         flex: 68%;
@@ -110,9 +111,9 @@ _________________*/
         font-weight: 800;
         text-transform: uppercase;
         text-decoration: none;
-        font-size: 2.4em;
+        font-size: 2.6em;
         letter-spacing: 1px;
-        color: var(--tertiary-color);
+        color: var(--secondary-color);
         user-select: none;
 }
 
@@ -123,21 +124,20 @@ ____________________*/
         display: grid;
         font-size: 10px;
         margin-top: 32em;
-        margin-bottom: 32em;
+        margin-bottom: 30em;
         padding:20em 0 18em 0;
         justify-content: center;
         align-content: center;
-        color: var(--background-color);
-        background-color: var(--secondary-color);
 }
 .carl__quote{
         display: grid;
         text-align: center;
-        font-weight: 700;
+        font-weight: 600;
         font-style: italic;
         letter-spacing: 1px;
-        font-size: 2.8em;
+        font-size: 2.6em;
         line-height: 1.6em;
+        color: var(--secondary-color);
 }
 .carl__author{
         display: grid;
@@ -145,8 +145,9 @@ ____________________*/
         padding-top: 3.6em;
         font-weight: 800;
         letter-spacing: 1px;
-        font-size: 3.2em;
-        text-shadow: 0 0 10px var(--secondary-color),
+        font-size: 3em;
+        color: var(--secondary-color);
+
 }
 
 
@@ -158,8 +159,7 @@ ____________________________*/
         .about__text-cv:hover a{
                 transition: all 0.3s ease-in-out;
                 color: var(--primary-color);
-                text-shadow: 0 0 10px var(--primary-color),
-                0 0 10px var(--primary-color);
+
         }
 }
         
@@ -167,8 +167,6 @@ ____________________________*/
 .about__text-cv:active a{
         transition: all 0.3s ease-in-out;
         color: var(--primary-color);
-        text-shadow: 0 0 10px var(--primary-color),
-        0 0 10px var(--primary-color);
 }
 
 
@@ -248,11 +246,11 @@ ____________________*/
         .about{
                 font-size: var(--main-size__phone);
                 padding: 0;
-                margin-top: 6em;
                 overflow: hidden;
         }
         .about__text-title{
                 font-size: 4.8em;
+                margin-top: 3.4em;
         }
         .about__text-about{
                 font-size: 2.8em;
