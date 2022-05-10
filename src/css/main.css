@@ -253,6 +253,7 @@ ____________________*/
     color: var(--secondary-color);
     text-shadow: 0 0 10px var(--tertiary-color);
     padding-left: 0;
+    padding-left: 18px;
 }
 
 

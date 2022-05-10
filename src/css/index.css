@@ -78,6 +78,7 @@ _________________*/
 }
 .about__video{
         flex: 68%;
+        overflow: hidden;
 }
 .about__video img{
         width: 100%;
@@ -85,6 +86,7 @@ _________________*/
 .about__text{
         flex: 32%;
         padding-left: 8em;
+        overflow: hidden;
 }
 .about__text-title{
         opacity: .9;
