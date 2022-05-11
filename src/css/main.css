@@ -54,7 +54,6 @@ ____________________*/
     z-index: 3000;
 }
 #loader img{
-    image-rendering: auto;
     width: 20%;
     position: absolute;
     top: 50%;
@@ -335,5 +334,19 @@ ____________________*/
     }
     .logo{
         font-size: var(--main-size__phone);
+    }
+
+
+    .menu__links-nav:hover{
+        transition: all 0.3s ease-in-out;
+        padding-left: 0;
+        color: var(--secondary-color);
+        text-shadow: 0 0 10px var(--tertiary-color);
+    }
+    .menu__links-nav:active{
+        transition: all 0.3s ease-in-out;
+        padding-left: 0;
+        color: var(--secondary-color);
+        text-shadow: 0 0 10px var(--tertiary-color);
     }
 }

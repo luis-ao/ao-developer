@@ -14,6 +14,8 @@ __________________*/
         text-transform: uppercase;
         justify-content: start;
         user-select: none;
+        overflow: hidden;
+        margin-top: 16em;
 }
 .hola{
         grid-area: 1 / 1 / 1 / 3 ;
@@ -21,7 +23,6 @@ __________________*/
         font-weight: 900;
         letter-spacing: 4px;
         font-size: 15em;
-        margin-top: 1em;
 }
 .musician{
         grid-area: 2 / 1 / 2 / 1;
@@ -73,14 +74,18 @@ _________________*/
         font-size: 10px;
         padding-left:var(--main-padding);
         padding-right:var(--main-padding);
-        margin-top: 10em;
+        margin-top: 16em;
         margin-bottom: 30em;
+        overflow: hidden;
 }
 .about__video{
         flex: 68%;
         overflow: hidden;
 }
-.about__video img{
+/* .about__video img{
+        width: 100%;
+} */
+.about__video video{
         width: 100%;
 }
 .about__text{
@@ -227,7 +232,6 @@ ____________________*/
                 padding-left: 10em;
                 padding-right: 0;
                 font-size: 2.6px;
-                overflow: hidden;
         }
         .hola,
         .soy{
@@ -248,11 +252,10 @@ ____________________*/
         .about{
                 font-size: var(--main-size__phone);
                 padding: 0;
-                overflow: hidden;
         }
         .about__text-title{
                 font-size: 4.8em;
-                margin-top: 3.4em;
+                margin-top: 2em;
         }
         .about__text-about{
                 font-size: 2.8em;
