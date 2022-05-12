@@ -39,18 +39,18 @@
 
       <div class="logo">
         <a href="./index.html">
-        <img
-          href="./index.html"
-          class="logo__img"
-          src="./src/resources/logo-a.png"
-          alt="Logo AO Developer"
-        />
-        <img
-          class="logo__img-2"
-          src="./src/resources/logo-o.png"
-          alt="Logo AO Developer"
-        />
-       </a>
+          <img
+            href="./index.html"
+            class="logo__img"
+            src="./src/resources/logo-a.png"
+            alt="Logo AO Developer"
+          />
+          <img
+            class="logo__img-2"
+            src="./src/resources/logo-o.png"
+            alt="Logo AO Developer"
+          />
+        </a>
       </div>
 
       <!--////////            
@@ -74,7 +74,9 @@
           </div>
 
           <br />
-          <div><a href="./contacto.html" class="menu__links-nav">Contacto</a></div>
+          <div>
+            <a href="./contacto.html" class="menu__links-nav">Contacto</a>
+          </div>
         </div>
 
         <div class="menu__links right menu__links-GSAP-2">
@@ -125,17 +127,53 @@
     <!--////////            
                BODY
   _______________________-->
+    <section class="contact">
+      <div class="contact__form">
+        <form
+          class="form"
+          action="https://formspree.io/f/xwkyaorp"
+          method="POST"
+        >
+          <div class="form__container">
+            <input
+              type="text"
+              class="form__input"
+              name="name"
+              placeholder="Nombre:"
+            />
+            <input
+              type="text"
+              class="form__input"
+              name="email"
+              placeholder="Email:"
+            />
+            <textarea
+              class="form__input form__input-message"
+              name="message"
+              placeholder="Mensaje:"
+            ></textarea>
 
+            <input type="submit" value="Enviar" class="form__cta" />
+          </div>
+        </form>
+      </div>
 
-    <!--////////            
-               NAV PROJECTS
-  _______________________-->
+      <div class="contact__textContact">
+        <div class="textContact__title">Empecemos un proyecto juntos</div>
+        <div class="textContact__text">
+          Puedes enviarme un mensaje para saludar, cotizar un proyecto o
+          agendar una video llamada.
+          Tambien puedes <a href="./src/resources/cv-ao-dev.pdf" target="_blank">Descargar mi CV aquí</a>
+        </div>
+      </div>
+    </section>
+
 
     <!--////////            
                FOOTER
   _______________________-->
     <footer>
-      <!-- <div class="footer-row1">
+      <div class="footer-row1">
         <div class="footer-row1__copy">
           <p class="wow animate__animated animate__fadeIn animate__slower">
             Copyright 2022 © AO Luis Roberto
@@ -190,10 +228,11 @@
           </div>
         </div>
       </div>
- -->
+
       <div class="footer-row2">
         <p>¡Gracias por tu Atención!</p>
       </div>
+      
     </footer>
 
     <!--//////////////// 

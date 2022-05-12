@@ -82,12 +82,12 @@ _________________*/
         flex: 68%;
         overflow: hidden;
 }
-/* .about__video img{
-        width: 100%;
-} */
-.about__video video{
+.about__video img{
         width: 100%;
 }
+.about__video video{
+        width: 100%;
+} 
 .about__text{
         flex: 32%;
         padding-left: 8em;

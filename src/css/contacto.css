@@ -1,8 +1,114 @@
 @import url('main.css');
 
+.contact{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        font-size: 10px;
+        padding-left: var(--main-padding);
+        padding-right: var(--main-padding);
+        padding-top: 12em;
+}
+.contact__form{
+        flex: 46%;
+        order: 1;
+}
+.form__container{
+        font-size: 10px;
+        width: 100%;
+        display: grid;
+        gap: 2em;
+        grid-auto-columns: 100%;
+}
+.form__input{
+        font-size: 3em;
+        padding: .8em;
+        border-radius: .2em;
+        outline: none;
+        border: none;
+        border-bottom: 2px groove var(--primary-color);
+        box-shadow: -.2em .2em 4px var(--primary-color);
+        background-color: var(--background-color);
+        color: var(--secondary-color);
+        font-weight: 600;
+        letter-spacing: .5px;
+}
+.form__input-message{
+        resize: none;
+        padding: .6em .8em 6em .8em;
+}
+.form__cta{
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 3.6em;
+        letter-spacing: 1.5px;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding: 1.1em 1em;
+        border-radius: .2em;
+        background-color: var(--secondary-color);
+        color: var(--quaternary-color);
+        border: 1px solid var(--secondary-color);
+        box-shadow: -.2em .2em 4px var(--quaternary-color);
+}
+.contact__textContact{
+        flex: 54%;
+        order: 2;
+        padding-left: 14em;
+        font-size: 10px;
+}
+
+.textContact__title{
+        color: var(--secondary-color);
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        font-size: 9em;
+        text-transform: capitalize;
+}
+.textContact__text{
+        padding-top: 1.6em;
+        color: var(--text-color);
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 2.8em;
+        line-height: 1.3em;
+}
+.textContact__text a{
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        font-size: 1em;
+}
+
+
+
+
+
 
 @media (hover: hover){
-
+        .form__cta:hover{
+                transition: all 0.3s ease-in-out;
+                background-color: var(--primary-color);
+                color: var(--background-color);
+                border: 1px solid var(--primary-color);
+        }
+        .textContact__text a:hover{
+                transition: all 0.3s ease-in-out;
+                text-decoration: none;
+                color: var(--quaternary-color);
+        }
+}
+.form__cta:active{
+        transition: all 0.3s ease-in-out;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        border: 1px solid var(--primary-color);
+}
+.textContact__text a:active{
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+        color: var(--quaternary-color);
 }
 
 
@@ -18,7 +124,15 @@
         LAPTOP
 ____________________*/
 @media screen and (max-width: 1540px){
-
+        .contact{
+                font-size: var(--main-size__laptop);
+        }
+        .form__container{
+                font-size: var(--main-size__laptop);
+        }
+        .contact__textContact{
+                font-size: var(--main-size__laptop);
+        }
 }
 
 
@@ -26,6 +140,15 @@ ____________________*/
         TABLET
 ____________________*/
 @media screen and (max-width: 966px){
+        .contact{
+                font-size: var(--main-size__tablet);
+        }
+        .form__container{
+                font-size: var(--main-size__tablet);
+        }
+        .contact__textContact{
+                font-size: var(--main-size__tablet);
+        }
 
 }
 
@@ -38,5 +161,26 @@ ____________________*/
         PHONE
 ____________________*/
 @media screen and (max-width: 500px) {
-
+        .contact{
+                font-size: var(--main-size__phone);
+                padding-left: var(--main-padding_small);
+                padding-right: var(--main-padding_small);
+        }
+        .contact__form{
+                flex: 100%;
+                order: 2;
+        }
+        .form__container{
+                font-size: var(--main-size__phone);
+                padding: 0;
+        }
+        .contact__textContact{
+                flex: 100%;
+                order: 1;
+                font-size: var(--main-size__phone);
+                padding: 0 0 12em 0;
+        }
+        .textContact__title{
+                font-size: 8em;
+        }
 }
