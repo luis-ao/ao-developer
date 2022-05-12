@@ -51,25 +51,32 @@
         border: 1px solid var(--secondary-color);
         box-shadow: -.2em .2em 4px var(--quaternary-color);
 }
+
 .contact__textContact{
         flex: 54%;
         order: 2;
-        padding-left: 14em;
+        padding-left: 16em;
         font-size: 10px;
+        overflow: hidden;
 }
-
-.textContact__title{
+.textContact__contact{
         color: var(--secondary-color);
+        font-family: var(--secondary-font);
         font-weight: 900;
-        letter-spacing: 1.5px;
-        font-size: 9em;
+        font-size: 10em;
+}
+.textContact__title{
+        color: var(--text-color);
+        font-weight: 800;
+        letter-spacing: 1px;
+        font-size: 3.8em;
         text-transform: capitalize;
+        padding-top: 1.6em;
 }
 .textContact__text{
-        padding-top: 1.6em;
+        padding-top: 1em;
         color: var(--text-color);
         font-weight: 600;
-        letter-spacing: 1px;
         font-size: 2.8em;
         line-height: 1.3em;
 }
@@ -77,9 +84,9 @@
         text-decoration: none;
         color: var(--primary-color);
         font-weight: 800;
-        letter-spacing: 1.5px;
         font-size: 1em;
 }
+
 
 
 
@@ -180,7 +187,7 @@ ____________________*/
                 font-size: var(--main-size__phone);
                 padding: 0 0 12em 0;
         }
-        .textContact__title{
-                font-size: 8em;
+        .textContact__contact{
+                font-size: 9em;
         }
 }

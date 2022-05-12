@@ -119,8 +119,7 @@ _________________*/
         text-transform: uppercase;
         text-decoration: none;
         font-size: 2.6em;
-        letter-spacing: 1px;
-        color: var(--secondary-color);
+        color: var(--primary-color);
         user-select: none;
 }
 
@@ -165,7 +164,7 @@ ____________________________*/
 @media (hover: hover){
         .about__text-cv:hover a{
                 transition: all 0.3s ease-in-out;
-                color: var(--primary-color);
+                color: var(--quaternary-color);
 
         }
 }
@@ -173,7 +172,7 @@ ____________________________*/
 /* ---- */
 .about__text-cv:active a{
         transition: all 0.3s ease-in-out;
-        color: var(--primary-color);
+        color: var(--quaternary-color);
 }
 
 
