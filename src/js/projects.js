@@ -3,14 +3,14 @@ const tl = gsap.timeline();
 tl.to(".titleGSAP", {
   opacity: 1,
 });
-tl.from(
+tl.to(
   ".line",
   {
     duration: 1,
     stagger: {
       amount: 0.5,
     },
-    width: "0%",
+    width: "100%",
   },
   "-=.2"
 );

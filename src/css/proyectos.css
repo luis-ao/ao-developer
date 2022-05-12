@@ -16,7 +16,6 @@
 }
 .titleGSAP{
         opacity: 0;
-        
 }
 
 
@@ -41,6 +40,13 @@
 }
       
 .line {
+        width: 0%;
+        height: 1.5px;
+        transform-origin: left;
+        overflow: hidden;
+        background-color: var(--secondary-color);
+}
+.line-2 {
         width: 100%;
         height: 1.5px;
         transform-origin: left;

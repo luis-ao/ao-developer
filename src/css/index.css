@@ -15,7 +15,7 @@ __________________*/
         justify-content: start;
         user-select: none;
         overflow: hidden;
-        margin-top: 16em;
+        margin-top: 14em;
 }
 .hola{
         grid-area: 1 / 1 / 1 / 3 ;
@@ -74,7 +74,7 @@ _________________*/
         font-size: 10px;
         padding-left:var(--main-padding);
         padding-right:var(--main-padding);
-        margin-top: 16em;
+        margin-top: 12em;
         margin-bottom: 30em;
         overflow: hidden;
 }
