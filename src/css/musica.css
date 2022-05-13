@@ -58,6 +58,14 @@
     letter-spacing: 1px;
     opacity: .8;
 }
+.music__text-description a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 1px;
+    opacity: 1;
+    color: var(--primary-color);
+}
 
 /*********************
     BUTTOMS
@@ -105,11 +113,19 @@ ____________________*/
         background-color: var(--secondary-color);
         color: var(--background-color);        
     }
+    .music__text-description a:hover{
+        transition: all 0.3s ease-in-out;
+        color: var(--quaternary-color);
+    }
 }
 .buttoms a:active{
     transition: all 0.2s ease-in-out;
     background-color: var(--secondary-color);
     color: var(--background-color);        
+}
+.music__text-description a:active{
+    transition: all 0.3s ease-in-out;
+    color: var(--quaternary-color);
 }
 
 
