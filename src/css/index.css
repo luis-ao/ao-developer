@@ -104,9 +104,10 @@ _________________*/
 .about__text-about{
         color: var(--text-color);
         font-weight: 500;
-        font-size: 2.2em;
+        font-size: 2.5em;
         letter-spacing: 1px;
         opacity: .7;
+        text-align: justify;
 }
 .about__text-about p{
         padding: .8em 0;

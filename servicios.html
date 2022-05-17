@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,11 +8,6 @@
     <!--////////            
                STYLE
   _______________________-->
-    <link rel="stylesheet" href="./src/css/normalize.css" />
-    <link rel="stylesheet" href="./src/css/main.css" />
-    <link rel="stylesheet" href="./src/css/servicio.css" />
-    <link rel="stylesheet" href="./src/css/footer.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -24,14 +19,23 @@
       rel="stylesheet"
     />
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="./src/css/normalize.css" />
+    <link rel="stylesheet" href="./src/css/servicios.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
+
     <link rel="icon" href="./src/resources/favicon-ao.webp" />
     <title>Servicios</title>
   </head>
-
   <body>
-    <!--////////            
-               HEADER
-  _______________________-->
     <header>
       <div class="header__open menu-open-gsap">
         <p>MENÚ</p>
@@ -39,18 +43,18 @@
 
       <div class="logo">
         <a href="./index.html">
-        <img
-          href="./index.html"
-          class="logo__img"
-          src="./src/resources/logo-a.png"
-          alt="Logo AO Developer"
-        />
-        <img
-          class="logo__img-2"
-          src="./src/resources/logo-o.png"
-          alt="Logo AO Developer"
-        />
-       </a>
+          <img
+            href="./index.html"
+            class="logo__img"
+            src="./src/resources/logo-a.png"
+            alt="Logo AO Developer"
+          />
+          <img
+            class="logo__img-2"
+            src="./src/resources/logo-o.png"
+            alt="Logo AO Developer"
+          />
+        </a>
       </div>
 
       <!--////////            
@@ -74,7 +78,9 @@
           </div>
 
           <br />
-          <div><a href="./contacto.html" class="menu__links-nav">Contacto</a></div>
+          <div>
+            <a href="./contacto.html" class="menu__links-nav">Contacto</a>
+          </div>
         </div>
 
         <div class="menu__links right menu__links-GSAP-2">
@@ -122,15 +128,75 @@
       </div>
     </header>
 
-    <!--////////            
-               BODY
-  _______________________-->
+    <section class="web-dev">
+      <div class="web-dev__anim">
+        <div id="animWeb" class="web-dev__anim-lottie"></div>
+      </div>
 
+      <div class="web-dev__text">
+        <div class="web-dev__text-title">DISEÑO WEB</div>
 
-    <!--////////            
-               NAV PROJECTS
-  _______________________-->
+        <div class="web-dev__text-description">
+          Diseñemos juntos el sitio web ideal para tu producto o servicio.
+          Cotiza tu proyecto ahora, sin costo.
+        </div>
 
+        <div>
+          <a
+            href="https://api.whatsapp.com/send?phone=+5215611859713&text=Hola%20Luis%20quiero%20cotizar%20un%20proyecto"
+            target="_blank"
+            class="web-dev__text-botton"
+            >Cotizar proyecto</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="carts-container">
+      <div>
+        <div class="cart-web">
+          <ion-icon class="cart-web__svg" name="cloudy"></ion-icon>
+          <p>Registro de dominio y hospedaje por un año</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="cart-web">
+          <ion-icon class="cart-web__svg" name="lock"></ion-icon>
+          <p>Sitio web con conexión cifrada y segura</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="cart-web">
+          <ion-icon class="cart-web__svg" name="mail"></ion-icon>
+          <p>Correos personalizados con el nombre de tu dominio</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="cart-web">
+          <ion-icon class="cart-web__svg" name="color-palette"></ion-icon>
+          <p>Un diseño que responda al objetivo del proyecto</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="cart-web">
+          <ion-icon class="cart-web__svg" name="tablet-portrait"></ion-icon>
+          <p>Diseño adaptado para distintos dispositivos</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="cart-web">
+          <ion-icon class="cart-web__svg" name="construct"></ion-icon>
+          <p>Dos meses gratis de mantenimiento en tu sitio web</p>
+        </div>
+      </div>
+    </section>
+
+    
     <!--////////            
                FOOTER
   _______________________-->
@@ -206,6 +272,10 @@
     <!--////////            
                SCRIPT 
   _______________________-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.3/lottie.min.js"
+      type="text/javascript"
+    ></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
@@ -217,9 +287,10 @@
     </script>
 
     <!--////////            
-               SCRIPT
-  _______________________-->
+             SCRIPT
+_______________________-->
 
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/lotties.js"></script>
   </body>
 </html>

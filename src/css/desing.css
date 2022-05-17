@@ -66,7 +66,7 @@ ________________________________*/
     color: var(--primary-color);
 }
 .infoProject__description-text{
-    font-weight: 400;
+    font-weight: 500;
     opacity: .7;
     letter-spacing: 1px;
     font-size: 2.8em;
@@ -179,15 +179,13 @@ ____________________*/
     align-items: center;
     width: 10em;
     height: 3.6em;
-
     font-size: 2.6em;
-
     user-select: none;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
     color: var(--text-color);
-    font-weight: 700;
+    font-weight: 800;
     background-color: var(--button-color);
     box-shadow: 0px 0px 10px var(--secondary-color);
     border: 2px solid var(--secondary-color);
