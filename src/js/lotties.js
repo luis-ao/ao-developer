@@ -2,7 +2,7 @@ const animWeb = document.getElementById('animWeb');
 
 const animationWeb = bodymovin.loadAnimation({
     container: animWeb,
-    path: '../resources/web-dev.json',
+    path: '../../src/web-dev.json',
     renderer: 'svg', 
     loop: true, 
     autoplay: true, 
