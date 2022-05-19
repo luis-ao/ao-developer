@@ -19,6 +19,7 @@
     --tertiary-color: #4b4363;
     --quaternary-color: #502f5a;
     --text-color:  #F2F2F2;
+    --text-color-2:  #f2f2f2cf;
     --button-color: #272727;
 
     
@@ -72,7 +73,7 @@ ____________________*/
     position: fixed;
     font-size: 10px;
     right: 4em;
-    padding: 5.5em 1.6em 1.6em 2.4em;
+    padding: 4.8em 1.6em 1.6em 2.4em;
     border-radius: 0 0 1.4em 1.4em;
     border-bottom: solid  2px   var(--secondary-color);
     border-left: solid  2px   var(--secondary-color);
@@ -91,11 +92,11 @@ ____________________*/
 .logo{
     display: flex;
     font-size: 10px;
-    padding-top: 4em;
+    padding-top: 5em;
     padding-left: 5em;
 }
 .logo img{
-    width: 9.6em;
+    width: 10em;
 }
 /*********************
         MENU

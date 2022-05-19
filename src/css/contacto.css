@@ -7,11 +7,56 @@
         font-size: 10px;
         padding-left: var(--main-padding);
         padding-right: var(--main-padding);
-        padding-top: 12em;
 }
+.contact__textContact{
+        flex: 54%;
+        order: 2;
+        font-size: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 14em;
+}
+.contact__textContact-lottie{
+        margin-top: -2em;
+        width: 80em;
+}
+.textContact__text{
+        margin-top: -1.5em;
+        padding: 0em 1em;
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 3em;
+        text-align: center;
+        letter-spacing: .5px;
+        line-height: 1.35em;
+}
+.textContact__text span{
+        color: var(--secondary-color);
+        letter-spacing: 1px;
+        font-weight: 700;
+}
+.textContact__text a{
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 1em;
+}
+
+
+/*____________________________
+
+              FORMULARIO 
+
+__________________________________*/
 .contact__form{
         flex: 46%;
         order: 1;
+        padding-top: 10em;
+}
+.contact__form-phone{
+        display: none;
 }
 .form__container{
         font-size: 10px;
@@ -20,26 +65,34 @@
         gap: 2em;
         grid-auto-columns: 100%;
 }
+.form__container-title{
+        text-transform: uppercase;
+        color: var(--text-color-2);
+        font-family: var(--secondary-font);
+        font-weight: 900;
+        font-size: 10em;
+        margin-bottom: .4em;
+}
 .form__input{
-        font-size: 3em;
+        font-size: 2.8em;
         padding: .8em;
         border-radius: .2em;
         outline: none;
         border: none;
-        border-bottom: 2px groove var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
         box-shadow: -.2em .2em 4px var(--primary-color);
-        background-color: var(--background-color);
-        color: var(--secondary-color);
+        background-color: var(--text-color-2);
+        color: var(--background-color);
         font-weight: 600;
         letter-spacing: .5px;
 }
 .form__input-message{
         resize: none;
-        padding: .6em .8em 6em .8em;
+        padding: .6em .8em 8em .8em;
 }
-.form__cta{
+.form__btn{
         cursor: pointer;
-        font-size: 3.6em;
+        font-size: 3.2em;
         letter-spacing: 1.5px;
         font-weight: 800;
         text-transform: uppercase;
@@ -51,41 +104,6 @@
         box-shadow: -.2em .2em 4px var(--quaternary-color);
 }
 
-.contact__textContact{
-        flex: 54%;
-        order: 2;
-        padding-left: 16em;
-        font-size: 10px;
-        overflow: hidden;
-}
-.textContact__contact{
-        color: var(--text-color);
-        font-family: var(--secondary-font);
-        font-weight: 900;
-        font-size: 10em;
-}
-.textContact__title{
-        color: var(--secondary-color);
-        font-weight: 800;
-        letter-spacing: 1px;
-        font-size: 3.8em;
-        text-transform: capitalize;
-        padding-top: 1.6em;
-}
-.textContact__text{
-        padding-top: 1em;
-        color: var(--text-color);
-        font-weight: 600;
-        font-size: 2.6em;
-        line-height: 1.3em;
-        text-align: justify;
-}
-.textContact__text a{
-        text-decoration: none;
-        color: var(--primary-color);
-        font-weight: 800;
-        font-size: 1em;
-}
 
 
 
@@ -94,30 +112,38 @@
 
 
 @media (hover: hover){
-        .form__cta:hover{
+        .form__btn:hover{
                 transition: all 0.3s ease-in-out;
-                background-color: var(--primary-color);
-                color: var(--background-color);
-                border: 1px solid var(--primary-color);
+                background-color: var(--quaternary-color);
+                color: var(--secondary-color);
+                border: 1px solid var(--quaternary-color);
+                box-shadow: -.2em .2em 4px var(--secondary-color);
+
         }
         .textContact__text a:hover{
                 transition: all 0.3s ease-in-out;
-                text-decoration: none;
+                color: var(--quaternary-color);
+        }
+        .contact__form-phone-subtitle a:hover{
+                transition: all 0.3s ease-in-out;
                 color: var(--quaternary-color);
         }
 }
-.form__cta:active{
+.form__btn:active{
         transition: all 0.3s ease-in-out;
-        background-color: var(--primary-color);
-        color: var(--background-color);
-        border: 1px solid var(--primary-color);
+        background-color: var(--quaternary-color);
+        color: var(--secondary-color);
+        border: 1px solid var(--quaternary-color);
+        box-shadow: -.2em .2em 4px var(--secondary-color);
 }
 .textContact__text a:active{
         transition: all 0.3s ease-in-out;
-        text-decoration: none;
         color: var(--quaternary-color);
 }
-
+.contact__form-phone-subtitle a:active{
+        transition: all 0.3s ease-in-out;
+        color: var(--quaternary-color);
+}
 
 
 
@@ -130,7 +156,7 @@
 /*********************
         LAPTOP
 ____________________*/
-@media screen and (max-width: 1540px){
+@media screen and (max-width: 1730px){
         .contact{
                 font-size: var(--main-size__laptop);
         }
@@ -173,6 +199,55 @@ ____________________*/
                 padding-left: var(--main-padding_small);
                 padding-right: var(--main-padding_small);
         }
+        .contact__textContact{
+                flex: 100%;
+                order: 1;
+                font-size: var(--main-size__phone);
+                padding: 0;
+                margin-bottom: -10em;
+        }
+        .form__container-title{
+                display: none;
+        }
+        .textContact__text{
+                display: none;
+        }
+        .contact__form-phone{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                font-size: var(--main-size__phone);
+                overflow: hidden;
+        }
+        .contact__form-phone-title{
+                flex: 100%;
+                text-transform: uppercase;
+                color: var(--secondary-color);
+                font-family: var(--secondary-font);
+                font-weight: 900;
+                font-size: 6.4em;
+                letter-spacing: 1px;
+                overflow: hidden;
+        }
+        .contact__form-phone-subtitle{
+                flex: 100%;
+                color: var(--text-color);
+                font-weight: 500;
+                font-size: 2.8em;
+                text-align: justify;
+                letter-spacing: 1px;
+                margin-top: 1.2em;
+                margin-bottom: 2.5em;
+                line-height: 1.4em;
+                padding-right: 2em;
+
+        }
+        .contact__form-phone-subtitle a{
+                text-decoration: none;
+                color: var(--primary-color);
+                font-weight: 700;
+                font-size: 1em;
+        }
         .contact__form{
                 flex: 100%;
                 order: 2;
@@ -180,14 +255,5 @@ ____________________*/
         .form__container{
                 font-size: var(--main-size__phone);
                 padding: 0;
-        }
-        .contact__textContact{
-                flex: 100%;
-                order: 1;
-                font-size: var(--main-size__phone);
-                padding: 0 0 12em 0;
-        }
-        .textContact__contact{
-                font-size: 9em;
         }
 }

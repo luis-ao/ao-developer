@@ -5,14 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--////////            
-               STYLE
-  _______________________-->
-    <link rel="stylesheet" href="./src/css/normalize.css" />
-    <link rel="stylesheet" href="./src/css/main.css" />
-    <link rel="stylesheet" href="./src/css/contacto.css" />
-    <link rel="stylesheet" href="./src/css/footer.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -23,6 +15,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
+    <!--////////            
+               STYLE
+  _______________________-->
+    <link rel="stylesheet" href="./src/css/normalize.css" />
+    <link rel="stylesheet" href="./src/css/contacto.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
 
     <link rel="icon" href="./src/resources/favicon-ao.webp" />
     <title>Contacto</title>
@@ -128,7 +127,35 @@
                BODY
   _______________________-->
     <section class="contact">
-      <div class="contact__form wow animate__animated animate__fadeIn animate__slow">
+
+      <div
+        class="contact__form wow animate__animated animate__fadeIn animate__slow"
+      >
+        <div class="form__container-title">!Escríbeme!</div>
+
+        <!--__________
+  
+            TEXTO PHONE
+         _________________-->
+        <div
+          class="contact__form-phone"
+        >
+          <div class="contact__form-phone-title">!Escríbeme!</div>
+
+          <div class="contact__form-phone-subtitle">
+            Empecemos un proyecto juntos. Puedes enviarme un
+            mensaje para cotizar un proyecto o agendar una video llamada,
+            También puedes
+            <a href="./src/resources/cv-ao-dev.pdf" target="_blank"
+              >Descargar mi CV aquí</a
+            >
+          </div>
+        </div>
+        
+      <!--__________
+  
+            FORMULARIO
+       _________________-->
         <form
           class="form"
           action="https://formspree.io/f/xwkyaorp"
@@ -153,22 +180,29 @@
               placeholder="Mensaje:"
             ></textarea>
 
-            <input type="submit" value="Enviar" class="form__cta" />
+            <input type="submit" value="Enviar" class="form__btn" />
           </div>
         </form>
       </div>
 
-      <div class="contact__textContact wow animate__animated animate__fadeInUp">
-        <div class="textContact__contact">CONTACTO</div>
-        <div class="textContact__title">¡Empecemos un proyecto juntos!</div>
+      <!--__________
+  
+             TEXTO 
+      _________________-->
+      <div
+        class="contact__textContact wow animate__animated animate__fadeIn animate__slow"
+      >
+        <div id="animContact" class="contact__textContact-lottie"></div>
+
         <div class="textContact__text">
-          Puedes enviarme un mensaje para saludar, cotizar un proyecto o
-          agendar una video llamada.
-          También puedes <a href="./src/resources/cv-ao-dev.pdf" target="_blank">Descargar mi CV aquí</a>
+          <span>Empecemos un proyecto juntos.</span> Puedes enviarme un mensaje
+          para cotizar un proyecto o agendar una video llamada, También puedes
+          <a href="./src/resources/cv-ao-dev.pdf" target="_blank"
+            >Descargar mi CV aquí</a
+          >
         </div>
       </div>
     </section>
-
 
     <!--////////            
                FOOTER
@@ -176,22 +210,20 @@
     <footer>
       <div class="footer-row1">
         <div class="footer-row1__copy">
-          <p class="wow animate__animated animate__fadeIn animate__slower">
+          <p class="wow animate__animated animate__fadeIn">
             Copyright 2022 © AO Luis Roberto
           </p>
         </div>
 
         <div class="footer-row1__logo">
           <img
-            class="wow animate__animated animate__fadeIn animate__slow"
+            class="wow animate__animated animate__fadeIn"
             src="./src/resources/footer-ao.gif"
             alt="Logo de AO Developer"
           />
         </div>
 
-        <div
-          class="footer-row1__contact wow animate__animated animate__fadeIn animate__slower"
-        >
+        <div class="footer-row1__contact wow animate__animated animate__fadeIn">
           <div class="footer-row1__contact-phone">
             <a
               class="text-hover-2"
@@ -233,7 +265,6 @@
       <div class="footer-row2">
         <p>¡Gracias por tu Atención!</p>
       </div>
-      
     </footer>
 
     <!--//////////////// 
@@ -246,6 +277,10 @@
     <!--////////            
                SCRIPT 
   _______________________-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.3/lottie.min.js"
+      type="text/javascript"
+    ></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
@@ -261,5 +296,6 @@
   _______________________-->
 
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/contacto.js"></script>
   </body>
 </html>
