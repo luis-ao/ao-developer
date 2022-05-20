@@ -12,6 +12,7 @@
 
 .infoProject__title{
     order: 1;
+    color: var(--text-color);
     grid-column: 1 / span 2;
     font-family: var(--secondary-font);
     text-transform: uppercase;
@@ -64,16 +65,16 @@
     color: var(--primary-color);
 }
 .infoProject__description-text{
+    line-height: 1.4em;
     font-weight: 500;
-    opacity: .7;
     letter-spacing: 1px;
     font-size: 2.8em;
-    margin-bottom: 2em;
+    padding-bottom: 4em;
+    opacity: .8;
 }
 .infoProject__description-text a{
     text-decoration: none;
     font-weight: 700;
-    opacity: 1;
     font-size: 1em;
     color: var(--primary-color);
 }
@@ -88,7 +89,7 @@ ____________________*/
     padding-right: var(--main-padding);
     display: flex;
     flex-wrap: wrap;
-    margin-top: 6em;
+    margin-top: 10em;
     margin-bottom: 14em;
 }
 .videos__andromeda-pc{
@@ -113,41 +114,6 @@ ____________________*/
 
 
 
-/*********************
-    BUTTOMS
-____________________*/
-.buttoms{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left:var(--main-padding);
-    padding-right:var(--main-padding);
-    padding-top: 6em;
-    justify-content: space-between;
-    font-size: 10px;
-    
-}
-.buttoms a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10em;
-    height: 3.6em;
-
-    font-size: 2.6em;
-
-    user-select: none;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--text-color);
-    font-weight: 800;
-    background-color: var(--button-color);
-    box-shadow: 0px 0px 10px var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-    border-radius: .6em;
-}
-
-
 
 
 
@@ -161,21 +127,12 @@ ____________________*/
 
 
 @media (hover: hover){
-    .buttoms a:hover{
-        transition: all 0.2s ease-in-out;
-        background-color: var(--secondary-color);
-        color: var(--background-color);        
-    }
     .infoProject__description-text a:hover{
         transition: all 0.3s ease-in-out;
         color: var(--quaternary-color);
     }
 }
-.buttoms a:active{
-    transition: all 0.2s ease-in-out;
-    background-color: var(--secondary-color);
-    color: var(--background-color);        
-}
+
 .infoProject__description-text a:active{
     transition: all 0.3s ease-in-out;
     color: var(--quaternary-color);
@@ -193,9 +150,7 @@ ____________________*/
         LAPTOP
 ____________________*/
 @media screen and (max-width: 1540px){
-    .buttoms{
-        font-size: var(--main-size__laptop);
-    }
+
     .infoProject{
         font-size: var(--main-size__laptop);
     }
@@ -212,9 +167,7 @@ ____________________*/
         TABLET
 ____________________*/
 @media screen and (max-width: 966px){
-    .buttoms{
-        font-size: var(--main-size__tablet);
-    }
+
     .infoProject{
         font-size: var(--main-size__tablet);
     }
@@ -261,10 +214,8 @@ ____________________*/
         grid-column: 1 / span 2;
         order: 2;
     }
-    .buttoms{
-        font-size: var(--main-size__phone);
-        padding-left: var(--main-padding_small);
-        padding-right: var(--main-padding_small);
+    .infoProject__description-text{
+        padding-bottom: 2em;
     }
     .videos{
         font-size: var(--main-size__laptop);

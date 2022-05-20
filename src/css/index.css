@@ -27,12 +27,12 @@ __________________*/
 .musician{
         grid-area: 2 / 1 / 2 / 1;
         padding-right: 1.4em;
-        font-weight: 600;
+        font-weight: 700;
         letter-spacing: 3px;
         font-size: 2.6em;
         text-align: end;
         padding-top: 1.3em;
-        color: var(--secondary-color);
+        color: var(--primary-color);
 }
 .musician p{
         padding-bottom: .4em;
@@ -55,12 +55,12 @@ __________________*/
         font-size: 15em;
 }
 .luis__front-end{
-        font-weight: 600;
+        font-weight: 700;
         letter-spacing: .24em;
         font-size: 2.6em;
         padding-left: .2em;
         padding-top: .4em;
-        color: var(--secondary-color);
+        color: var(--primary-color);
 }
 
 
@@ -95,7 +95,7 @@ _________________*/
 }
 .about__text-title{
         opacity: .9;
-        color: var(--text-color);
+        color: var(--primary-color);
         font-family: var(--secondary-font);
         font-weight: 900;
         font-size: 3.6em;

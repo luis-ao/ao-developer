@@ -108,6 +108,7 @@ ____________________*/
     height: 0;
     border: solid 2px var(--tertiary-color);
     box-shadow: 0px 0px 10px var(--tertiary-color);
+    margin-bottom: 8em;
 }
 .videos__comercial iframe{
     position: absolute;
@@ -117,37 +118,6 @@ ____________________*/
     height: 100%;
 }
 
-/*********************
-    BUTTOMS
-____________________*/
-.buttoms{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left:var(--main-padding);
-    padding-right:var(--main-padding);
-    padding-top: 16em;
-    justify-content: space-between;
-    font-size: 10px;
-    
-}
-.buttoms a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10em;
-    height: 3.6em;
-    font-size: 2.6em;
-    user-select: none;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--text-color);
-    font-weight: 800;
-    background-color: var(--button-color);
-    box-shadow: 0px 0px 10px var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-    border-radius: .6em;
-}
 
 
 
@@ -160,20 +130,6 @@ ____________________*/
 
 
 
-
-
-@media (hover: hover){
-    .buttoms a:hover{
-        transition: all 0.2s ease-in-out;
-        background-color: var(--secondary-color);
-        color: var(--background-color);        
-    }
-}
-.buttoms a:active{
-    transition: all 0.2s ease-in-out;
-    background-color: var(--secondary-color);
-    color: var(--background-color);        
-}
 
 
 
@@ -187,9 +143,6 @@ ____________________*/
         LAPTOP
 ____________________*/
 @media screen and (max-width: 1540px){
-    .buttoms{
-        font-size: var(--main-size__laptop);
-    }
     .infoProject{
         font-size: var(--main-size__laptop);
     }
@@ -206,9 +159,6 @@ ____________________*/
         TABLET
 ____________________*/
 @media screen and (max-width: 966px){
-    .buttoms{
-        font-size: var(--main-size__tablet);
-    }
     .infoProject{
         font-size: var(--main-size__tablet);
     }
@@ -251,11 +201,6 @@ ____________________*/
         order: 2;
     }
     .videos{
-        font-size: var(--main-size__phone);
-        padding-left: var(--main-padding_small);
-        padding-right: var(--main-padding_small);
-    }
-    .buttoms{
         font-size: var(--main-size__phone);
         padding-left: var(--main-padding_small);
         padding-right: var(--main-padding_small);

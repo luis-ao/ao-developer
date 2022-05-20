@@ -67,7 +67,7 @@ __________________________________*/
 }
 .form__container-title{
         text-transform: uppercase;
-        color: var(--text-color-2);
+        color: var(--primary-color);
         font-family: var(--secondary-font);
         font-weight: 900;
         font-size: 10em;
@@ -199,6 +199,11 @@ ____________________*/
                 padding-left: var(--main-padding_small);
                 padding-right: var(--main-padding_small);
         }
+        .contact__textContact-lottie{
+                margin-top: 4em;
+                margin-bottom: 2em;
+                width: 64em;
+        }
         .contact__textContact{
                 flex: 100%;
                 order: 1;
@@ -222,7 +227,7 @@ ____________________*/
         .contact__form-phone-title{
                 flex: 100%;
                 text-transform: uppercase;
-                color: var(--secondary-color);
+                color: var(--primary-color);
                 font-family: var(--secondary-font);
                 font-weight: 900;
                 font-size: 6.4em;

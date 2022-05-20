@@ -160,66 +160,6 @@ ____________________*/
 
 
 
-/*********************
-    BUTTOMS
-____________________*/
-.buttoms{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left:var(--main-padding);
-    padding-right:var(--main-padding);
-    padding-top: 6em;
-    justify-content: space-between;
-    font-size: 10px;
-    
-}
-.buttoms a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10em;
-    height: 3.6em;
-    font-size: 2.6em;
-    user-select: none;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--text-color);
-    font-weight: 800;
-    background-color: var(--button-color);
-    box-shadow: 0px 0px 10px var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-    border-radius: .6em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (hover: hover){
-    .buttoms a:hover{
-        transition: all 0.2s ease-in-out;
-        background-color: var(--secondary-color);
-        color: var(--background-color);        
-    }
-}
-.buttoms a:active{
-    transition: all 0.2s ease-in-out;
-    background-color: var(--secondary-color);
-    color: var(--background-color);        
-}
-
-
-
 
 
 
@@ -243,9 +183,6 @@ ____________________*/
     .desing__row2{
         font-size: var(--main-size__laptop);
     }
-    .buttoms{
-        font-size: var(--main-size__laptop);
-    }
 }
 
 
@@ -264,9 +201,6 @@ ____________________*/
     }
     .desing__row1,
     .desing__row2{
-        font-size: var(--main-size__tablet);
-    }
-    .buttoms{
         font-size: var(--main-size__tablet);
     }
 }
@@ -341,11 +275,5 @@ ____________________*/
     }
     .img-phone-2{
         display: none;
-    }
-
-    .buttoms{
-        font-size: var(--main-size__phone);
-        padding-left: var(--main-padding_small);
-        padding-right: var(--main-padding_small);
     }
 }

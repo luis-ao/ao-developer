@@ -1,0 +1,93 @@
+@import url('main.css');
+
+.buttoms{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:var(--main-padding);
+    padding-right:var(--main-padding);
+    padding-top: 6em;
+    justify-content: space-between;
+    font-size: 10px;
+    
+}
+.buttoms a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 3.6em;
+    font-size: 2.6em;
+    user-select: none;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--quaternary-color);
+    font-weight: 800;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: .3em;
+    box-shadow: -.3em .3em 4px var(--quaternary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (hover: hover){
+    .buttoms a:hover{
+        transition: all 0.2s ease-in-out;
+        background-color: var(--quaternary-color);
+        box-shadow: -.3em .3em 4px var(--secondary-color);
+        color: var(--secondary-color);     
+        border: 2px solid var(--quaternary-color);
+    }
+}
+.buttoms a:active{
+    transition: all 0.2s ease-in-out;
+        background-color: var(--quaternary-color);
+        box-shadow: -.3em .3em 4px var(--secondary-color);
+        color: var(--secondary-color);     
+        border: 2px solid var(--quaternary-color);      
+}
+
+
+
+/*********************
+        LAPTOP
+____________________*/
+@media screen and (max-width: 1540px){
+    .buttoms{
+        font-size: var(--main-size__laptop);
+    }
+}
+
+
+/*********************
+        TABLET
+____________________*/
+@media screen and (max-width: 966px){
+    .buttoms{
+        font-size: var(--main-size__tablet);
+    }
+}
+
+
+/*********************
+        PHONE
+____________________*/
+@media screen and (max-width: 500px) {
+    .buttoms{
+        font-size: var(--main-size__phone);
+        padding-left: var(--main-padding_small);
+        padding-right: var(--main-padding_small);
+    }
+}

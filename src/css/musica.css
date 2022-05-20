@@ -67,36 +67,6 @@
     color: var(--primary-color);
 }
 
-/*********************
-    BUTTOMS
-____________________*/
-.buttoms{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left:var(--main-padding);
-    padding-right:var(--main-padding);
-    justify-content: space-between;
-    font-size: 10px;
-}
-.buttoms a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10em;
-    height: 3.6em;
-    font-size: 2.6em;
-    user-select: none;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--text-color);
-    font-weight: 800;
-    background-color: var(--button-color);
-    box-shadow: 0px 0px 10px var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-    border-radius: .6em;
-}
-
 
 
 
@@ -106,21 +76,12 @@ ____________________*/
 
 
 @media (hover: hover){
-    .buttoms a:hover{
-        transition: all 0.2s ease-in-out;
-        background-color: var(--secondary-color);
-        color: var(--background-color);        
-    }
     .music__text-description a:hover{
         transition: all 0.3s ease-in-out;
         color: var(--quaternary-color);
     }
 }
-.buttoms a:active{
-    transition: all 0.2s ease-in-out;
-    background-color: var(--secondary-color);
-    color: var(--background-color);        
-}
+
 .music__text-description a:active{
     transition: all 0.3s ease-in-out;
     color: var(--quaternary-color);
@@ -138,9 +99,6 @@ ____________________*/
         LAPTOP
 ____________________*/
 @media screen and (max-width: 1540px){
-    .buttoms{
-        font-size: var(--main-size__laptop);
-    }
     .music{
         font-size: var(--main-size__laptop);
     }
@@ -151,9 +109,6 @@ ____________________*/
         TABLET
 ____________________*/
 @media screen and (max-width: 966px){
-    .buttoms{
-        font-size: var(--main-size__tablet);
-    }
     .music{
         font-size: var(--main-size__tablet);
     }
@@ -186,10 +141,5 @@ ____________________*/
     .music__video{
         grid-column: 1 / span 2;
         margin-bottom: 8em;
-    }
-    .buttoms{
-        font-size: var(--main-size__phone);
-        padding-left: var(--main-padding_small);
-        padding-right: var(--main-padding_small);
     }
 }
