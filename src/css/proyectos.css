@@ -75,11 +75,11 @@
         overflow: hidden;
         font-weight: 800;
         color: var(--secondary-color);
-        font-size: 3em;
-        letter-spacing: 1px;
+        font-size: 3.4em;
+        letter-spacing: 2px;
         opacity: 0;
+        padding: 1.3em;
         background-color: var(--quaternary-color);
-        padding: 1.4em 2em;
         border-radius: .3em;
 }
       
@@ -90,25 +90,35 @@
 @media (hover: hover){
       .projects__nav:hover .projects__nav-hover{
         opacity: 1;
-        animation: animate 4s linear infinite;
+        animation: animate 5s linear infinite;
         transition: .3s ease-in-out;
       }
       @keyframes animate{
         from{
-            transform: translateX(50%);
+            transform: translateX(-280%);
         }
         to{
-            transform: translateX(-100%);
+            transform: translateX(280%);
         }
       }
-            
-      .projects__nav:hover .projects__nav-name,
+      .projects__nav:hover .projects__nav-name{
+        opacity: .3;
+        transition: .3s ease-in-out;
+      }
       .projects__nav:hover .projects__nav-sub{
         opacity: 0;
         transition: .3s ease-in-out;
-
       }
 }
+.projects__nav:active .projects__nav-name{
+  opacity: .2;
+  transition: .3s ease-in-out;
+}
+.projects__nav:active .projects__nav-sub{
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
 
 
 

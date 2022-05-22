@@ -125,12 +125,13 @@ ____________________*/
 @media screen and (max-width: 500px) {
     .music{
         font-size: var(--main-size__laptop);
-        padding-left: var(--main-padding_small);
-        padding-right: var(--main-padding_small);
+        padding-left: 4em;
+        padding-right: 4em;
     }
     .music__text{
         grid-column: 1 / span 2;
         padding-left: 0;
+        overflow: hidden;
     }
     .music__text-title{
         font-size: 6em;

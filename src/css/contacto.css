@@ -172,7 +172,7 @@ ____________________*/
 /*********************
         TABLET
 ____________________*/
-@media screen and (max-width: 966px){
+@media screen and (max-width: 900px){
         .contact{
                 font-size: var(--main-size__tablet);
         }
@@ -186,6 +186,17 @@ ____________________*/
 }
 
 
+@media screen and (max-width: 700px) {
+        .contact{
+                font-size: 3px;
+        }
+        .form__container{
+                font-size: 3px;
+        }
+        .contact__textContact{
+                font-size: 3px;
+        }
+}
 
 
 
@@ -193,7 +204,7 @@ ____________________*/
 /*********************
         PHONE
 ____________________*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
         .contact{
                 font-size: var(--main-size__phone);
                 padding-left: var(--main-padding_small);
@@ -231,7 +242,6 @@ ____________________*/
                 font-family: var(--secondary-font);
                 font-weight: 900;
                 font-size: 6.4em;
-                letter-spacing: 1px;
                 overflow: hidden;
         }
         .contact__form-phone-subtitle{
@@ -241,11 +251,9 @@ ____________________*/
                 font-size: 2.8em;
                 text-align: justify;
                 letter-spacing: 1px;
-                margin-top: 1.2em;
-                margin-bottom: 2.5em;
+                margin-top: .8em;
+                margin-bottom: 2.8em;
                 line-height: 1.4em;
-                padding-right: 2em;
-
         }
         .contact__form-phone-subtitle a{
                 text-decoration: none;
