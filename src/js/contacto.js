@@ -7,4 +7,4 @@ const animationWeb = bodymovin.loadAnimation({
     loop: true, 
     autoplay: true, 
     name: "Contacto",
-  })
+  });

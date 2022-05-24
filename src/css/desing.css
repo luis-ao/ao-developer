@@ -1,6 +1,55 @@
 @import url('main.css');
 
 
+#lightbox-principal{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    background-color: var(--lightbox-color);
+}
+#lightbox-interno{
+    width: 50%;
+    height: 400px;
+    border: 2px solid var(--text-color);
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#img-activa{
+    height: 100%;
+}
+#lightbox-interno button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+}
+#btn-close{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3rem;
+}
+#btn-prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 3rem;
+}
+#btn-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 3rem;
+}
+
+
 /*¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
  INFORMATION PROYECT COVER ART
 ________________________________*/

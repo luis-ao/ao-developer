@@ -10,6 +10,7 @@
 @font-face {
     font-family: 'nasalization';
     src: url(../resources/nasalization-rg.otf);
+    font-display: auto;
 }
 
 :root{
@@ -21,6 +22,7 @@
     --text-color:  #F2F2F2;
     --text-color-2:  #f2f2f2cf;
     --button-color: #272727;
+    --lightbox-color: #0d0d0cb6;
 
     
     --primary-font: 'nasalization', sans-serif;
@@ -39,6 +41,7 @@
 body{
     background-color: var(--background-color);
     font-family: var(--tertiary-font);
+    box-sizing: border-box;
 } 
 
 /*********************
