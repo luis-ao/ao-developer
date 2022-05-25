@@ -4,6 +4,9 @@
         display: grid;
         width: 100%;
         overflow: hidden;
+        font-size: 10px;
+        padding-top: 14em;
+        align-items: center;
 }
 .home__videoBG{
         position: absolute;
@@ -11,6 +14,11 @@
         width: 100%;
         top: 0;
         overflow: hidden;
+}
+.home__lottie{
+        padding-left: 1em;
+        z-index: 1;
+        width: 78%;
 }
 
 
@@ -28,7 +36,9 @@
         LAPTOP
 ____________________*/
 @media screen and (max-width: 1540px){
-
+        .home{
+                font-size: var(--main-size__laptop);
+        }
 }
 
 
@@ -36,7 +46,9 @@ ____________________*/
         TABLET
 ____________________*/
 @media screen and (max-width: 966px){
-
+        .home{
+                font-size: var(--main-size__tablet);
+        }
 }
 
 
@@ -48,5 +60,7 @@ ____________________*/
         PHONE
 ____________________*/
 @media screen and (max-width: 500px) {
-
+        .home{
+                font-size: var(--main-size__phone);
+        }
 }

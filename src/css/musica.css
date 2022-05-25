@@ -9,7 +9,7 @@
     color: var(--text-color);
     margin-top: 12em;
     margin-bottom: 18em;
-    align-items: center;
+    align-items: flex-end;
 }
 .music__video{
     position: relative;
@@ -18,6 +18,7 @@
     height: 0;
     border: solid 2px var(--primary-color);
     box-shadow: 0px 0px 10px var(--primary-color);
+    order: 1;
 }
 .music__video iframe{
     position: absolute;
@@ -27,11 +28,12 @@
     height: 100%;
 }
 .music__text{
-    height: 44em;
-    padding: 0 6.2em 0 14em; 
+    padding-left: 14em; 
+    padding-right: 8em;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    order: 2;
 }
 .music__text-title{
     font-family: var(--secondary-font);
@@ -39,12 +41,12 @@
     font-weight: 900;
     letter-spacing: 2px;
     font-size: 8em;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-shadow: -2px 2px 4px var(--background-color);
 }
 .music__text-description{
     margin-top: 1.4em;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 2.4em;
     letter-spacing: 1px;
     opacity: .8;
@@ -116,23 +118,22 @@ ____________________*/
 ____________________*/
 @media screen and (max-width: 500px) {
     .music{
-        font-size: var(--main-size__laptop);
-        padding-left: 4em;
-        padding-right: 4em;
+        font-size: var(--main-size__phone);
+        padding-left: var(--main-padding_small);
+        padding-right: var(--main-padding_small);
+        overflow: hidden;
     }
     .music__text{
         grid-column: 1 / span 2;
-        padding-left: 0;
-        overflow: hidden;
-    }
-    .music__text-title{
-        font-size: 6em;
+        padding: 0;
+        order: 1;
+        margin-bottom: 8em;
     }
     .title-paradigmas{
-        font-size: 5em;
+        font-size: 7em;
     }
     .music__video{
         grid-column: 1 / span 2;
-        margin-bottom: 8em;
+        order: 2;
     }
 }

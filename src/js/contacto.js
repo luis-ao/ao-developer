@@ -1,6 +1,6 @@
 const animContact = document.getElementById('animContact');
 
-const animationWeb = bodymovin.loadAnimation({
+const animationContact = bodymovin.loadAnimation({
     container: animContact,
     path: '../../src/resources/lotties/contact.json',
     renderer: 'svg', 
