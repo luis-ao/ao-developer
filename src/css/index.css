@@ -20,6 +20,31 @@
         z-index: 1;
         width: 78%;
 }
+.homePhone{
+        display: none;
+        width: 100%;
+        overflow: hidden;
+        font-size: 10px;
+        padding-top: 7em;
+        margin-bottom: 18em;
+}
+.homePhone__videoBG{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 0;
+        overflow: hidden;
+}
+.homePhone__lottie{
+        z-index: 1;
+        width: 90%;
+}
+
+
+
+
+
+
 .about{
         display: grid;
         grid-template-columns: 38% 62%;
@@ -47,12 +72,13 @@
 
 .about__info-text p {
         color: var(--text-color);
-        font-weight: 500;
+        font-weight: 700;
         font-size: 2.8em;
         opacity: .8;
         text-align: justify;
         margin-bottom: 1em;
         line-height: 1.4em;
+        letter-spacing: 1px;
 }
 .about__info-text a {
         display: flex;
@@ -147,7 +173,10 @@ ____________________*/
 ____________________*/
 @media screen and (max-width: 500px) {
         .home{
-                font-size: var(--main-size__phone);
+                display: none;
+        }
+        .homePhone{
+                display: grid;
         }
         .about{
                 font-size: var(--main-size__phone);
@@ -161,17 +190,14 @@ ____________________*/
                 font-size: 7em;
         }
         
-        .about__info-text p {
-                font-size: 2.6em;
-        }
         .about__info-text a {
-                font-size: 2.6em;
-                margin-bottom: 4em;
+                margin-bottom: 8em;
         }
         .about__lottie{
                 position: relative;
                 width: 48em;
                 display: flex;
                 padding-left: 8em;
+                margin-bottom: 8em;
         }
 }
