@@ -74,6 +74,7 @@ ________________________________*/
     font-size: 10em;
     margin-bottom: .8em;
     margin-top: 1.8em;
+    color: var(primary-color);
 }
 
 .infoProject__date{
@@ -120,6 +121,7 @@ ________________________________*/
     letter-spacing: 1px;
     font-size: 2.8em;
     margin-bottom: 2em;
+    text-align: justify;
 }
 
 

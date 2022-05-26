@@ -43,14 +43,17 @@
 
 
 
+/*______________
 
+         ABOUT 
+________________________*/
 
 .about{
         display: grid;
         grid-template-columns: 38% 62%;
         font-size: 10px;
         padding-left: 20em;
-        margin-top: 34em;
+        margin-top: 36em;
         margin-bottom: 42em;
 }
 .about__info{
@@ -106,7 +109,37 @@
 }
 
 
-
+/*¨¨¨¨¨¨¨¨¨¨ 
+     CARL SAGAN 
+____________________*/
+.carl{
+        display: grid;
+        font-size: 10px;
+        margin-top: 32em;
+        margin-bottom: 30em;
+        padding:20em 0 18em 0;
+        justify-content: center;
+        align-content: center;
+}
+.carl__quote{
+        display: grid;
+        text-align: center;
+        font-weight: 600;
+        font-style: italic;
+        letter-spacing: 1px;
+        font-size: 2.6em;
+        line-height: 1.6em;
+        color: var(--secondary-color);
+}
+.carl__author{
+        display: grid;
+        text-align: center;
+        padding-top: 3.6em;
+        font-weight: 800;
+        letter-spacing: 1px;
+        font-size: 3em;
+        color: var(--secondary-color);
+}
 
 
 
@@ -148,6 +181,9 @@ ____________________*/
         .about{
                 font-size: var(--main-size__laptop);
         }
+        .carl{
+                font-size: var(--main-size__laptop);
+        }
 }
 
 
@@ -159,6 +195,9 @@ ____________________*/
                 font-size: var(--main-size__tablet);
         }
         .about{
+                font-size: var(--main-size__tablet);
+        }
+        .carl{
                 font-size: var(--main-size__tablet);
         }
 }
@@ -199,5 +238,10 @@ ____________________*/
                 display: flex;
                 padding-left: 8em;
                 margin-bottom: 8em;
+        }
+        .carl{
+                font-size: var(--main-size__phone);
+                padding-left: 9em;
+                padding-right: 9em ;
         }
 }
