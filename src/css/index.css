@@ -25,23 +25,23 @@
         grid-template-columns: 38% 62%;
         font-size: 10px;
         padding-left: 20em;
-        margin-top: 36em;
-        margin-bottom: 44em;
+        margin-top: 34em;
+        margin-bottom: 42em;
 }
 .about__info{
         display: flex;
 }
 .about__info-text{
         flex: 100%;
-        padding-top: 14em;
+        padding-top: 16em;
 }
 .about__info-text h2 {
-        color: var(--secondary-color);
+        color: var(--primary-color);
         font-family: var(--secondary-font);
         font-weight: 900;
         text-transform: uppercase;
         font-size: 10em;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         margin-bottom: .2em;
 }
 
@@ -49,16 +49,16 @@
         color: var(--text-color);
         font-weight: 500;
         font-size: 2.8em;
-        letter-spacing: .5px;
-        opacity: .7;
+        opacity: .8;
         text-align: justify;
         margin-bottom: 1em;
+        line-height: 1.4em;
 }
 .about__info-text a {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 2em;
+        margin-top: 2.6em;
         padding: 1em;
         font-size: 2.8em;
         user-select: none;
@@ -151,5 +151,27 @@ ____________________*/
         }
         .about{
                 font-size: var(--main-size__phone);
+                padding-left: 6em;
+                padding-right: 6em;
+                margin-top: 4em;
+                margin-bottom: 20em;
+                grid-template-columns: 100%;
+        }
+        .about__info-text h2 {
+                font-size: 7em;
+        }
+        
+        .about__info-text p {
+                font-size: 2.6em;
+        }
+        .about__info-text a {
+                font-size: 2.6em;
+                margin-bottom: 4em;
+        }
+        .about__lottie{
+                position: relative;
+                width: 48em;
+                display: flex;
+                padding-left: 8em;
         }
 }
