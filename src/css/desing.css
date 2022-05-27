@@ -74,7 +74,11 @@ ________________________________*/
     font-size: 10em;
     margin-bottom: .8em;
     margin-top: 1.8em;
+<<<<<<< HEAD
     color: var(--primary-color);
+=======
+    color: var(primary-color);
+>>>>>>> cd43a21db8719c2355bc304031a9a500c3ce97d3
 }
 
 .infoProject__date{
