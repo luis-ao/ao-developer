@@ -22,7 +22,7 @@
     --text-color:  #F2F2F2;
     --text-color-2:  #f2f2f2cf;
     --button-color: #272727;
-    --lightbox-color: #0d0d0cb6;
+    --lightbox-color: #0d0d0cdb;
 
     
     --primary-font: 'nasalization', sans-serif;
@@ -206,7 +206,7 @@ ____________________*/
         transition: all 0.3s ease-in-out;
         opacity: 1;
         background-color: var(--primary-color);
-        box-shadow: -3px 3px 6px var(--primary-color);
+        box-shadow: -3px 3px 6px var(--tertiary-color);
         color: var(--background-color);
         border-bottom: solid  2px   var(--primary-color);
         border-left: solid  2px   var(--primary-color);

@@ -123,17 +123,17 @@
     <!--////////            
                BODY
   _______________________-->
-    <section id="lightbox-principal">
-      <div id="lightbox-interno">
-        <img
-          id="img-activa"
-          src="../src/resources/desing/P2.webp"
-          alt="Infografía de planta"
-        />
-        <button id="btn-close" type="button">X</button>
-        <button id="btn-next" type="button">&gt;</button>
-        <button id="btn-prev" type="button">&lt;</button>
-      </div>
+    <section id="lightbox" class="lightbox">
+      <img class="lightbox__img" id="img-activa" src="" alt="" />
+      <button
+        class="lightbox__button lightbox__button-close"
+        id="btn-close"
+        type="button"
+      >
+        X
+      </button>
+      <!-- <button class="lightbox__button lightbox__button-next" id="btn-next" type="button">&gt;</button>
+        <button class="lightbox__button lightbox__button-prev" id="btn-prev" type="button">&lt;</button> -->
     </section>
 
     <section class="infoProject">
@@ -231,11 +231,13 @@
         </div>
         <div class="desing__row2-colum3">
           <img
+            id="img-galery"
             class="img-phone-2 wow animate__animated animate__fadeIn animate__slow"
             src="../src/resources/desing/P4.webp"
             alt="Infografía de planta"
           />
           <img
+            id="img-galery"
             class="wow animate__animated animate__fadeIn animate__slow"
             src="../src/resources/desing/cesped.webp"
             alt="Publicidad para jardinería"
