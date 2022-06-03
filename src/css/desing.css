@@ -225,7 +225,6 @@ ____________________*/
     #img-galery:hover{
         transition: all 0.3s ease-in-out;
         opacity: .5;
-        filter: blur(1px);
     }
 }
 .lightbox__button-close:active{
@@ -235,7 +234,6 @@ ____________________*/
 #img-galery:active{
     transition: all 0.3s ease-in-out;
     opacity: .5;
-    filter: blur(1px);
 }
 
 
