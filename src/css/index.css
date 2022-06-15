@@ -78,10 +78,9 @@ ________________________*/
         font-weight: 700;
         font-size: 2.8em;
         opacity: .8;
-        text-align: justify;
         margin-bottom: 1em;
         line-height: 1.4em;
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
 }
 .about__info-text a {
         display: flex;
